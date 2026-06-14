@@ -1,26 +1,31 @@
 # Glossary
 
-Plain-language definitions of terms you'll meet around here. Many of these also show up as **dotted underlines** in the lessons — hover (or tap) them for a quick definition in context.
+Plain-language definitions of terms you'll meet around here, **A–Z**.
 
-## IDLE
+!!! tip "Two fast ways to find a term"
+    Use the **search** box (top right, or press `/`) to jump straight to a word — it searches the whole site. On wider screens, the **contents** list on the right of this page is a clickable alphabetical index.
 
-**Integrated Development and Learning Environment** — the simple code editor and interactive shell that ships *with* Python. It's deliberately bare: no aggressive autocomplete or AI suggestions, which is exactly why it's good for learning. You write code, press **F5**, and it runs. We start here before any heavier tools. (It's also a small pun on Monty Python's Eric Idle — the language is named after Monty Python's Flying Circus.)
-
-## PATH
-
-A list your operating system keeps of folders to search when you type a program's name. When a guide says "add Python to your PATH," it means "let me type `python` in a terminal and have the computer find it," instead of typing the program's full location every time. The usual Windows setup gotcha — "`python` is not recognized" — is almost always a PATH that wasn't set.
-
-## REPL
-
-**Read-Eval-Print Loop** — an interactive prompt that **r**eads a line of code, **e**valuates it, **p**rints the result, and loops for the next line. Python's `>>>` prompt (including IDLE's shell) is a REPL: type `2 + 2`, press Enter, see `4`. Great for quick experiments. *Not to be confused with **Replit**, a separate online IDE that happens to share the name.*
+Many of these terms also appear as **dotted underlines** in the lessons — hover (or tap) one for a quick definition in context.
 
 ## IDE
 
-**Integrated Development Environment** — an editor bundled with tools to write, run, and debug code in one place (e.g., VS Code, PyCharm). IDLE is a tiny IDE; you'll graduate to a fuller one when the fundamentals are yours.
+**Integrated Development Environment** — an editor bundled with tools to write, run, and debug code in one place (e.g., VS Code, PyCharm). IDLE is a tiny IDE; you'll graduate to a fuller one once the fundamentals are yours.
+
+## IDLE
+
+**Integrated Development and Learning Environment** — the simple code editor and interactive shell that ships *with* Python. It's deliberately bare: no aggressive autocomplete or AI suggestions, which is exactly why it's good for learning. You write code, press **F5**, and it runs. We start here before any heavier tools. (It's also a nod to Monty Python's Eric Idle — Python is named after Monty Python's Flying Circus.)
 
 ## Interpreter
 
 The program that reads your Python code and runs it, line by line. When you "install Python," you're mainly installing the interpreter (the `python` / `python3` command).
+
+## PATH
+
+A list your operating system keeps of folders to search when you type a program's name. When a guide says "add Python to your PATH," it means "let me type `python` in a terminal and have the computer find it," instead of typing the program's full location every time. The classic Windows gotcha — "`python` is not recognized" — is almost always a PATH that wasn't set.
+
+## REPL
+
+**Read-Eval-Print Loop** — an interactive prompt that **r**eads a line of code, **e**valuates it, **p**rints the result, and loops for the next line. Python's `>>>` prompt (including IDLE's shell) is a REPL: type `2 + 2`, press Enter, see `4`. Great for quick experiments. *Not to be confused with **Replit**, a separate online IDE that happens to share the name.*
 
 ## Shell
 
