@@ -11,6 +11,4 @@ Free, structured courses — learn from them at your own pace, right here on the
 
 **Tag legend:** *Subject* is the broad field; *Tags* flag the language/tool (`Python`, `SQL`), level (`Beginner`), focus (`Data Structures`, `Databases`), and curriculum alignment (`MSU-aligned` = mapped to MSU Denver's objectives; see each course's affiliation note). Future courses may use their own subjects/codes not tied to any university.
 
-➡️ **[Browse by tag](../tags.md)** — see every course grouped by tag (clickable tag chips also appear on each course page).
-
 You read and learn here on the site. When a course includes code to run, the **runnable files** live in an open repository you can download — see [Using GitHub](../guides/using-github.md) if that's new to you.

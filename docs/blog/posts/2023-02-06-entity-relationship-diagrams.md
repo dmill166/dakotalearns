@@ -3,8 +3,6 @@ date: 2023-02-06
 slug: entity-relationship-diagrams
 categories:
   - Tutorials
-tags:
-  - Databases
 ---
 
 # Entity Relationship Diagrams

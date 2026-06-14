@@ -4,8 +4,6 @@ slug: personal-progress-update-3-2025-01-20
 draft: true
 categories:
   - Personal
-tags:
-  - Career
 ---
 
 # Personal Progress Update #3: 2025-01-21

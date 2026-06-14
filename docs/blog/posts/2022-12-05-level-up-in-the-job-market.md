@@ -3,9 +3,6 @@ date: 2022-12-05
 slug: level-up-in-the-job-market
 categories:
   - Career
-tags:
-  - Career
-  - Job Search
 ---
 
 # Level Up in the Job Market

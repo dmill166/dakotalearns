@@ -3,9 +3,6 @@ date: 2023-04-03
 slug: installation-guide-for-python-macos-windows
 categories:
   - Tutorials
-tags:
-  - Python
-  - Installation
 ---
 
 # Installation Guide for Python - MacOS & Windows

@@ -51,7 +51,6 @@ plugins:
       blog_dir: blog
       post_url_format: "{slug}"
       post_excerpt: optional
-  - tags
 
 markdown_extensions:
   - admonition
@@ -82,7 +81,6 @@ nav:
       - Install Python: guides/install-python.md
       - Using GitHub: guides/using-github.md
   - Glossary: glossary.md
-  - Tags: tags.md
   - Blog:
       - blog/index.md
   - About: about.md

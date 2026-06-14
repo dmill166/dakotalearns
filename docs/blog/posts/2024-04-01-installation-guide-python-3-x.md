@@ -3,9 +3,6 @@ date: 2024-04-01
 slug: installation-guide-python-3-x
 categories:
   - Tutorials
-tags:
-  - Python
-  - Installation
 ---
 
 # Installation Guide: Python 3.x 🐍

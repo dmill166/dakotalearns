@@ -4,9 +4,6 @@ slug: teaching-cs1-in-public
 draft: true
 categories:
   - Announcements
-tags:
-  - Teaching
-  - Computer Science
 ---
 
 # Teaching CS1 in Public

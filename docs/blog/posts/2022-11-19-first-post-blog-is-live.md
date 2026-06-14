@@ -3,8 +3,6 @@ date: 2022-11-19
 slug: first-post-blog-is-live
 categories:
   - Reflections
-tags:
-  - Blogging
 ---
 
 # First Post – Blog is Live!
