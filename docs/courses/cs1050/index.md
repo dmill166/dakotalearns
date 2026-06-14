@@ -31,4 +31,14 @@ Readable lecture articles will appear here, unit by unit, as the course is built
 
 ## Textbook
 
-Taught alongside John Zelle's *Python Programming: An Introduction to Computer Science* (4th ed.). The course references it by chapter; it doesn't reproduce it — bring your own copy if you'd like the companion reading.
+Taught alongside **John Zelle's *Python Programming: An Introduction to Computer Science*** (4th ed.). The course references it by chapter and never reproduces it — bring your own copy for the companion reading.
+
+**Please buy it and support the author** — independent authors and small publishers are how good, affordable CS textbooks keep existing.
+
+- **4th edition (recommended, current):** [get a copy](https://amzn.to/3Qpgrt1)
+- **3rd edition (budget option):** [get a copy](https://amzn.to/4vJmxTT) — cheaper used; a few Python references are slightly dated, but the concepts hold up fine for this course.
+
+You can also check your library, or buy direct from the publisher — whatever gets the book in your hands.
+
+!!! note "A note on the book links"
+    The Amazon links above are affiliate links: if you buy through them, Dakota Learns may earn a small commission **at no extra cost to you**. It helps keep this work free. You're welcome to search for the book yourself instead — same book, your choice.
