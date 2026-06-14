@@ -28,6 +28,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - toc.follow
@@ -72,13 +73,14 @@ nav:
   - Home: index.md
   - Start Here: start-here.md
   - Courses:
-      - Catalog: courses/index.md
+      - courses/index.md
       - CS 1050 — Computer Science 1: courses/cs1050/index.md
   - Guides:
       - Install Python: guides/install-python.md
       - Using GitHub: guides/using-github.md
   - Glossary: glossary.md
-  - Blog: blog/index.md
+  - Blog:
+      - blog/index.md
   - About: about.md
   - Support: https://github.com/sponsors/dmill166
 
