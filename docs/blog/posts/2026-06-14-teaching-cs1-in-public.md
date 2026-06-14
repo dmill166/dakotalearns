@@ -1,5 +1,6 @@
 ---
 date: 2026-06-14
+slug: teaching-cs1-in-public
 draft: true
 categories:
   - Announcements

@@ -45,7 +45,7 @@ plugins:
   - blog:
       blog_dir: blog
       post_url_format: "{slug}"
-      post_excerpt: required
+      post_excerpt: optional
   - tags
 
 markdown_extensions:
@@ -78,4 +78,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/dmill166
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/CHANGEME   # TODO: set your LinkedIn URL
+      link: https://www.linkedin.com/in/dakota-hollmann-
