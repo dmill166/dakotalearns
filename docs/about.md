@@ -2,9 +2,11 @@
 
 ## The project
 
-**Dakota Learns** is an effort to make the fundamentals of computer science genuinely accessible — free, beginner-first, and built in the open. The courses here are designed to be *portable* (recognizable as solid CS anywhere), aligned to recognized standards (ABET, ACM/IEEE-CS CS2023), and honest about what they do and don't cover.
+**Dakota Learns** is what it says: a place where I learn in public and share it, free and beginner-first. *Let's learn something together.*
 
-It started as a personal blog in 2022, sparked by a simple idea from the data community: get involved, share what you learn, and help others on the same journey. It's grown into something more deliberate — full, free courses built and taught in public, with the blog now the journal of that process. The early posts are all still here.
+**Right now the focus is computer science** — full, free courses designed to be *portable* (recognizable as solid CS anywhere), aligned to recognized standards (ABET, ACM/IEEE-CS CS2023), and honest about what they do and don't cover. But the project isn't defined by one subject. It started as a personal blog in 2022 — covering everything from databases to security to the occasional life lesson — sparked by a simple idea from the data community: get involved, share what you learn, help others on the same journey. CS is where my energy is today (and where I'm headed as a teacher); if I'm learning something else worth sharing, it may show up here too.
+
+The blog is now the journal of that process, and the early posts are all still here.
 
 ## Who's behind it
 
@@ -12,7 +14,7 @@ I'm **Dakota Hollmann** — a lead-level data engineer with 10+ years in data an
 
 I also give back to the program I came from: I serve on **MSU Denver's Computer Science and Data Science & Machine Learning advisory boards**, have delivered guest lectures on databases and technical-interview prep, and am preparing to teach as adjunct faculty. This site is part of that preparation — the materials I'm building to teach from, shared openly so anyone can learn from them too.
 
-I learned largely on free and open resources. This is me paying that forward.
+I leaned on free and open resources my whole way through school and throughout my career — and I plan to keep doing so as I teach. This is me paying that forward.
 
 ## Affiliation
 
@@ -35,3 +37,4 @@ Everything here is free, and always will be at the content level. If it helped y
 
 - GitHub: [@dmill166](https://github.com/dmill166)
 - LinkedIn: [dakota-hollmann-](https://www.linkedin.com/in/dakota-hollmann-)
+- Background: [Digital CV](https://dmill166.github.io/CV/)

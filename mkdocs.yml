@@ -1,6 +1,6 @@
 site_name: Dakota Learns
 site_url: https://dakotalearns.com
-site_description: Free, beginner-friendly computer science — taught in public.
+site_description: Free, beginner-friendly learning shared in public — currently focused on computer science. Let's learn something together.
 site_author: Dakota Hollmann
 repo_url: https://github.com/dmill166/dakotalearns
 repo_name: dmill166/dakotalearns
@@ -13,15 +13,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -73,8 +73,7 @@ nav:
       - CS 1050 — Computer Science 1: courses/cs1050/index.md
   - Guides:
       - Install Python: guides/install-python.md
-  - Blog:
-      - blog/index.md
+  - Blog: blog/index.md
   - About: about.md
   - Support: https://github.com/sponsors/dmill166
 

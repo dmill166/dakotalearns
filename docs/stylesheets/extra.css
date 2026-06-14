@@ -1,8 +1,15 @@
-/* Dakota Learns — light brand tweaks. Adjust as the brand develops. */
+/* Dakota Learns — brand colors: sapphire / royal blue. */
 
 :root {
-  --md-primary-fg-color: #3f51b5;
-  --md-accent-fg-color: #3949ab;
+  --md-primary-fg-color:        #0f52ba;  /* sapphire — header / primary */
+  --md-primary-fg-color--light: #2563eb;  /* royal */
+  --md-primary-fg-color--dark:  #0a3a85;  /* deep sapphire */
+  --md-accent-fg-color:         #1d4ed8;  /* royal — links/hover */
+}
+
+/* Dark mode: keep the royal accent readable on the slate scheme */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #60a5fa;
 }
 
 /* A touch more breathing room on the landing hero buttons */
