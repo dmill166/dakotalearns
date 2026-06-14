@@ -14,6 +14,10 @@ I also give back to the program I came from: I serve on **MSU Denver's Computer 
 
 I learned largely on free and open resources. This is me paying that forward.
 
+## Affiliation
+
+Independent educational materials created by Dakota Hollmann. **Not affiliated with, endorsed by, or sponsored by Metropolitan State University of Denver.** MSU Denver course codes and objectives are referenced for curriculum alignment only.
+
 ## How it's licensed
 
 - **Course content** (text, slides, prompts): [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) — free to read and share for non-commercial use, with attribution.

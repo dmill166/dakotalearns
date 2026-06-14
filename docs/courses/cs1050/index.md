@@ -5,6 +5,9 @@ The first programming course: from "what is a computer program?" to writing real
 !!! tip "Brand new? Do this first"
     [Install Python](../../guides/install-python.md), then come back.
 
+!!! info "About the name"
+    "CS 1050" is referenced for **curriculum alignment** with MSU Denver's course objectives. These are independent materials — **not affiliated with, endorsed by, or sponsored by MSU Denver.**
+
 ## What this course covers
 
 Designed to be portable (a strong CS1 anywhere), aligned to MSU Denver's course objectives, ABET CAC outcomes, and ACM/IEEE-CS CS2023 — and built to set you up for CS 2 (data structures). Highlights:
