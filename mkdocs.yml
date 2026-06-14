@@ -1,0 +1,81 @@
+site_name: Dakota Learns
+site_url: https://dakotalearns.com
+site_description: Free, beginner-friendly computer science — taught in public.
+site_author: Dakota Hollmann
+repo_url: https://github.com/dmill166/dakotalearns
+repo_name: dmill166/dakotalearns
+copyright: >
+  Copyright © 2026 Dakota Hollmann — content CC BY-NC-ND 4.0, code PolyForm Noncommercial 1.0.0
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      post_url_format: "{slug}"
+      post_excerpt: required
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Start Here: start-here.md
+  - Courses:
+      - Catalog: courses/index.md
+      - CS 1050 — Computer Science 1: courses/cs1050/index.md
+  - Guides:
+      - Install Python: guides/install-python.md
+  - Blog:
+      - blog/index.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dmill166
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/CHANGEME   # TODO: set your LinkedIn URL
