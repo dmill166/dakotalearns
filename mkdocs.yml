@@ -53,12 +53,15 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - abbr
   - toc:
       permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.emoji:
@@ -73,6 +76,8 @@ nav:
       - CS 1050 — Computer Science 1: courses/cs1050/index.md
   - Guides:
       - Install Python: guides/install-python.md
+      - Using GitHub: guides/using-github.md
+  - Glossary: glossary.md
   - Blog: blog/index.md
   - About: about.md
   - Support: https://github.com/sponsors/dmill166

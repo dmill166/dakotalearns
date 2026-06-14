@@ -21,13 +21,15 @@ Designed to be portable (a strong CS1 anywhere), aligned to MSU Denver's course 
 - Searching, sorting, and an intro to algorithmic complexity (Big-O)
 - A running thread on testing/debugging and clear technical writing
 
-## Materials
+## How this course works
 
-The full course materials — syllabus, schedule, labs, assignments, and starter code — live in the open course repository:
+**You learn right here on the site** — no GitHub or downloads required. Lecture articles, explanations, and assignment prompts are published as readable pages, unit by unit, as the course is built in public. Follow along on the [blog](../../blog/index.md).
 
-[:material-github: Course repository](https://github.com/dmill166/msudenver-cs1050){ .md-button }
+When you're ready to *write code*, the **runnable files** (starter code, examples, tests) live in the open repository — grab them as a simple ZIP, no account or Git needed. New to that? See [Using GitHub](../../guides/using-github.md).
 
-Readable lecture articles will appear here, unit by unit, as the course is built in public. Follow along on the [blog](../../blog/index.md).
+[:material-github: Code files (GitHub)](https://github.com/dmill166/msudenver-cs1050){ .md-button }
+
+> Solution keys live in a separate private repo (academic integrity). Instructors can request access.
 
 ## Textbook
 
