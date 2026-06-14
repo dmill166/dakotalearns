@@ -1,30 +1,12 @@
 ---
 date: 2022-12-12
 slug: personal-progress-update-1-2022-12-11
-tags:
-  - Amazon Web Services
-  - AWS
-  - Azure
-  - Cloud
-  - Cloud Certifications
-  - Cloud Technologies
-  - College
-  - Discord
-  - Georgia Institute of Technology
-  - Georgia Tech
-  - Master&#039;s Degree
-  - Microsoft Azure
-  - OMSCS
-  - Personal Goals
-  - Physical Health
-  - Recharge
-  - Reddit
-  - Rest
-  - Self-Care
-  - University
-  - Walking
 categories:
   - Personal
+tags:
+  - Graduate School
+  - Cloud
+  - Mental Health
 ---
 
 # Personal Progress Update #1: 2022-12-11

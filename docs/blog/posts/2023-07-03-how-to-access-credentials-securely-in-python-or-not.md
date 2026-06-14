@@ -1,32 +1,11 @@
 ---
 date: 2023-07-03
 slug: how-to-access-credentials-securely-in-python-or-not
-tags:
-  - Blog post
-  - Career
-  - chatGPT
-  - Config
-  - Config Files
-  - ConfigParser
-  - Configuration
-  - Credentials
-  - Dictionary
-  - Environment Variable
-  - GPT-4
-  - How to
-  - Key
-  - Key Management
-  - Key-Value
-  - Learn
-  - Password
-  - PasswordSafe
-  - Professional Development
-  - Safe
-  - Security
-  - Thinking
-  - Vault
 categories:
   - Tutorials
+tags:
+  - Security
+  - Python
 ---
 
 # How to Access Credentials [Securely] in Python... or not?

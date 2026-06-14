@@ -1,20 +1,11 @@
 ---
 date: 2024-04-01
 slug: installation-guide-python-3-x
-tags:
-  - AI
-  - Artificial Intelligence
-  - Blog post
-  - chatGPT
-  - coding
-  - How to
-  - install
-  - programming
-  - py
-  - Python3
-  - VS Code
 categories:
   - Tutorials
+tags:
+  - Python
+  - Installation
 ---
 
 # Installation Guide: Python 3.x 🐍

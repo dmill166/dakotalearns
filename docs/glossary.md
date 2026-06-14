@@ -7,6 +7,10 @@ Plain-language definitions of terms you'll meet around here, **A–Z**.
 
 Many of these terms also appear as **dotted underlines** in the lessons — hover (or tap) one for a quick definition in context.
 
+<input type="text" id="glossary-filter" placeholder="🔎 Filter terms on this page…" aria-label="Filter glossary terms" style="width:100%;padding:0.6rem 0.8rem;margin:0.5rem 0 1rem;border:1px solid var(--md-default-fg-color--lighter);border-radius:0.4rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font-size:0.9rem;">
+
+<p id="glossary-empty" style="display:none"><em>No terms match your filter.</em></p>
+
 ## IDE
 
 **Integrated Development Environment** — an editor bundled with tools to write, run, and debug code in one place (e.g., VS Code, PyCharm). IDLE is a tiny IDE; you'll graduate to a fuller one once the fundamentals are yours.

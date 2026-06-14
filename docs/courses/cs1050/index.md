@@ -1,3 +1,11 @@
+---
+tags:
+  - Computer Science
+  - Python
+  - Beginner
+  - MSU-aligned
+---
+
 # CS 1050 — Computer Science 1 (Python)
 
 The first programming course: from "what is a computer program?" to writing real Python with functions, classes, and basic algorithms. **No prior experience or math background required.**

@@ -1,22 +1,10 @@
 ---
 date: 2023-02-06
 slug: entity-relationship-diagrams
-tags:
-  - Attribute
-  - Business Requirements
-  - Chen
-  - Chen Notation
-  - Database
-  - Diagram
-  - Draw.io
-  - Entity
-  - Entity-Relationship
-  - ER Diagram
-  - LucidChart
-  - Model
-  - Relationship
 categories:
   - Tutorials
+tags:
+  - Databases
 ---
 
 # Entity Relationship Diagrams

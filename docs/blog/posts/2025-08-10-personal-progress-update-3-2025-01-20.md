@@ -1,16 +1,11 @@
 ---
 date: 2025-08-10
 slug: personal-progress-update-3-2025-01-20
-tags:
-  - Blog post
-  - Career
-  - Data Engineer
-  - Professional
-  - Reflection
-  - Rest
 draft: true
 categories:
   - Personal
+tags:
+  - Career
 ---
 
 # Personal Progress Update #3: 2025-01-21

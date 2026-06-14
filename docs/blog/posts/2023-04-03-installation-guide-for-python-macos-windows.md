@@ -1,23 +1,11 @@
 ---
 date: 2023-04-03
 slug: installation-guide-for-python-macos-windows
-tags:
-  - Blog post
-  - Chat GPT
-  - Chat-GPT
-  - chatGPT
-  - How to
-  - how-to
-  - IDLE
-  - install
-  - install-guide
-  - installation
-  - PATH
-  - py
-  - py3
-  - TIOBE
 categories:
   - Tutorials
+tags:
+  - Python
+  - Installation
 ---
 
 # Installation Guide for Python - MacOS & Windows

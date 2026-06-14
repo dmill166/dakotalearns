@@ -1,17 +1,11 @@
 ---
 date: 2022-12-05
 slug: level-up-in-the-job-market
-tags:
-  - Career
-  - compensation
-  - job board
-  - job hunt
-  - job search
-  - jobs
-  - new start
-  - work-life balance
 categories:
   - Career
+tags:
+  - Career
+  - Job Search
 ---
 
 # Level Up in the Job Market

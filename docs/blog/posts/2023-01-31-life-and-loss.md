@@ -1,22 +1,11 @@
 ---
 date: 2023-01-31
 slug: life-and-loss
-tags:
-  - Blog
-  - Endurance
-  - Financial Planning
-  - Funeral
-  - Grief
-  - Life and Loss
-  - Life Lessons
-  - Loss
-  - Mental
-  - Mental Health
-  - Mourning
-  - Resilience
-  - Work Hard
 categories:
   - Reflections
+tags:
+  - Grief
+  - Mental Health
 ---
 
 # Life and Loss

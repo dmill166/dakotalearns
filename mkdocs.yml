@@ -42,6 +42,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/glossary-filter.js
+
 plugins:
   - search
   - blog:
@@ -79,6 +82,7 @@ nav:
       - Install Python: guides/install-python.md
       - Using GitHub: guides/using-github.md
   - Glossary: glossary.md
+  - Tags: tags.md
   - Blog:
       - blog/index.md
   - About: about.md
