@@ -27,7 +27,9 @@ For commercial use or to create and share an adaptation, [reach out](https://git
 
 ## Support (optional)
 
-Everything here is free, and always will be at the content level. If you'd like to support more of it being made, a link will live here once there's a steady stream of material — entirely optional, with nothing ever locked behind it.
+Everything here is free, and always will be at the content level. If it helped you and you'd like to support more of it being made, you can — **entirely optional, and nothing is ever locked behind it.**
+
+[:material-heart: Sponsor on GitHub](https://github.com/sponsors/dmill166){ .md-button }
 
 ## Find me
 

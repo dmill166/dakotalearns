@@ -76,6 +76,7 @@ nav:
   - Blog:
       - blog/index.md
   - About: about.md
+  - Support: https://github.com/sponsors/dmill166
 
 extra:
   social:

@@ -23,7 +23,7 @@ No prior experience assumed. No paywall. Just clear, honest material that takes 
 
 ## Why free
 
-I believe the fundamentals of computing should be accessible to anyone willing to learn. Everything here is free to read and learn from. If it helps you and you want to support more of it, there's a way to — but you'll never hit a wall.
+I believe the fundamentals of computing should be accessible to anyone willing to learn. Everything here is free to read and learn from. If it helps you and you want to support more of it, you can [sponsor the work](https://github.com/sponsors/dmill166) — but you'll never hit a wall.
 
 ## Who makes this
 
