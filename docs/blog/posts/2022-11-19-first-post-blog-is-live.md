@@ -1,12 +1,12 @@
 ---
 date: 2022-11-19
 slug: first-post-blog-is-live
-categories:
-  - Blogging
 tags:
   - Blog post
   - First Year Post
   - How to
+categories:
+  - Reflections
 ---
 
 # First Post – Blog is Live!

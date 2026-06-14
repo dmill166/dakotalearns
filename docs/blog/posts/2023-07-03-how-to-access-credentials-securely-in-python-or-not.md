@@ -1,11 +1,6 @@
 ---
 date: 2023-07-03
 slug: how-to-access-credentials-securely-in-python-or-not
-categories:
-  - Blogging
-  - Business
-  - Python
-  - Techniques
 tags:
   - Blog post
   - Career
@@ -30,6 +25,8 @@ tags:
   - Security
   - Thinking
   - Vault
+categories:
+  - Tutorials
 ---
 
 # How to Access Credentials [Securely] in Python... or not?

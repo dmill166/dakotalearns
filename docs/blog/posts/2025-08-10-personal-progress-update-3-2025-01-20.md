@@ -1,9 +1,6 @@
 ---
 date: 2025-08-10
 slug: personal-progress-update-3-2025-01-20
-categories:
-  - Blogging
-  - Life
 tags:
   - Blog post
   - Career
@@ -12,6 +9,8 @@ tags:
   - Reflection
   - Rest
 draft: true
+categories:
+  - Personal
 ---
 
 # Personal Progress Update #3: 2025-01-21

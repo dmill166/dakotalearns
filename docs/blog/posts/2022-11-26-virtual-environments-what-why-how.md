@@ -1,14 +1,14 @@
 ---
 date: 2022-11-26
 slug: virtual-environments-what-why-how
-categories:
-  - Python
 tags:
   - MacOS
   - pip
   - Virtual Environment
   - VS Code
   - Windows
+categories:
+  - Tutorials
 ---
 
 # Virtual Environments - What, Why, How?

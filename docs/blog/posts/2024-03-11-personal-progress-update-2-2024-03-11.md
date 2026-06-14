@@ -1,9 +1,6 @@
 ---
 date: 2024-03-11
 slug: personal-progress-update-2-2024-03-11
-categories:
-  - Blogging
-  - Life
 tags:
   - Blog post
   - Career
@@ -11,6 +8,8 @@ tags:
   - Professional
   - Reflection
   - Rest
+categories:
+  - Personal
 ---
 
 # Personal Progress Update #2: 2024-03-11

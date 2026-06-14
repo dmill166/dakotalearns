@@ -1,13 +1,6 @@
 ---
 date: 2024-04-15
 slug: learning-python-001-hello-world-and-idle
-categories:
-  - Blogging
-  - Learning
-  - MacOS
-  - Python
-  - Technology
-  - Windows
 tags:
   - AI
   - Artificial Intelligence
@@ -24,6 +17,8 @@ tags:
   - Python3
   - Visual Studio Code
   - VS Code
+categories:
+  - Tutorials
 ---
 
 # Learning Python 001: "Hello, World!" and IDLE

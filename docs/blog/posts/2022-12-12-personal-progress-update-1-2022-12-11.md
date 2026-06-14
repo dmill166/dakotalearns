@@ -1,10 +1,6 @@
 ---
 date: 2022-12-12
 slug: personal-progress-update-1-2022-12-11
-categories:
-  - Blogging
-  - Career
-  - Python
 tags:
   - Amazon Web Services
   - AWS
@@ -27,6 +23,8 @@ tags:
   - Self-Care
   - University
   - Walking
+categories:
+  - Personal
 ---
 
 # Personal Progress Update #1: 2022-12-11

@@ -1,10 +1,6 @@
 ---
 date: 2023-01-31
 slug: life-and-loss
-categories:
-  - Blogging
-  - Career
-  - Life
 tags:
   - Blog
   - Endurance
@@ -19,6 +15,8 @@ tags:
   - Mourning
   - Resilience
   - Work Hard
+categories:
+  - Reflections
 ---
 
 # Life and Loss

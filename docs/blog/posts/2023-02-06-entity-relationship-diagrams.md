@@ -1,11 +1,6 @@
 ---
 date: 2023-02-06
 slug: entity-relationship-diagrams
-categories:
-  - Blogging
-  - Business
-  - Career
-  - Techniques
 tags:
   - Attribute
   - Business Requirements
@@ -20,6 +15,8 @@ tags:
   - LucidChart
   - Model
   - Relationship
+categories:
+  - Tutorials
 ---
 
 # Entity Relationship Diagrams

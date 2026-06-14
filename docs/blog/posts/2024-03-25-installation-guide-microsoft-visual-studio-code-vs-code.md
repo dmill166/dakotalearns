@@ -1,13 +1,6 @@
 ---
 date: 2024-03-25
 slug: installation-guide-microsoft-visual-studio-code-vs-code
-categories:
-  - Blogging
-  - Career
-  - Installation Guide
-  - MacOS
-  - Technology
-  - Windows
 tags:
   - How to
   - install
@@ -17,6 +10,8 @@ tags:
   - programming
   - Python
   - VS Code
+categories:
+  - Tutorials
 ---
 
 # Installation Guide: Microsoft Visual Studio Code (VS Code)

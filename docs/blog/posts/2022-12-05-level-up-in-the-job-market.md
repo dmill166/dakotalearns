@@ -10,6 +10,8 @@ tags:
   - jobs
   - new start
   - work-life balance
+categories:
+  - Career
 ---
 
 # Level Up in the Job Market
