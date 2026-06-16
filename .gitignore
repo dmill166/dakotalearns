@@ -14,3 +14,11 @@ Thumbs.db
 .idea/
 .cache/
 _local/
+
+# Course prose synced at build time from source repos (single source of truth =
+# the course repo). Pulled by tools/sync_courses.py before each build — never
+# committed here. Hand-authored course hubs (docs/courses/<id>/index.md) stay tracked.
+docs/courses/*/syllabus/
+docs/courses/*/lectures/
+docs/courses/*/labs/
+docs/courses/*/assignments/

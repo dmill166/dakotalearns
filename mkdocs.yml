@@ -76,7 +76,13 @@ nav:
   - Start Here: start-here.md
   - Courses:
       - courses/index.md
-      - CS 1050 — Computer Science 1: courses/cs1050/index.md
+      - CS 1050 — Computer Science 1:
+          - courses/cs1050/index.md
+          # Synced from dmill166/msudenver-cs1050 at build time (see courses.yml).
+          - Syllabus: courses/cs1050/syllabus/cs1050_syllabus_v1.md
+          - Schedule (Fall 2026): courses/cs1050/syllabus/cs1050_schedule_fall2026.md
+          - Design rationale: courses/cs1050/syllabus/cs1050_design_rationale.md
+          - Outcomes map (ABET/CS2023): courses/cs1050/syllabus/outcomes_map_abet_cs2023.md
   - Guides:
       - Install Python: guides/install-python.md
       - Using GitHub: guides/using-github.md

@@ -1,0 +1,26 @@
+# Course content manifest — single source of truth lives in each course's repo.
+#
+# The site does NOT store course prose. tools/sync_courses.py pulls it from these
+# repos into docs/ at build time (CI runs it automatically; run it yourself before
+# `mkdocs serve`). Adding a course = append one block below. No workflow changes
+# needed — the integration is course-count-agnostic.
+#
+# Per course:
+#   id    short slug; also the docs/courses/<id>/ folder the prose lands in
+#   repo  GitHub owner/name of the PUBLIC course repo (never the private solutions repo)
+#   ref   branch or tag to pull (default: main)
+#   sync  list of copy rules, each:
+#           from     directory within the course repo
+#           to       destination under docs/ (git-ignored; see .gitignore)
+#           include  filename glob to copy (default: "*")
+#           exclude  filename glob(s) to skip (e.g. repo-internal READMEs)
+
+courses:
+  - id: cs1050
+    repo: dmill166/msudenver-cs1050
+    ref: main
+    sync:
+      - { from: syllabus,    to: courses/cs1050/syllabus,    include: "*.md" }
+      - { from: lectures,    to: courses/cs1050/lectures,    include: "*.md", exclude: "README.md" }
+      - { from: labs,        to: courses/cs1050/labs,        include: "*.md", exclude: "README.md" }
+      - { from: assignments, to: courses/cs1050/assignments, include: "*.md", exclude: "README.md" }
