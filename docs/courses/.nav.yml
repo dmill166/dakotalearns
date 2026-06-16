@@ -1,0 +1,7 @@
+# Courses catalog. New course folders are picked up automatically by the "*/"
+# glob — no edit here when a course is added; each course's own .nav.yml sets
+# its title and bucket order.
+title: Courses
+nav:
+  - index.md
+  - "*/"

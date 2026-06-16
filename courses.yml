@@ -12,15 +12,18 @@
 #   sync  list of copy rules, each:
 #           from     directory within the course repo
 #           to       destination under docs/ (git-ignored; see .gitignore)
-#           include  filename glob to copy (default: "*")
+#           include  filename glob(s) to copy — string or list (default: "*")
 #           exclude  filename glob(s) to skip (e.g. repo-internal READMEs)
+#
+# ".nav.yml" is pulled alongside the prose so the course repo controls its own
+# on-site navigation (order + section titles) — single source of truth for nav too.
 
 courses:
   - id: cs1050
     repo: dmill166/msudenver-cs1050
     ref: main
     sync:
-      - { from: syllabus,    to: courses/cs1050/syllabus,    include: "*.md" }
-      - { from: lectures,    to: courses/cs1050/lectures,    include: "*.md", exclude: "README.md" }
-      - { from: labs,        to: courses/cs1050/labs,        include: "*.md", exclude: "README.md" }
-      - { from: assignments, to: courses/cs1050/assignments, include: "*.md", exclude: "README.md" }
+      - { from: syllabus,    to: courses/cs1050/syllabus,    include: ["*.md", ".nav.yml"] }
+      - { from: lectures,    to: courses/cs1050/lectures,    include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: labs,        to: courses/cs1050/labs,        include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: assignments, to: courses/cs1050/assignments, include: ["*.md", ".nav.yml"], exclude: "README.md" }

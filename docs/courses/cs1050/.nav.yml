@@ -1,0 +1,11 @@
+# CS 1050 hub + buckets. index.md is the hand-authored hub (section landing).
+# The bucket directories are synced from dmill166/msudenver-cs1050 at build time;
+# their inner order/titles come from each bucket's own .nav.yml (also synced).
+# Lectures/Labs/Assignments appear automatically once they contain content.
+title: CS 1050 — Computer Science 1
+nav:
+  - index.md
+  - syllabus
+  - lectures
+  - labs
+  - assignments

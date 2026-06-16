@@ -1,0 +1,12 @@
+# Global navigation (top level). awesome-nav builds the rest from the tree.
+# Directories (courses, guides, blog) expand into collapsible sections; their
+# contents and titles are controlled by the .nav.yml inside each.
+nav:
+  - index.md
+  - start-here.md
+  - courses
+  - guides
+  - glossary.md
+  - blog
+  - about.md
+  - Support: https://github.com/sponsors/dmill166

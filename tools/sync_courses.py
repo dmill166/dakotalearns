@@ -30,11 +30,10 @@ DOCS = ROOT / "docs"
 MANIFEST = ROOT / "courses.yml"
 
 
-def _excludes(rule: dict) -> list[str]:
-    ex = rule.get("exclude")
-    if ex is None:
+def _as_list(value) -> list[str]:
+    if value is None:
         return []
-    return [ex] if isinstance(ex, str) else list(ex)
+    return [value] if isinstance(value, str) else list(value)
 
 
 def sync_course(course: dict) -> int:
@@ -54,8 +53,8 @@ def sync_course(course: dict) -> int:
         for rule in course.get("sync", []):
             src_dir = src_root / rule["from"]
             dest_dir = DOCS / rule["to"]
-            include = rule.get("include", "*")
-            excludes = _excludes(rule)
+            includes = _as_list(rule.get("include", "*"))
+            excludes = _as_list(rule.get("exclude"))
 
             if not src_dir.is_dir():
                 print(f"  (skip) {repo}:{rule['from']} — not present")
@@ -68,7 +67,7 @@ def sync_course(course: dict) -> int:
             for path in sorted(src_dir.rglob("*")):
                 if not path.is_file():
                     continue
-                if not fnmatch.fnmatch(path.name, include):
+                if not any(fnmatch.fnmatch(path.name, pat) for pat in includes):
                     continue
                 if any(fnmatch.fnmatch(path.name, pat) for pat in excludes):
                     continue
