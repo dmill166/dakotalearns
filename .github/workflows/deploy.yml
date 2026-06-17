@@ -3,6 +3,10 @@ name: Deploy site
 on:
   push:
     branches: [main]
+  # Course repos fire this when their content changes (the site pulls their
+  # prose at build time). See each course repo's rebuild-site workflow.
+  repository_dispatch:
+    types: [course-content]
   workflow_dispatch:
 
 permissions:
