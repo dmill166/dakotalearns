@@ -4,4 +4,3 @@
 *[PATH]: An operating-system list of folders to search for programs, so you can run them by name in a terminal.
 *[CLI]: Command-Line Interface — typing commands in a terminal instead of clicking.
 *[venv]: Virtual environment — an isolated, per-project set of Python packages.
-*[CS]: Computer Science.

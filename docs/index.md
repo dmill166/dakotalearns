@@ -17,7 +17,7 @@ hide:
 
 ## What you'll find here
 
-- **Courses** — full, structured courses you can learn from for free. First up: **CS 1050 — Computer Science 1 (Python)**.
+- **Courses** — full, structured courses you can learn from for free. First up: **Computer Science 1 (Python)**.
 - **Guides** — standalone walk-throughs for common starting points (installing Python, choosing an editor, and more).
 - **Blog** — the learning-in-public journal: what I'm making, what I'm figuring out, and the occasional detour into whatever I'm curious about.
 

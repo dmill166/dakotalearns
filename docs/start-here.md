@@ -8,7 +8,7 @@ Before anything else, get Python working on your computer. The [Install Python g
 
 ## 2. Pick a course
 
-Head to the [course catalog](courses/index.md). If you've never programmed, start with **CS 1050 — Computer Science 1**. It assumes zero background and builds up from "what is a computer program?"
+Head to the [course catalog](courses/index.md). If you've never programmed, start with **Computer Science 1**. It assumes zero background and builds up from "what is a computer program?"
 
 ## 3. Learn by doing
 

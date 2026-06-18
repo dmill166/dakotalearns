@@ -1,4 +1,4 @@
-# CS 1050 hub + buckets. index.md is the hand-authored hub (section landing).
+# Computer Science 1 hub + buckets. index.md is the hand-authored hub (section landing).
 # The bucket directories are synced from dmill166/computer-science-1 at build time;
 # their inner order/titles come from each bucket's own .nav.yml (also synced).
 # Lectures/Labs/Assignments appear automatically once they contain content.
