@@ -27,7 +27,7 @@ Designed to be portable (a strong CS1 anywhere), aligned to MSU Denver's course 
 
 When you're ready to *write code*, the **runnable files** (starter code, examples, tests) live in the open repository — grab them as a simple ZIP, no account or Git needed. New to that? See [Using GitHub](../../guides/using-github.md).
 
-[:material-github: Code files (GitHub)](https://github.com/dmill166/msudenver-cs1050){ .md-button }
+[:material-github: Code files (GitHub)](https://github.com/dmill166/computer-science-1){ .md-button }
 
 > Solution keys live in a separate private repo (academic integrity). Instructors can request access.
 

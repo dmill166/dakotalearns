@@ -30,7 +30,7 @@ No GitHub account is required to download. You can re-download anytime to get th
 Once you're comfortable, you can **clone** a repo — make a live local copy you can update with one command. You don't need this for the course, but when you're curious:
 
 ```bash
-git clone https://github.com/dmill166/msudenver-cs1050.git
+git clone https://github.com/dmill166/computer-science-1.git
 ```
 
 (That requires installing [Git](https://git-scm.com/downloads) and is entirely optional.)

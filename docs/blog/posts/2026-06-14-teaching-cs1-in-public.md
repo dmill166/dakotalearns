@@ -31,4 +31,4 @@ The materials live in open repositories, and I'll post here as each piece comes 
 
 ## Start now
 
-If you want a head start: [install Python](../../guides/install-python.md), then peek at [CS 1050](../../courses/cs1050/index.md).
+If you want a head start: [install Python](../../guides/install-python.md), then peek at [CS 1050](../../courses/computer-science-1/index.md).

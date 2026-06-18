@@ -33,7 +33,7 @@ dakotalearns/
 │   ├── about.md               # project + licensing + support
 │   ├── courses/               # course catalog + per-course hubs
 │   │   ├── index.md
-│   │   └── cs1050/
+│   │   └── computer-science-1/
 │   │       ├── index.md       # hand-authored hub
 │   │       └── syllabus/ …    # SYNCED from the course repo (git-ignored)
 │   ├── guides/                # standalone guides (install Python, …)
@@ -49,7 +49,7 @@ Pushes to `main` build and deploy automatically (GitHub Actions → Pages). Firs
 
 ## Relationship to the course repos
 
-This site is the **read surface** — not a second copy. Each course's **public repo is the single source of truth** for that course's prose *and* code (e.g. [`msudenver-cs1050`](https://github.com/dmill166/msudenver-cs1050)). At build time the site **pulls the prose from those repos** and renders it here; the **runnable code** stays in the repo to grab as a ZIP. Nothing is authored or maintained in two places.
+This site is the **read surface** — not a second copy. Each course's **public repo is the single source of truth** for that course's prose *and* code (e.g. [`computer-science-1`](https://github.com/dmill166/computer-science-1)). At build time the site **pulls the prose from those repos** and renders it here; the **runnable code** stays in the repo to grab as a ZIP. Nothing is authored or maintained in two places.
 
 ## Course content sync
 

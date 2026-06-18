@@ -19,11 +19,11 @@
 # on-site navigation (order + section titles) — single source of truth for nav too.
 
 courses:
-  - id: cs1050
-    repo: dmill166/msudenver-cs1050
+  - id: computer-science-1
+    repo: dmill166/computer-science-1
     ref: main
     sync:
-      - { from: syllabus,    to: courses/cs1050/syllabus,    include: ["*.md", ".nav.yml"] }
-      - { from: lectures,    to: courses/cs1050/lectures,    include: ["*.md", ".nav.yml"], exclude: "README.md" }
-      - { from: labs,        to: courses/cs1050/labs,        include: ["*.md", ".nav.yml"], exclude: "README.md" }
-      - { from: assignments, to: courses/cs1050/assignments, include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: syllabus,    to: courses/computer-science-1/syllabus,    include: ["*.md", ".nav.yml"] }
+      - { from: lectures,    to: courses/computer-science-1/lectures,    include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: labs,        to: courses/computer-science-1/labs,        include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: assignments, to: courses/computer-science-1/assignments, include: ["*.md", ".nav.yml"], exclude: "README.md" }
