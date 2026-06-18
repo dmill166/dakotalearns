@@ -6,7 +6,7 @@ repo_url: https://github.com/dmill166/dakotalearns
 repo_name: dmill166/dakotalearns
 copyright: >
   © 2026 Dakota Hollmann · content CC BY-NC-ND 4.0 · code PolyForm Noncommercial 1.0.0 ·
-  Independent — not affiliated with MSU Denver · <a href="/disclaimers/">Disclaimers</a>
+  <a href="/disclaimers/">Disclaimers</a>
 
 # Built but kept out of the tab nav (linked from the footer + MSU footnotes).
 not_in_nav: |
