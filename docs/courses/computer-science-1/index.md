@@ -1,16 +1,13 @@
-# CS 1050 — Computer Science 1 (Python)
+# Computer Science 1 (Python)
 
 The first programming course: from "what is a computer program?" to writing real Python with functions, classes, and basic algorithms. **No prior experience or math background required.**
 
 !!! tip "Brand new? Do this first"
     [Install Python](../../guides/install-python.md), then come back.
 
-!!! info "About the name"
-    "CS 1050" is referenced for **curriculum alignment** with MSU Denver's course objectives. These are independent materials — **not affiliated with, endorsed by, or sponsored by MSU Denver.**
-
 ## What this course covers
 
-Designed to be portable (a strong CS1 anywhere), aligned to MSU Denver's course objectives, ABET CAC outcomes, and ACM/IEEE-CS CS2023 — and built to set you up for CS 2 (data structures). Highlights:
+Designed to be portable (a strong CS1 anywhere), aligned to recognized CS1 outcomes — ABET CAC and ACM/IEEE-CS CS2023 — and to MSU Denver's CS 1050 course objectives,[^msu] and built to set you up for CS 2 (data structures). Highlights:
 
 - Values, types, variables, input/output
 - Decisions and loops
@@ -44,3 +41,5 @@ You can also check your library, or buy direct from the publisher — whatever g
 
 !!! note "A note on the book links"
     The Amazon links above are affiliate links: if you buy through them, Dakota Learns may earn a small commission **at no extra cost to you**. It helps keep this work free. You're welcome to search for the book yourself instead — same book, your choice.
+
+[^msu]: These are **independent** materials, aligned to MSU Denver's CS 1050 course objectives for portability — **not** affiliated with, endorsed by, or sponsored by MSU Denver. MSU course codes are referenced for alignment only. See the [Disclaimers](../../disclaimers.md).

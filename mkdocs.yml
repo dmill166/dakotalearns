@@ -5,8 +5,12 @@ site_author: Dakota Hollmann
 repo_url: https://github.com/dmill166/dakotalearns
 repo_name: dmill166/dakotalearns
 copyright: >
-  Copyright © 2026 Dakota Hollmann — content CC BY-NC-ND 4.0, code PolyForm Noncommercial 1.0.0.
-  Independent project — not affiliated with or endorsed by MSU Denver.
+  © 2026 Dakota Hollmann · content CC BY-NC-ND 4.0 · code PolyForm Noncommercial 1.0.0 ·
+  Independent — not affiliated with MSU Denver · <a href="/disclaimers/">Disclaimers</a>
+
+# Built but kept out of the tab nav (linked from the footer + MSU footnotes).
+not_in_nav: |
+  disclaimers.md
 
 theme:
   name: material
@@ -58,9 +62,15 @@ plugins:
   - awesome-nav:
       logs:
         no_matches: info  # don't fail --strict on not-yet-populated buckets (Lectures/Labs/…)
+  # Generates RSS feeds (new + updated) from the blog. Course pages are synced
+  # (no site-repo git history), so they're excluded for now — see the
+  # "RSS course-feed via date front-matter" backlog item.
+  - rss:
+      match_path: "blog/posts/.*"
 
 markdown_extensions:
   - admonition
+  - footnotes
   - attr_list
   - md_in_html
   - abbr

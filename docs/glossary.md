@@ -31,6 +31,10 @@ A list your operating system keeps of folders to search when you type a program'
 
 **Read-Eval-Print Loop** — an interactive prompt that **r**eads a line of code, **e**valuates it, **p**rints the result, and loops for the next line. Python's `>>>` prompt (including IDLE's shell) is a REPL: type `2 + 2`, press Enter, see `4`. Great for quick experiments. *Not to be confused with **Replit**, a separate online IDE that happens to share the name.*
 
+## RSS
+
+**Really Simple Syndication** — a standard *feed* that lets you follow a site's new or updated posts in a **reader app**, without an account, an algorithm, or email. See [Following the blog (RSS)](guides/following-rss.md) to subscribe.
+
 ## Shell
 
 A text prompt where you type commands — either your operating system's terminal (Command Prompt, PowerShell, Terminal) or a language shell like Python's `>>>` REPL.

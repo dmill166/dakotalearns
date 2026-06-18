@@ -4,7 +4,7 @@ Free, structured courses — learn from them at your own pace, right here on the
 
 | Course | Subject | Tags | What it is | Status |
 |---|---|---|---|---|
-| **[CS 1050 — Computer Science 1](computer-science-1/index.md)** | Computer Science | `Python` `Beginner` `MSU-aligned` | First programming course, in Python. Zero experience assumed. | 🟢 In progress |
+| **[Computer Science 1](computer-science-1/index.md)** | Computer Science | `Python` `Beginner` `MSU-aligned` | First programming course, in Python. Zero experience assumed. | 🟢 In progress |
 | CS 1030 — Computer Science Principles | Computer Science | `Python` `Beginner` `MSU-aligned` | Broad intro for non-majors / first exposure. | ⚪ Planned |
 | CS 2050 — Computer Science 2 | Computer Science | `Python` `Data Structures` `MSU-aligned` | Data structures: ADTs, linked lists, trees, recursion. | ⚪ Planned |
 | CS 3810 — Principles of Database Systems | Computer Science | `SQL` `Databases` `MSU-aligned` | Relational design, SQL, normalization. | ⚪ Planned |
