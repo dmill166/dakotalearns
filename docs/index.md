@@ -8,7 +8,7 @@ hide:
 
 ### *Let's learn something together.*
 
-**Free, beginner-friendly learning — shared in public.** I'm a lifelong learner sharing what I pick up, clearly and honestly, for anyone starting from zero. Right now the focus is **computer science**, but the throughline here is curiosity, not a single subject.
+**Free, beginner-friendly learning — shared in public.** I'm a lifelong learner sharing what I pick up, clearly and honestly, for anyone starting from zero.
 
 [Start here :material-arrow-right:](start-here.md){ .md-button .md-button--primary }
 [Browse courses](courses/index.md){ .md-button }
@@ -25,8 +25,8 @@ hide:
 
 ## Why free
 
-I leaned on free and open resources my whole way through school and into my career — and I want to keep doing that while helping others. Everything here is free to read and learn from. If it helps you and you'd like to support more of it, you can [sponsor the work](https://github.com/sponsors/dmill166) — but you'll never hit a wall.
+I leaned on free and open resources alongside my degrees — all the way through school and into my career — and I want to keep doing that while helping others. Everything here is free to read and learn from. If it helps you and you'd like to support more of it, you can [sponsor the work](https://github.com/sponsors/dmill166) — but you'll never hit a wall.
 
 ## Who makes this
 
-I'm Dakota — a data engineer who got here on free, open learning and wants to pay it forward, especially as I move toward teaching. [More about the project :material-arrow-right:](about.md)
+I'm Dakota — a data engineer moving toward teaching, sharing what I learn along the way. [More about the project :material-arrow-right:](about.md)

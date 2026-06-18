@@ -20,4 +20,4 @@ When something breaks (it will — that's normal), note three things: your opera
 
 ---
 
-Ready? [Install Python](guides/install-python.md), then [open CS 1050](courses/cs1050/index.md).
+Ready? [Install Python](guides/install-python.md), then [open CS 1050](courses/computer-science-1/index.md).
