@@ -8,7 +8,7 @@ hide:
 
 ### *Let's learn something together.*
 
-**Free, beginner-friendly learning — shared in public.** I'm a lifelong learner sharing what I pick up, clearly and honestly, for anyone starting from zero.
+**Free, beginner-friendly learning — shared in public.** I'm a lifelong learner sharing what I pick up, as clearly and honestly as I can, for anyone starting from zero. No gatekeeping, no assumed background — let's just figure it out together.
 
 [Start here :material-arrow-right:](start-here.md){ .md-button .md-button--primary }
 [Browse courses](courses/index.md){ .md-button }

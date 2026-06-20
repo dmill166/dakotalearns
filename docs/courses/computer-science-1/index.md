@@ -1,6 +1,6 @@
 # Computer Science 1 (Python)
 
-The first programming course: from "what is a computer program?" to writing real Python with functions, classes, and basic algorithms. **No prior experience or math background required.**
+The first programming course — from "what *is* a computer program?" all the way to writing real Python with functions, classes, and your first real algorithms. **No prior experience and no math background required.** We start from zero and build up.
 
 !!! tip "Brand new? Do this first"
     [Install Python](../../guides/install-python.md), then come back.
