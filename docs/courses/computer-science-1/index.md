@@ -42,4 +42,4 @@ You can also check your library, or buy direct from the publisher — whatever g
 !!! note "A note on the book links"
     The Amazon links above are affiliate links: if you buy through them, Dakota Learns may earn a small commission **at no extra cost to you**. It helps keep this work free. You're welcome to search for the book yourself instead — same book, your choice.
 
-[^msu]: These are **independent** materials, aligned to MSU Denver's CS 1050 course objectives for portability — **not** affiliated with, endorsed by, or sponsored by MSU Denver. MSU course codes are referenced for alignment only. See the [Disclaimers](../../disclaimers.md).
+[^msu]: These are **independent** materials, aligned to MSU Denver's CS 1050 course objectives for portability — **not** affiliated with, endorsed by, or sponsored by MSU Denver. MSU Denver course codes are referenced for alignment only. See the [Disclaimers](../../disclaimers.md).

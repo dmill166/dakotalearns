@@ -8,7 +8,7 @@ copyright: >
   © 2026 Dakota Hollmann · content CC BY-NC-ND 4.0 · code PolyForm Noncommercial 1.0.0 ·
   <a href="/disclaimers/">Disclaimers</a>
 
-# Built but kept out of the tab nav (linked from the footer + MSU footnotes).
+# Built but kept out of the tab nav (linked from the footer + MSU Denver footnotes).
 not_in_nav: |
   disclaimers.md
 
@@ -83,7 +83,12 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      # Render ```mermaid fenced blocks as diagrams (Material built-in support).
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

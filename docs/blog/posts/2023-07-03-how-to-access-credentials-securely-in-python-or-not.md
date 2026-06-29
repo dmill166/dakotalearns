@@ -17,7 +17,7 @@ Updates since we last learned something together...
 
 * I'm taking a break from my Master's of Computer Science program to see what else I may want to pursue. In my personal experience at Georgia Tech, I did not find the level of gratification or satisfaction with the knowledge gained that I had hoped for when I started the program. Therefore, I'd like to explore potential other degree programs, certification programs, self-study pursuits, and finally take a chance to enjoy this thing called "free time".
 * My time back at Dish has kept me busy as we completed the 70% Buildout (see the official Dish press release [HERE](https://about.dish.com/2023-06-15-The-DISH-5G-Network-is-Now-Available-to-Over-70-Percent-of-the-U-S-Population)). It's been a wild ride already leaving me excited for what the future may hold in this current career journey.
-* I've been re-reading a book from my Senior Experience course with Dr. Steve Beaty at MSU Denver (CS 4360 - Technical Software Project) titled "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport. If you want to read a perspective respecting your focus in this world of distractions, I'd highly recommend it (you can find it [HERE](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) on Amazon).
+* I've been re-reading a book from my Senior Experience course with Dr. Steve Beaty at MSU Denver (CS 4360 - Technical Software Project) titled "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport. If you want to read a perspective respecting your focus in this world of distractions, I'd highly recommend it (you can find it [HERE](https://amzn.to/4uZzoAI) on Amazon — an affiliate link; [here's why](/disclaimers/#affiliate-links)).
 
 I'll digress on me and give you what you came for - my time learning about accessing credentials in Python, various methods of accessing said credentials, and pros/cons of each approach to this problem. We'll conclude with ChatGPT's thoughts on the topic and the usual review of how writing this post went.
 
@@ -115,7 +115,7 @@ Links:
 
 * [My last post, Life and Loss](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/)
 * [Dish Network achieving 70% 5G Wireless Buildout FCC Milestone](https://about.dish.com/2023-06-15-The-DISH-5G-Network-is-Now-Available-to-Over-70-Percent-of-the-U-S-Population)
-* [Amazon: "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
+* [Amazon: "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport](https://amzn.to/4uZzoAI)
 * [Nikolai Janakiev (Freelance Data Scientist and Data Engineer) perspective on credentials/configurations in Python](https://janakiev.com/blog/python-credentials-and-configuration/)
 * [TowardsDataScience post](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3) on LOREM IPSUM
 * [The Twelve-Factor App](https://12factor.net/)

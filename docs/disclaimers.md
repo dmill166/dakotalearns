@@ -1,6 +1,6 @@
 # Disclaimers
 
-> The short version is in the footer of every page; this is the full detail.
+> Brief notes appear in the page footer and next to affiliate links where they're used; this page is the full detail.
 
 ## Affiliation
 
@@ -19,7 +19,16 @@ The materials teach *from* sources (such as the course textbook) but do **not** 
 
 ## Affiliate links
 
-Some book links are Amazon affiliate links: if you buy through them, Dakota Learns may earn a small commission at no extra cost to you. It helps keep this work free. You're always welcome to find the book elsewhere.
+<!-- author_status: dakota-voice-draft | section: Affiliate links (expanded from Dakota's input — his edit) -->
+Dakota Learns is free, and it stays that way. Some links across the site and course pages are **affiliate links** — most often to textbooks, occasionally to tools or fun project ideas. If you buy through one, Dakota Learns may earn a small commission **at no extra cost to you**. There's never any requirement or expectation that you do — you're always welcome to find the same thing elsewhere, or skip it entirely.
+
+**Why they're here.** Building and running this takes real time and money, all my own. A little coming back through these links helps offset that and broadens what's possible here — better resources for the site, and eventually things a plain free site can't do on its own (more interactivity, maybe some compute). It will never put the learning behind a wall; the free core is the whole point. (Would you rather support the work directly? That's what [GitHub Sponsors](https://github.com/sponsors/dmill166) is for — also entirely optional.)
+
+**What you'll find linked:**
+
+- **Textbooks** — recommended to *supplement* a course, never required. A good textbook is more rigorously prepared than I can manage on my own without a publisher behind me; it's there if you want to go deeper.
+- **Tools, samples & ideas** — things I've personally used, enjoyed, or have my eye on; examples of what you can build with what you're learning; or community projects that relate to the topic at hand.
+<!-- /author_status -->
 
 ## No warranty
 
