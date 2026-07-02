@@ -17,7 +17,7 @@ Updates since we last learned something together...
 
 * I'm taking a break from my Master's of Computer Science program to see what else I may want to pursue. In my personal experience at Georgia Tech, I did not find the level of gratification or satisfaction with the knowledge gained that I had hoped for when I started the program. Therefore, I'd like to explore potential other degree programs, certification programs, self-study pursuits, and finally take a chance to enjoy this thing called "free time".
 * My time back at Dish has kept me busy as we completed the 70% Buildout (see the official Dish press release [HERE](https://about.dish.com/2023-06-15-The-DISH-5G-Network-is-Now-Available-to-Over-70-Percent-of-the-U-S-Population)). It's been a wild ride already leaving me excited for what the future may hold in this current career journey.
-* I've been re-reading a book from my Senior Experience course with Dr. Steve Beaty at MSU Denver (CS 4360 - Technical Software Project) titled "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport. If you want to read a perspective respecting your focus in this world of distractions, I'd highly recommend it (you can find it [HERE](https://amzn.to/4uZzoAI) on Amazon — an affiliate link; [here's why](/disclaimers/#affiliate-links)).
+* I've been re-reading a book from my Senior Experience course with Dr. Steve Beaty at MSU Denver (CS 4360 - Technical Software Project) titled "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport. If you want to read a perspective respecting your focus in this world of distractions, I'd highly recommend it (you can find it [HERE](https://amzn.to/4uZzoAI) on Amazon — an affiliate link; [here's why](../../disclaimers.md#affiliate-links)).
 
 I'll digress on me and give you what you came for - my time learning about accessing credentials in Python, various methods of accessing said credentials, and pros/cons of each approach to this problem. We'll conclude with ChatGPT's thoughts on the topic and the usual review of how writing this post went.
 
@@ -37,7 +37,7 @@ Posting at the start of 2022 on this topic, Nikolai Janakiev (Freelance Data Sci
 
 # 🗒️ Methods Review
 
-EDIT: Defense-by-depth was added later, but takes the spotlight of this article. You can jump there [now](#defense-by-depth) or read on for all the post content.
+EDIT: Defense-by-depth was added later, but takes the spotlight of this article. You can jump there [now](#defense-by-depth-and-chatgpt-thoughts-on-security-in-python) or read on for all the post content.
 
 We need to start this conversation with the question.... why? Why have a method of accessing credentials in Python aside from hard-coding them in each program we write? While reading the TowardsDataScience article on the topic, I came across a quote they reference from "The Twelve-Factor App" that answered this well:
 

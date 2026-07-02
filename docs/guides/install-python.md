@@ -64,4 +64,4 @@ You'll bounce between both all the time: start in the shell to play, move to the
 > **Going deeper (optional):** the [official IDLE documentation](https://docs.python.org/3/library/idle.html) is the complete reference. Fair warning — it's thorough and a bit dense (it's a reference, not a tutorial), so don't feel you need to read it all. It's there for when you want the full details on a menu or shortcut.
 <!-- /author_status -->
 
-[^aff]: Affiliate link — if you buy through it, Dakota Learns may earn a small commission at no extra cost to you, which helps keep this work free. [Here's why](/disclaimers/#affiliate-links); you're always welcome to find it elsewhere.
+[^aff]: Affiliate link — if you buy through it, Dakota Learns may earn a small commission at no extra cost to you, which helps keep this work free. [Here's why](../disclaimers.md#affiliate-links); you're always welcome to find it elsewhere.
