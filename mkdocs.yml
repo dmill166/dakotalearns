@@ -102,5 +102,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dmill166
+      name: Dakota on GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/dakota-hollmann-
+      name: Dakota on LinkedIn

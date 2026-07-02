@@ -16,3 +16,34 @@
 .md-button {
   margin: 0.2rem 0.3rem 0.2rem 0;
 }
+
+/* ── Accessibility: admonition / collapsible colors (WCAG 2.1 AA, both schemes) ── */
+
+/* "question" (Check-yourself self-tests). Material's default is acid Light-Green-A700
+   (#64dd17): its icon/border only reach ~1.7:1 — below the 3:1 non-text floor.
+   Green-700 (#388e3c) is the one green shade that clears 3:1 in BOTH light and dark. */
+.md-typeset .admonition.question,
+.md-typeset details.question { border-color: #388e3c; }
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary { background-color: #388e3c14; }
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before { background-color: #388e3c; }
+.md-typeset .question > .admonition-title::after,
+.md-typeset .question > summary::after { color: #388e3c; }
+
+/* "faq" (common questions WE answer). A distinct slate blue-grey (#455a64) + quote
+   icon so an FAQ never looks like a green "answer this yourself" self-check —
+   differentiated on three channels (color + icon + type word), not color alone. */
+:root { --md-admonition-icon--faq: var(--md-admonition-icon--quote); }
+.md-typeset .admonition.faq,
+.md-typeset details.faq { border-color: #455a64; }
+.md-typeset .faq > .admonition-title,
+.md-typeset .faq > summary { background-color: #455a6414; }
+.md-typeset .faq > .admonition-title::before,
+.md-typeset .faq > summary::before {
+  background-color: #455a64;
+  -webkit-mask-image: var(--md-admonition-icon--faq);
+          mask-image: var(--md-admonition-icon--faq);
+}
+.md-typeset .faq > .admonition-title::after,
+.md-typeset .faq > summary::after { color: #455a64; }
