@@ -47,3 +47,93 @@
 }
 .md-typeset .faq > .admonition-title::after,
 .md-typeset .faq > summary::after { color: #455a64; }
+
+/* ── Self-check widgets (quiz + Parsons; javascripts/quiz-parsons.js) ──
+   Same green as `question` (learner-answers role, AA-safe both schemes).
+   Result state is icon + words + color — the color is reinforcement only. */
+
+.md-typeset .dl-widget {
+  border: .075rem solid #388e3c;
+  border-radius: .2rem;
+  padding: .8rem;
+  margin: 1em 0;
+}
+.md-typeset .dl-widget-title {
+  font-weight: 700;
+  margin: 0 0 .5em;
+}
+.md-typeset .dl-question {
+  border: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+.md-typeset .dl-question legend {
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: .4em;
+}
+.md-typeset .dl-option {
+  display: block;
+  margin: .15em 0;
+  cursor: pointer;
+}
+.md-typeset .dl-option input { margin-right: .5em; }
+
+.md-typeset .dl-btn {
+  display: inline-block;
+  margin: .5em .5em 0 0;
+  padding: .25em .9em;
+  border: .075rem solid #388e3c;
+  border-radius: .2rem;
+  background: #388e3c14;
+  color: var(--md-typeset-color);
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+}
+.md-typeset .dl-btn:hover { background: #388e3c2e; }
+.md-typeset .dl-btn:focus-visible {
+  outline: .15rem solid var(--md-accent-fg-color);
+  outline-offset: .1rem;
+}
+.md-typeset .dl-btn-quiet { border-color: #455a64; background: #455a6414; }
+.md-typeset .dl-btn-quiet:hover { background: #455a642e; }
+
+.md-typeset ol.dl-parsons-list {
+  list-style: none;
+  margin: .5em 0;
+  padding: 0;
+}
+.md-typeset .dl-parsons-line {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin: .25em 0 !important;
+  padding: .3em .6em;
+  border: .05rem solid var(--md-default-fg-color--lightest);
+  border-radius: .2rem;
+  background: var(--md-code-bg-color);
+  cursor: grab;
+}
+.md-typeset .dl-parsons-line.dl-dragging { opacity: .5; }
+.md-typeset .dl-line-text { flex: 1; }
+.md-typeset .dl-parsons-line .dl-move {
+  margin: 0;
+  padding: 0 .5em;
+  line-height: 1.4;
+}
+
+/* Feedback: normal-contrast text; the colored icon/border only reinforce. */
+.md-typeset .dl-feedback { margin: .6em 0 0; }
+.md-typeset .dl-feedback.dl-ok { border-left: .2rem solid #388e3c; padding-left: .5em; }
+.md-typeset .dl-feedback.dl-no { border-left: .2rem solid #d32f2f; padding-left: .5em; }
+.md-typeset .dl-feedback.dl-ok .dl-mark { color: #388e3c; font-weight: 700; }
+.md-typeset .dl-feedback.dl-no .dl-mark { color: #d32f2f; font-weight: 700; }
+[data-md-color-scheme="slate"] .md-typeset .dl-feedback.dl-no .dl-mark { color: #ef5350; }
+[data-md-color-scheme="slate"] .md-typeset .dl-feedback.dl-no { border-left-color: #ef5350; }
+
+/* Page-date line on synced course pages (overrides/main.html) */
+.dl-page-dates {
+  color: var(--md-default-fg-color--light);
+  font-size: .64rem;
+}

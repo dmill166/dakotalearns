@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{#
+  Page-date line for synced course pages. tools/sync_courses.py stamps
+  date_published / date_updated into front-matter from the SOURCE repo's real
+  git history (the site repo has none for synced files). Pages without the
+  keys — hand-authored site pages, opted-out pages — render unchanged.
+  Blog posts keep the blog plugin's own date handling.
+#}
+{% block content %}
+  {{ super() }}
+  {% if page.meta.date_published or page.meta.date_updated %}
+    <hr>
+    <p class="dl-page-dates">
+      {%- if page.meta.date_published %}
+      Published {{ page.meta.date_published }}
+      {%- endif %}
+      {#- show "Last updated" only when it's genuinely later than published —
+          a hand-set (e.g. future-dated) publish date otherwise renders an
+          older "updated" beside it, which reads as broken -#}
+      {%- if page.meta.date_updated and (not page.meta.date_published or page.meta.date_updated > page.meta.date_published) %}
+      {%- if page.meta.date_published %} · {% endif %}Last updated {{ page.meta.date_updated }}
+      {%- endif %}
+    </p>
+  {% endif %}
+{% endblock %}
