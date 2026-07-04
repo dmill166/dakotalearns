@@ -23,8 +23,5 @@ courses:
     repo: dmill166/computer-science-1
     ref: main
     sync:
-      - { from: syllabus,    to: courses/computer-science-1/syllabus,    include: ["*.md", ".nav.yml"] }
-      - { from: lectures,    to: courses/computer-science-1/lectures,    include: ["*.md", ".nav.yml"], exclude: "README.md" }
-      - { from: checkpoints, to: courses/computer-science-1/checkpoints, include: ["*.md", ".nav.yml"], exclude: "README.md" }
-      - { from: labs,        to: courses/computer-science-1/labs,        include: ["*.md", ".nav.yml"], exclude: "README.md" }
-      - { from: assignments, to: courses/computer-science-1/assignments, include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      - { from: syllabus, to: courses/computer-science-1/syllabus, include: ["*.md", ".nav.yml"] }
+      - { from: "unit*",  to: courses/computer-science-1,          include: ["*.md", ".nav.yml"], exclude: "README.md" }

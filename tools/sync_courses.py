@@ -125,40 +125,65 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
             src_root = Path(tmp)
 
         for rule in course.get("sync", []):
-            src_dir = src_root / rule["from"]
-            dest_dir = DOCS / rule["to"]
+            src_spec = rule["from"]
             includes = _as_list(rule.get("include", "*"))
             excludes = _as_list(rule.get("exclude"))
 
-            if not src_dir.is_dir():
-                print(f"  (skip) {repo}:{rule['from']} — not present")
-                continue
-
-            # Clean the destination so a removal in the source is reflected.
-            if dest_dir.exists():
-                shutil.rmtree(dest_dir)
-
-            for path in sorted(src_dir.rglob("*")):
-                if not path.is_file():
+            # A glob `from` (e.g. "unit*") syncs every matching top-level
+            # directory to <to>/<dirname> — unit-count-agnostic, the same
+            # way the global nav includes courses via a glob.
+            if any(ch in src_spec for ch in "*?["):
+                pairs = [
+                    (d, DOCS / rule["to"] / d.name)
+                    for d in sorted(src_root.glob(src_spec))
+                    if d.is_dir()
+                ]
+                # Clean matching dests so a dir removed at the source
+                # (or no longer matching) disappears from the site.
+                dest_parent = DOCS / rule["to"]
+                if dest_parent.exists():
+                    for old in sorted(dest_parent.glob(src_spec)):
+                        if old.is_dir():
+                            shutil.rmtree(old)
+                if not pairs:
+                    print(f"  (skip) {repo}:{src_spec} — no matches")
+            else:
+                pairs = [(src_root / src_spec, DOCS / rule["to"])]
+                if not pairs[0][0].is_dir():
+                    print(f"  (skip) {repo}:{src_spec} — not present")
                     continue
-                included = (
-                    fnmatch.fnmatch(path.name, pat) for pat in includes
+                # Clean the destination so a source removal is reflected.
+                if pairs[0][1].exists():
+                    shutil.rmtree(pairs[0][1])
+
+            for src_dir, dest_dir in pairs:
+                copied += _copy_tree(
+                    src_dir, dest_dir, src_root, repo, includes, excludes
                 )
-                if not any(included):
-                    continue
-                if any(fnmatch.fnmatch(path.name, pat) for pat in excludes):
-                    continue
-                rel = path.relative_to(src_dir)
-                target = dest_dir / rel
-                target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copy2(path, target)
-                repo_rel = str(path.relative_to(src_root))
-                _inject_dates(target, src_root, repo_rel)
-                copied += 1
-                dest_rel = target.relative_to(DOCS)
-                print(f"  {repo}:{rule['from']}/{rel} -> docs/{dest_rel}")
 
     print(f"[{cid}] {copied} file(s) synced from {repo}@{ref}")
+    return copied
+
+
+def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
+    """Copy one directory tree per the include/exclude globs; stamp dates."""
+    copied = 0
+    for path in sorted(src_dir.rglob("*")):
+        if not path.is_file():
+            continue
+        if not any(fnmatch.fnmatch(path.name, pat) for pat in includes):
+            continue
+        if any(fnmatch.fnmatch(path.name, pat) for pat in excludes):
+            continue
+        rel = path.relative_to(src_dir)
+        target = dest_dir / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(path, target)
+        repo_rel = str(path.relative_to(src_root))
+        _inject_dates(target, src_root, repo_rel)
+        copied += 1
+        dest_rel = target.relative_to(DOCS)
+        print(f"  {repo}:{path.relative_to(src_root)} -> docs/{dest_rel}")
     return copied
 
 

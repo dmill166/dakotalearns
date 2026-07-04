@@ -19,7 +19,4 @@ _local/
 # the course repo). Pulled by tools/sync_courses.py before each build — never
 # committed here. Hand-authored course hubs (docs/courses/<id>/index.md) stay tracked.
 docs/courses/*/syllabus/
-docs/courses/*/lectures/
-docs/courses/*/checkpoints/
-docs/courses/*/labs/
-docs/courses/*/assignments/
+docs/courses/*/unit*/
