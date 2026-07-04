@@ -1,26 +1,36 @@
 {% extends "base.html" %}
 
 {#
-  Page-date line for synced course pages. tools/sync_courses.py stamps
-  date_published / date_updated into front-matter from the SOURCE repo's real
-  git history (the site repo has none for synced files). Pages without the
-  keys — hand-authored site pages, opted-out pages — render unchanged.
-  Blog posts keep the blog plugin's own date handling.
+  Page footer row: dates (left) + feedback link (right).
+
+  Dates: tools/sync_courses.py stamps date_published / date_updated into
+  synced course pages' front-matter from the SOURCE repo's real git history
+  (the site repo has none for synced files). "Last updated" renders only
+  when it's genuinely later than the published date — a hand-set (e.g.
+  future-dated) publish date otherwise shows an older "updated" beside it,
+  which reads as broken. Pages without date keys just show no dates.
+
+  Feedback: every page gets a "Feedback / report a problem" link that
+  opens a prefilled GitHub issue on the site repo with the page URL and
+  title baked in, so reports arrive attached to the page they're about.
+  (Requires a GitHub account — the issue form says so on arrival.)
 #}
 {% block content %}
   {{ super() }}
-  {% if page.meta.date_published or page.meta.date_updated %}
-    <hr>
-    <p class="dl-page-dates">
+  <hr>
+  <p class="dl-page-footer">
+    <span class="dl-page-dates">
       {%- if page.meta.date_published %}
       Published {{ page.meta.date_published }}
       {%- endif %}
-      {#- show "Last updated" only when it's genuinely later than published —
-          a hand-set (e.g. future-dated) publish date otherwise renders an
-          older "updated" beside it, which reads as broken -#}
       {%- if page.meta.date_updated and (not page.meta.date_published or page.meta.date_updated > page.meta.date_published) %}
       {%- if page.meta.date_published %} · {% endif %}Last updated {{ page.meta.date_updated }}
       {%- endif %}
-    </p>
-  {% endif %}
+    </span>
+    <span class="dl-page-feedback">
+      <a href="https://github.com/dmill166/dakotalearns/issues/new?title={{ ('Feedback: ' ~ page.title) | urlencode }}&amp;body={{ ('Page: ' ~ page.canonical_url ~ ' — what did you expect, and what happened?') | urlencode }}" rel="noopener">
+        Feedback / report a problem
+      </a>
+    </span>
+  </p>
 {% endblock %}

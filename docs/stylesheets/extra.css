@@ -132,8 +132,13 @@
 [data-md-color-scheme="slate"] .md-typeset .dl-feedback.dl-no .dl-mark { color: #ef5350; }
 [data-md-color-scheme="slate"] .md-typeset .dl-feedback.dl-no { border-left-color: #ef5350; }
 
-/* Page-date line on synced course pages (overrides/main.html) */
-.dl-page-dates {
+/* Page footer row: dates left, feedback link right (overrides/main.html) */
+.dl-page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   color: var(--md-default-fg-color--light);
   font-size: .64rem;
 }
+.dl-page-feedback { margin-left: auto; }
