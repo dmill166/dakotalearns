@@ -4,7 +4,7 @@ Getting Python working is the only setup step before any course — no experienc
 
 ## What is Python? {#what-is-python}
 
-<!-- author_status: dakota-voice-draft | section: What is Python? (shaped from Dakota's input — his edit) -->
+<!-- author_status: dakota-authored | section: What is Python? (voice-core approved by Dakota 2026-07-05) -->
 [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is a general-purpose programming language created back in 1991 by [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum). I've always found it to be wonderfully user-friendly — something people *with* and *without* a technical background can pick up. It's grown exponentially from its early days into an enterprise-capable tool that fuels everything from personal hobbies to the highly complex systems running inside public and private institutions alike.
 
 I like to use Python to teach computer science for a few reasons:
@@ -16,7 +16,7 @@ I like to use Python to teach computer science for a few reasons:
 I hope you'll come to like it for these reasons — or for reasons all your own.
 <!-- /author_status -->
 
-The full, maintained walk-through (macOS, Windows, Linux), an editor recommendation, a one-command environment check, and troubleshooting lives in the CS 1050 course repository, kept current there so there's a single source of truth:
+The full, maintained walk-through (macOS, Windows, Linux), an editor recommendation, a one-command environment check, and troubleshooting lives in the Computer Science 1 course repository, kept current there so there's a single source of truth:
 
 [:material-github: Module 0 — Set up Python](https://github.com/dmill166/computer-science-1/tree/main/resources/setup){ .md-button .md-button--primary }
 
@@ -27,11 +27,11 @@ The full, maintained walk-through (macOS, Windows, Linux), an editor recommendat
 3. Start in **IDLE** (it ships with Python) — it keeps you focused on concepts instead of leaning on autocomplete.
 4. Verify: run `python3 --version` (or `python --version` on Windows). Any 3.13+ is ideal.
 
-You don't need virtual environments or `pyenv` for an intro course — see the full guide for why (and how, if you want them anyway).
+You don't need virtual environments or `pyenv` for an intro course — see the [Module 0 setup guide](https://github.com/dmill166/computer-science-1/tree/main/resources/setup#advanced-instructions-optional) for why (and how, if you want them anyway).
 
 ## Meet IDLE — the shell and the editor {#meet-idle}
 
-<!-- author_status: dakota-voice-draft | section: IDLE shell & editor primer (drafted for Dakota's edit) -->
+<!-- author_status: dakota-authored | section: IDLE shell & editor primer (approved by Dakota 2026-07-05) -->
 When you open **IDLE**, you're actually meeting two tools that work together. Knowing which is which will save you a lot of early confusion, so let's take two minutes here.
 
 ### The interactive shell (the `>>>` window)

@@ -19,7 +19,7 @@ The materials teach *from* sources (such as the course textbook) but do **not** 
 
 ## Affiliate links
 
-<!-- author_status: dakota-voice-draft | section: Affiliate links (expanded from Dakota's input — his edit) -->
+<!-- author_status: dakota-authored | section: Affiliate links (voice-core approved by Dakota 2026-07-05) -->
 Dakota Learns is free, and it stays that way. Some links across the site and course pages are **affiliate links** — most often to textbooks, occasionally to tools or fun project ideas. If you buy through one, Dakota Learns may earn a small commission **at no extra cost to you**. There's never any requirement or expectation that you do — you're always welcome to find the same thing elsewhere, or skip it entirely.
 
 **Why they're here.** Building and running this takes real time and money, all my own. A little coming back through these links helps offset that and broadens what's possible here — better resources for the site, and eventually things a plain free site can't do on its own (more interactivity, maybe some compute). It will never put the learning behind a wall; the free core is the whole point. (Would you rather support the work directly? That's what [GitHub Sponsors](https://github.com/sponsors/dmill166) is for — also entirely optional.)
