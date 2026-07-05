@@ -34,6 +34,12 @@ jobs:
         # Single source of truth = each course's public repo (see courses.yml).
         # Pulls prose into docs/ just before the build; nothing is committed here.
         run: python tools/sync_courses.py
+      - name: Content gate (publish-lock + a11y)
+        # Runs AFTER sync so it sees synced course pages too, and BEFORE build
+        # so a failure blocks publishing. Hard-fails on any surviving
+        # author_status: dakota-voice-draft and on missing mermaid accDescr /
+        # <img> alt. See tools/check_content.py + cs-teaching/a11y.md.
+        run: python tools/check_content.py
       - name: Build site
         run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
