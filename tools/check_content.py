@@ -16,6 +16,21 @@ Publish-lock (oneshot_build_requirements.md A2 / gate 1)
     (``draft: true`` front-matter is inert for non-blog pages, which is why
     this is a content grep and not a front-matter flag; see §10.)
 
+Marker coverage (provenance convention, locked 2026-07-09)
+    Every published page must carry at least one valid ``author_status``
+    marker (``dakota-authored`` / ``dakota-voice-draft`` /
+    ``assistant-mechanical`` / ``assistant-shared``). There is
+    deliberately NO exempt class: these are Dakota's public works, and
+    every page gets at least a light voice pass and his hand before it
+    counts as his (his call, 2026-07-09). An unmarked page used to pass
+    silently — "unmarked" meant "invisible to this gate," not
+    "voice-verified" — so unmarked is now a hard fail, and a marker with
+    an unrecognized value fails too (typo protection). ``docs/blog/`` is
+    excluded: the blog is Dakota's voice by definition, and blog drafts
+    are already held back by ``draft: true``. Canonical convention doc:
+    ``cs-teaching/voice_provenance.md`` (this implementation is
+    deliberately vendored per repo — zero cross-repo CI dependency).
+
 Accessibility (cs-teaching/a11y.md)
     * Every ``mermaid`` diagram must carry an ``accDescr`` (its text
       alternative; ``accTitle`` alone does not describe the figure).
@@ -41,6 +56,20 @@ DOCS = ROOT / "docs"
 
 # The one author_status value that must never reach a published page.
 DRAFT_MARKER = "author_status: dakota-voice-draft"
+
+# The provenance values a published page may carry. Every page outside
+# docs/blog/ must carry at least one (marker-coverage convention,
+# locked 2026-07-09; no exempt class — Dakota, same day); any other
+# value after ``author_status:`` is a typo and fails the gate.
+VALID_STATUSES = (
+    "dakota-authored",
+    "dakota-voice-draft",
+    "assistant-mechanical",
+    "assistant-shared",
+)
+STATUS_MARKER = re.compile(
+    r"author_status:\s*([A-Za-z-]+)"
+)
 
 # A raw <img ...> tag (may span lines: [^>] also matches newlines).
 IMG_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
@@ -81,6 +110,38 @@ def check_publish_lock(path: Path, text: str) -> list[Violation]:
                     "unpromoted voice-core draft (author_status: "
                     "dakota-voice-draft) — promote to dakota-authored "
                     "before publishing",
+                )
+            )
+    return found
+
+
+def check_marker_coverage(path: Path, text: str) -> list[Violation]:
+    """Fail an unmarked page, and any marker with an invalid value.
+
+    "Unmarked" must mean "impossible," not "invisible to the gate": a
+    page with no ``author_status`` marker at all is a hard fail, as is a
+    marker whose value isn't in ``VALID_STATUSES`` (typo protection).
+    """
+    found = []
+    matches = STATUS_MARKER.findall(text)
+    if not matches:
+        found.append(
+            Violation(
+                path,
+                1,
+                "page carries no author_status marker — add "
+                "dakota-authored / dakota-voice-draft / assistant-*, "
+                "per cs-teaching/voice_provenance.md",
+            )
+        )
+    for value in matches:
+        if value not in VALID_STATUSES:
+            found.append(
+                Violation(
+                    path,
+                    1,
+                    f"unrecognized author_status value {value!r} — "
+                    f"expected one of {', '.join(VALID_STATUSES)}",
                 )
             )
     return found
@@ -135,6 +196,8 @@ def scan(docs: Path) -> list[Violation]:
     for path in sorted(docs.rglob("*.md")):
         text = path.read_text(encoding="utf-8")
         violations += check_publish_lock(path, text)
+        if "blog" not in path.relative_to(docs).parts:
+            violations += check_marker_coverage(path, text)
         violations += check_mermaid_accdescr(path, text)
         violations += check_img_alt(path, text)
     return violations
