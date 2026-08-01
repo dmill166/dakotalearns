@@ -1,5 +1,7 @@
 # Computer Science 1 (Python)
 
+<!-- author_status: dakota-voice-draft | section: full page (textbook section reshaped from Dakota's A4 dump 2026-07-11; affiliate framing previously reviewed 2026-06-24 — review, edit, promote to dakota-authored) -->
+
 The first programming course — from "what *is* a computer program?" all the way to writing real Python with functions, classes, and your first real algorithms. **No prior experience and no math background required.** We start from zero and build up.
 
 !!! tip "Brand new? Do this first"
@@ -31,6 +33,8 @@ When you're ready to *write code*, the **runnable files** (starter code, example
 ## Textbook
 
 Taught alongside **John Zelle's *Python Programming: An Introduction to Computer Science*** (4th ed.). The course references it by chapter and never reproduces it — bring your own copy for the companion reading.
+
+We've all had that college professor who was suspiciously pushy about a book… that they wrote. This isn't that — I am not John Zelle, and I have no formal connection to him. I've simply loved his writing style and teaching approach ever since my first Python coursework back in 2012, and I've bought multiple copies over the years (mostly because I keep loaning mine out and never getting them back — the highest praise a book can earn).
 
 **Please buy it and support the author** — independent authors and small publishers are how good, affordable CS textbooks keep existing.
 

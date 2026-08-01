@@ -1,5 +1,7 @@
 # Glossary
 
+<!-- author_status: dakota-voice-draft | section: full page, light voice pass (assistant-drafted 2026-07-09 per Dakota's no-exempt call — review + promote to dakota-authored) -->
+
 Plain-language definitions of terms you'll meet around here, **A–Z**.
 
 !!! tip "Two fast ways to find a term"
@@ -23,6 +25,10 @@ Many of these terms also appear as **dotted underlines** in the lessons — hove
 
 The program that reads your Python code and runs it, line by line. When you "install Python," you're mainly installing the interpreter (the `python` / `python3` command).
 
+## Operating system (OS)
+
+The software that runs your computer and everything on it — **Windows**, **macOS**, or **Linux** are the ones you'll meet in this course. Guides often branch by OS ("on Windows do this; on macOS do that") because each one names things a little differently — same destination, slightly different doors.
+
 ## PATH
 
 A list your operating system keeps of folders to search when you type a program's name. When a guide says "add Python to your PATH," it means "let me type `python` in a terminal and have the computer find it," instead of typing the program's full location every time. The classic Windows gotcha — "`python` is not recognized" — is almost always a PATH that wasn't set.
@@ -45,4 +51,4 @@ An isolated, per-project set of Python packages, so one project's installs can't
 
 ---
 
-*Missing a term you'd like defined? It'll grow as the lessons do.*
+*Missing a term you'd like defined? Tell me with the feedback link below — this page grows as the lessons do.*

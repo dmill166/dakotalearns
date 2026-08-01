@@ -7,6 +7,9 @@ categories:
 
 # Installation Guide: Python 3.x 🐍
 
+!!! note "Update (July 21, 2026)"
+    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)** — it stays up to date as things change.
+
 Welcome back so soon after the last post!
 
 I had a lot of fun writing the [Installation Guide for VS Code](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/); so much, in fact, that I didn't want to wait around too much before I created the guide meant to follow it - an Installation Guide for Python 3.x!

@@ -1,6 +1,8 @@
 # Courses
 
-Free, structured courses — learn from them at your own pace, right here on the site. Subjects will grow over time; **computer science is the current focus.** Each course is built end-to-end before the next begins.
+<!-- author_status: dakota-voice-draft | section: full page, light voice pass (assistant-drafted 2026-07-09 per Dakota's no-exempt call — review + promote to dakota-authored) -->
+
+Free, structured courses — learn from them at your own pace, right here on the site. Subjects will grow over time; **computer science is the current focus.** I build each course end-to-end before starting the next, so nothing here is half a course.
 
 | Course | Subject | Tags | What it is | Status |
 |---|---|---|---|---|

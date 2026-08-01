@@ -1,10 +1,14 @@
 # Disclaimers
 
+<!-- author_status: dakota-voice-draft | section: Affiliation/Licensing/Copyright/No-warranty, light voice pass (assistant-drafted 2026-07-09 per Dakota's no-exempt call; legal precision kept — review + promote to dakota-authored; Affiliate links section already dakota-authored below) -->
+
 > Brief notes appear in the page footer and next to affiliate links where they're used; this page is the full detail.
 
 ## Affiliation
 
 Dakota Learns is an **independent** project by Dakota Hollmann. Its course materials are **not affiliated with, endorsed by, or sponsored by** Metropolitan State University of Denver (MSU Denver) or any other institution. Where a course references a university course code or objectives (e.g., "CS 1050"), it is for **curriculum alignment only** — to show the materials map to recognized outcomes — and never to imply affiliation or that the author teaches there.
+
+In plain terms: I've guest-lectured, joined panels, and serve in an advisory capacity at MSU Denver — and I'm openly interested in one day teaching through the university and giving back to the program that gave so much to me. But we are independent entities. My course-code references show *intended alignment*, not endorsement, and not enforcement of any institution's official course descriptions or objectives.
 
 ## Licensing
 
@@ -15,7 +19,7 @@ These licenses cover original work only and grant no rights to any third-party m
 
 ## Copyright & third-party materials
 
-The materials teach *from* sources (such as the course textbook) but do **not** reproduce them — concepts are explained in original words and examples, and sources are referenced, not copied. See the initiative's [copyright policy](https://github.com/dmill166/cs-teaching/blob/main/COPYRIGHT_POLICY.md).
+My materials teach *from* sources (such as the course textbook) but never reproduce them — I explain concepts in original words and examples, and reference sources rather than copy them. See the initiative's [copyright policy](https://github.com/dmill166/cs-teaching/blob/main/COPYRIGHT_POLICY.md).
 
 ## Affiliate links
 

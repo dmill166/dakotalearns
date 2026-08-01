@@ -7,6 +7,9 @@ categories:
 
 # Installation Guide for Python - MacOS & Windows
 
+!!! note "Update (July 21, 2026)"
+    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)** — it stays up to date as things change.
+
 ## Welcome back!
 
 Why, hello there! 👋 It's been almost two months since I last blogged to you all about ERDs (Entity-Relationship Diagrams) and we walked through some foundations as well as use cases for them.

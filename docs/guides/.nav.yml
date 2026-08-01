@@ -1,4 +1,5 @@
 nav:
   - Install Python: install-python.md
+  - Terminal Basics: terminal-basics.md
   - Using GitHub: using-github.md
   - Following the blog (RSS): following-rss.md

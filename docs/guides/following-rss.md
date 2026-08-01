@@ -1,5 +1,7 @@
 # Following the blog (RSS)
 
+<!-- author_status: assistant-shared | section: full page (06-19 audit verdict: on-voice; promote to dakota-authored after Dakota's affirm-read — provenance sweep 2026-07-09) -->
+
 New posts go up as the course is built in public. The lowest-friction way to catch them — no account, no algorithm, no inbox clutter — is **RSS**.
 
 ## What's RSS?

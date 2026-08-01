@@ -1,5 +1,7 @@
 # Install Python
 
+<!-- author_status: assistant-mechanical | section: page frame + The short version (voice-core sections below carry their own markers — provenance sweep 2026-07-09) -->
+
 Getting Python working is the only setup step before any course — no experience needed.
 
 ## What is Python? {#what-is-python}

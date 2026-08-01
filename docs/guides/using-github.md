@@ -1,5 +1,7 @@
 # Using GitHub (only when you want the code)
 
+<!-- author_status: assistant-shared | section: full page (06-19 audit verdict: on-voice; promote to dakota-authored after Dakota's affirm-read — provenance sweep 2026-07-09) -->
+
 You **do not need GitHub to learn here.** Every lesson, explanation, and assignment prompt is readable right on this site. GitHub is only where the **runnable code files** live — starter code, examples, and tests — for when you're ready to actually write and run programs. This guide shows the easy way to get them.
 
 !!! tip "The short version"

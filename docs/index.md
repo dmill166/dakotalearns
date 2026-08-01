@@ -6,6 +6,8 @@ hide:
 
 # Dakota Learns
 
+<!-- author_status: dakota-voice-draft | section: full page (reshaped from Dakota's Sheet A voice-core dumps 2026-07-11 — review, edit, promote to dakota-authored) -->
+
 ### *Let's learn something together.*
 
 **Free, beginner-friendly learning — shared in public.** I'm a lifelong learner sharing what I pick up, as clearly and honestly as I can, for anyone starting from zero. No gatekeeping, no assumed background — let's just figure it out together.
@@ -25,7 +27,7 @@ hide:
 
 ## Why free
 
-I leaned on free and open resources alongside my degrees — all the way through school and into my career — and I want to keep doing that while helping others. Everything here is free to read and learn from. If it helps you and you'd like to support more of it, you can [sponsor the work](https://github.com/sponsors/dmill166) — but you'll never hit a wall.
+I leaned on free and open resources alongside my degrees — all the way through school and into my career — and I want to keep doing that while helping others. And here's the bigger reason: technology and computing aren't the future anymore. They're the present, and they'll keep being the present. If you have even a vague interest in learning this — for college, for a career, or just for the fun of it — I want you to be able to succeed, and I'd love to be one of the reasons you do. Everything here is free to read and learn from. If it helps you and you'd like to support more of it, you can [sponsor the work](https://github.com/sponsors/dmill166) — but you'll never hit a wall.
 
 ## Who makes this
 
