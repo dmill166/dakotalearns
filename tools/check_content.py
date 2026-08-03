@@ -71,6 +71,17 @@ STATUS_MARKER = re.compile(
     r"author_status:\s*([A-Za-z-]+)"
 )
 
+# Naming rule: site-native pages never mention "CS 1050"/"CS1050" at
+# all — our course is Computer Science 1; MSU codes belong only in
+# reviewed alignment contexts. Exclusions: docs/blog/ (Dakota's
+# historical posts), docs/disclaimers.md (carries the quoted example
+# explaining the rule), docs/courses/ (synced course prose — its
+# mentions are governed by the course repo's baseline ratchet in
+# integrity_scan.py check v).
+NAME_TOKEN = re.compile(r"CS ?1050", re.IGNORECASE)
+NAME_EXEMPT_PARTS = ("blog", "courses")
+NAME_EXEMPT_FILES = ("disclaimers.md",)
+
 # A raw <img ...> tag (may span lines: [^>] also matches newlines).
 IMG_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 # Opening fence of a mermaid block, e.g. ```mermaid (optionally indented).
@@ -147,6 +158,23 @@ def check_marker_coverage(path: Path, text: str) -> list[Violation]:
     return found
 
 
+def check_no_course_codes(path: Path, text: str) -> list[Violation]:
+    """Fail any site-native page that mentions the CS 1050 course code."""
+    found = []
+    for i, line in enumerate(text.splitlines(), start=1):
+        if NAME_TOKEN.search(line):
+            found.append(
+                Violation(
+                    path,
+                    i,
+                    "mentions 'CS 1050' — the course is Computer "
+                    "Science 1; MSU codes live only in reviewed "
+                    "alignment contexts (see the naming rule)",
+                )
+            )
+    return found
+
+
 def check_mermaid_accdescr(path: Path, text: str) -> list[Violation]:
     """Fail on any mermaid diagram missing an accDescr text alternative."""
     found = []
@@ -196,8 +224,12 @@ def scan(docs: Path) -> list[Violation]:
     for path in sorted(docs.rglob("*.md")):
         text = path.read_text(encoding="utf-8")
         violations += check_publish_lock(path, text)
-        if "blog" not in path.relative_to(docs).parts:
+        rel_parts = path.relative_to(docs).parts
+        if "blog" not in rel_parts:
             violations += check_marker_coverage(path, text)
+        if (not any(p in rel_parts for p in NAME_EXEMPT_PARTS)
+                and path.name not in NAME_EXEMPT_FILES):
+            violations += check_no_course_codes(path, text)
         violations += check_mermaid_accdescr(path, text)
         violations += check_img_alt(path, text)
     return violations
