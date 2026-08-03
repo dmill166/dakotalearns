@@ -27,7 +27,7 @@ The full, maintained walk-through (macOS, Windows, Linux), an editor recommendat
 1. Download the **current** Python from [python.org/downloads](https://www.python.org/downloads/) (the big yellow button) — not an older release.
 2. **Windows:** check **"Add python.exe to PATH"** during install. **macOS/Linux:** use the `python3` command.
 3. Start in **IDLE** (it ships with Python) — it keeps you focused on concepts instead of leaning on autocomplete.
-4. Verify: run `python3 --version` (or `python --version` on Windows). Any 3.13+ is ideal.
+4. Verify: run `python3 --version` (or `python --version` on Windows). Any 3.13 or newer is ideal.
 
 You don't need virtual environments or `pyenv` for an intro course — see the [Module 0 setup guide](https://github.com/dmill166/computer-science-1/tree/main/resources/setup#advanced-instructions-optional) for why (and how, if you want them anyway).
 
