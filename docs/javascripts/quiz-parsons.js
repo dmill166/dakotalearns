@@ -93,9 +93,12 @@
 
   /* ────────────────────────────────────────────────────────────────────
    * Quiz widget
-   * Data shape: {title?, questions: [{prompt, options[], answer, explain?}]}
+   * Data shape: {title?, questions: [{prompt, options[], answer,
+   * explain?, hint?}]}
    * `answer` is the zero-based index into `options`. Learners may retry
-   * until correct; a wrong pick never reveals the answer.
+   * until correct; a wrong pick never reveals the answer. `hint`
+   * renders as a collapsed "Need a hint?" toggle available before
+   * answering (a native <details>, keyboard-accessible by default).
    * ──────────────────────────────────────────────────────────────────── */
 
   /**
@@ -136,6 +139,18 @@
         label.appendChild(span);
         fs.appendChild(label);
       });
+
+      if (q.hint) {
+        var hint = document.createElement("details");
+        hint.className = "dl-hint";
+        var sum = document.createElement("summary");
+        sum.textContent = "Need a hint?";
+        hint.appendChild(sum);
+        var hp = document.createElement("p");
+        hp.innerHTML = inline(q.hint);
+        hint.appendChild(hp);
+        fs.appendChild(hint);
+      }
 
       var fb = feedbackEl();
       var btn = document.createElement("button");

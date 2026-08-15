@@ -16,7 +16,7 @@ GitHub is a website for storing and sharing files — especially code. A **repos
 1. Open the course's code repository (links are on each course page).
 2. Click the green **`< > Code`** button near the top right.
 3. Choose **Download ZIP**.
-4. Find the `.zip` in your Downloads, double-click to unzip.
+4. Find the `.zip` in your Downloads, double-click to unzip. (**Windows:** use "Extract All" and work in the *extracted* folder — clicking *into* the zip's preview looks the same but isn't; files run and save strangely from inside it.)
 5. Open the folder in your editor (IDLE: `File → Open`). Done.
 
 No GitHub account is required to download. You can re-download anytime to get the latest version.
