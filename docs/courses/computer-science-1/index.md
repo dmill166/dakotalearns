@@ -43,6 +43,8 @@ We've all had that college professor who was suspiciously pushy about a book… 
 
 You can also check your library, or buy direct from the publisher — whatever gets the book in your hands.
 
+One more, for the course's **writing & presentation thread**: Barbara Oakley's [*A Mind for Numbers*](https://amzn.to/4xI5piu) — the learning-how-to-learn book, and the anchor for the written report and oral presentation later in the course. Chapter details arrive with that thread; it's listed early so you can plan or library-reserve (print, eBook, and audiobook all exist).
+
 !!! note "A note on the book links"
     The Amazon links above are affiliate links: if you buy through them, Dakota Learns may earn a small commission **at no extra cost to you**. It helps keep this work free. You're welcome to search for the book yourself instead — same book, your choice.
 

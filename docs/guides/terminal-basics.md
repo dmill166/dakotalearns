@@ -44,7 +44,7 @@ On Windows: `cd Downloads`, then `python check_env.py`. The pattern is always th
 
 ## "Permission denied"? (macOS / Linux, rare)
 
-Our instructions always run scripts *through* an interpreter — `bash setup_env.sh`, `python3 check_env.py` — which needs no special permissions. If some *other* guide ever tells you to run a script directly (`./setup_env.sh`) and you hit `permission denied`, that's the one case where you'd first run `chmod +x setup_env.sh` (mark the file as executable). You won't need it for this course; now you know what it's for anyway.
+Our instructions always run scripts *through* an interpreter — `bash setup_venv.sh`, `python3 check_env.py` — which needs no special permissions. If some *other* guide ever tells you to run a script directly (`./setup_venv.sh`) and you hit `permission denied`, that's the one case where you'd first run `chmod +x setup_venv.sh` (mark the file as executable). You won't need it for this course; now you know what it's for anyway.
 
 ## When it goes sideways
 

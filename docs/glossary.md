@@ -21,6 +21,10 @@ Many of these terms also appear as **dotted underlines** in the lessons — hove
 
 **Integrated Development and Learning Environment** — the simple code editor and interactive shell that ships *with* Python. It's deliberately bare: no aggressive autocomplete or AI suggestions, which is exactly why it's good for learning. You write code, press **F5**, and it runs. We start here before any heavier tools. (It's also a nod to Monty Python's Eric Idle — Python is named after Monty Python's Flying Circus.)
 
+## I/O
+
+**Input/Output** — the umbrella term for data going *into* a program (the keyboard, a file) and coming back *out* (the screen, a file). When a lesson says "interactive I/O," it means the keyboard-and-screen conversation kind.
+
 ## Interpreter
 
 The program that reads your Python code and runs it, line by line. When you "install Python," you're mainly installing the interpreter (the `python` / `python3` command).
@@ -28,6 +32,10 @@ The program that reads your Python code and runs it, line by line. When you "ins
 ## Operating system (OS)
 
 The software that runs your computer and everything on it — **Windows**, **macOS**, or **Linux** are the ones you'll meet in this course. Guides often branch by OS ("on Windows do this; on macOS do that") because each one names things a little differently — same destination, slightly different doors.
+
+## OOP
+
+**Object-Oriented Programming** — a style of programming where you bundle data and the actions that belong with it into "objects." You've been *using* objects since your first week (strings are objects!); later units teach you to define your own kinds.
 
 ## PATH
 
