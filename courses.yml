@@ -22,6 +22,12 @@ courses:
   - id: computer-science-1
     repo: dmill166/computer-science-1
     ref: main
+    # University course codes this course ALIGNS to (regexes). The content
+    # gate (tools/check_content.py) forbids these on site-native pages —
+    # our courses are named by subject; codes appear only in reviewed
+    # alignment contexts. New course = list its codes here and the naming
+    # gate extends automatically.
+    alignment_codes: ["CS ?1050"]
     sync:
       - { from: syllabus, to: courses/computer-science-1/syllabus, include: ["*.md", ".nav.yml"] }
       - { from: "unit*",  to: courses/computer-science-1,          include: ["*.md", ".nav.yml"], exclude: "README.md" }

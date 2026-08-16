@@ -53,7 +53,16 @@ def _as_list(value) -> list[str]:
 
 
 def _git_dates(repo: Path, rel: str) -> tuple[str | None, str | None]:
-    """(first_commit_date, last_commit_date) as YYYY-MM-DD, or (None, None)."""
+    """Look up a file's first and last commit dates via git log.
+
+    Args:
+        repo: Git working tree to query.
+        rel: File path relative to the repo root.
+
+    Returns:
+        (first_commit_date, last_commit_date) as YYYY-MM-DD strings,
+        or (None, None) for a file git has no history for.
+    """
     out = subprocess.run(
         ["git", "-C", str(repo), "log", "--follow", "--format=%as", "--", rel],
         capture_output=True,
@@ -65,7 +74,13 @@ def _git_dates(repo: Path, rel: str) -> tuple[str | None, str | None]:
 
 
 def _inject_dates(target: Path, src_repo: Path, rel: str) -> None:
-    """Stamp date_published/date_updated into a synced page's front-matter."""
+    """Stamp date_published/date_updated into a synced page's front-matter.
+
+    Args:
+        target: Synced copy under docs/ to edit in place.
+        src_repo: Source repo the page came from (for git history).
+        rel: Page path relative to the source repo root.
+    """
     if target.suffix != ".md":
         return
     text = target.read_text(encoding="utf-8")
@@ -102,7 +117,14 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
     Clones the course repo (full history, for date stamping) — or uses a
     local working tree if `local` maps this course id to a path — then
     applies each sync rule's include/exclude globs and stamps page dates.
-    Returns the number of files copied.
+
+    Args:
+        course: One course entry from the ``courses.yml`` manifest.
+        local: Course id -> local working tree, overriding the clone
+            (preview mode).
+
+    Returns:
+        The number of files copied.
     """
     cid = course["id"]
     repo = course["repo"]
@@ -166,7 +188,20 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
 
 
 def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
-    """Copy one directory tree per the include/exclude globs; stamp dates."""
+    """Copy one directory tree per the include/exclude globs; stamp dates.
+
+    Args:
+        src_dir: Directory tree to copy from.
+        dest_dir: Destination directory under docs/.
+        src_root: Course repo root (for repo-relative paths and git
+            date lookups).
+        repo: "owner/name" label used in the log lines.
+        includes: Filename globs a file must match to be copied.
+        excludes: Filename globs that exclude a file.
+
+    Returns:
+        The number of files copied.
+    """
     copied = 0
     for path in sorted(src_dir.rglob("*")):
         if not path.is_file():
@@ -188,7 +223,12 @@ def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
 
 
 def main() -> int:
-    """Parse CLI args, read the manifest, and sync every course."""
+    """Parse CLI args, read the manifest, and sync every course.
+
+    Returns:
+        Process exit code (always 0 — a missing or empty manifest is
+        a no-op, not an error).
+    """
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--local",

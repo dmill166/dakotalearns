@@ -51,6 +51,8 @@ import re
 import sys
 from pathlib import Path
 
+import yaml  # provided by MkDocs (PyYAML); no extra dependency needed
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 
@@ -71,16 +73,39 @@ STATUS_MARKER = re.compile(
     r"author_status:\s*([A-Za-z-]+)"
 )
 
-# Naming rule: site-native pages never mention "CS 1050"/"CS1050" at
-# all — our course is Computer Science 1; MSU codes belong only in
-# reviewed alignment contexts. Exclusions: docs/blog/ (Dakota's
-# historical posts), docs/disclaimers.md (carries the quoted example
-# explaining the rule), docs/courses/ (synced course prose — its
-# mentions are governed by the course repo's baseline ratchet in
-# integrity_scan.py check v).
-NAME_TOKEN = re.compile(r"CS ?1050", re.IGNORECASE)
+# Naming rule: site-native pages never mention a university course
+# code — our courses are named by subject; codes belong only in
+# reviewed alignment contexts. The CODES ARE DATA, not code: each
+# course's ``alignment_codes`` list in ``courses.yml`` feeds this
+# check, so onboarding a course extends the gate automatically.
+# Exclusions: docs/blog/ (Dakota's historical posts),
+# docs/disclaimers.md (carries the quoted example explaining the
+# rule), docs/courses/ (synced course prose — its mentions are
+# governed by each course repo's baseline ratchet, integrity_scan
+# check v).
+MANIFEST = ROOT / "courses.yml"
 NAME_EXEMPT_PARTS = ("blog", "courses")
 NAME_EXEMPT_FILES = ("disclaimers.md",)
+
+
+def load_name_token() -> re.Pattern | None:
+    """Build the forbidden-course-code pattern from courses.yml.
+
+    Returns:
+        A compiled alternation of every course's alignment_codes, or
+        None when the manifest is missing or lists no codes (the
+        naming check is then skipped rather than guessed at).
+    """
+    if not MANIFEST.is_file():
+        return None
+    manifest = yaml.safe_load(MANIFEST.read_text()) or {}
+    patterns = []
+    for course in manifest.get("courses", []):
+        patterns += course.get("alignment_codes", [])
+    if not patterns:
+        return None
+    return re.compile("|".join(patterns), re.IGNORECASE)
+
 
 # A raw <img ...> tag (may span lines: [^>] also matches newlines).
 IMG_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
@@ -110,7 +135,12 @@ def _line_of(text: str, index: int) -> int:
 
 
 def check_publish_lock(path: Path, text: str) -> list[Violation]:
-    """Fail on any surviving dakota-voice-draft marker in the page."""
+    """Fail on any surviving dakota-voice-draft marker in the page.
+
+    Returns:
+        One violation per draft-marker line; empty means the page
+        passes.
+    """
     found = []
     for i, line in enumerate(text.splitlines(), start=1):
         if DRAFT_MARKER in line:
@@ -132,6 +162,10 @@ def check_marker_coverage(path: Path, text: str) -> list[Violation]:
     "Unmarked" must mean "impossible," not "invisible to the gate": a
     page with no ``author_status`` marker at all is a hard fail, as is a
     marker whose value isn't in ``VALID_STATUSES`` (typo protection).
+
+    Returns:
+        One violation for a missing marker plus one per invalid
+        value; empty means the page passes.
     """
     found = []
     matches = STATUS_MARKER.findall(text)
@@ -158,25 +192,45 @@ def check_marker_coverage(path: Path, text: str) -> list[Violation]:
     return found
 
 
-def check_no_course_codes(path: Path, text: str) -> list[Violation]:
-    """Fail any site-native page that mentions the CS 1050 course code."""
+def check_no_course_codes(
+    path: Path, text: str, token: re.Pattern
+) -> list[Violation]:
+    """Fail any site-native page mentioning a university course code.
+
+    Args:
+        path: The page being checked.
+        text: The page's content.
+        token: Compiled alternation of every course's alignment codes
+            (from courses.yml via load_name_token).
+
+    Returns:
+        One violation per mentioning line; empty means the page
+        passes.
+    """
     found = []
     for i, line in enumerate(text.splitlines(), start=1):
-        if NAME_TOKEN.search(line):
+        match = token.search(line)
+        if match:
             found.append(
                 Violation(
                     path,
                     i,
-                    "mentions 'CS 1050' — the course is Computer "
-                    "Science 1; MSU codes live only in reviewed "
-                    "alignment contexts (see the naming rule)",
+                    f"mentions university course code "
+                    f"{match.group(0)!r} — our courses are named by "
+                    "subject; codes live only in reviewed alignment "
+                    "contexts (see the naming rule)",
                 )
             )
     return found
 
 
 def check_mermaid_accdescr(path: Path, text: str) -> list[Violation]:
-    """Fail on any mermaid diagram missing an accDescr text alternative."""
+    """Fail on any mermaid diagram missing an accDescr text alternative.
+
+    Returns:
+        One violation per diagram without an accDescr, anchored to
+        its opening fence; empty means the page passes.
+    """
     found = []
     lines = text.splitlines()
     i = 0
@@ -203,7 +257,12 @@ def check_mermaid_accdescr(path: Path, text: str) -> list[Violation]:
 
 
 def check_img_alt(path: Path, text: str) -> list[Violation]:
-    """Fail on any raw <img> tag lacking an alt attribute."""
+    """Fail on any raw <img> tag lacking an alt attribute.
+
+    Returns:
+        One violation per alt-less <img> tag; empty means the page
+        passes.
+    """
     found = []
     for match in IMG_TAG.finditer(text):
         if not re.search(r"\balt\s*=", match.group(0), re.IGNORECASE):
@@ -219,24 +278,36 @@ def check_img_alt(path: Path, text: str) -> list[Violation]:
 
 
 def scan(docs: Path) -> list[Violation]:
-    """Run every check over every markdown page under ``docs``."""
+    """Run every check over every markdown page under ``docs``.
+
+    Returns:
+        All violations found across the tree; empty means the gate
+        passes.
+    """
     violations: list[Violation] = []
+    name_token = load_name_token()
     for path in sorted(docs.rglob("*.md")):
         text = path.read_text(encoding="utf-8")
         violations += check_publish_lock(path, text)
         rel_parts = path.relative_to(docs).parts
         if "blog" not in rel_parts:
             violations += check_marker_coverage(path, text)
-        if (not any(p in rel_parts for p in NAME_EXEMPT_PARTS)
+        if (name_token is not None
+                and not any(p in rel_parts for p in NAME_EXEMPT_PARTS)
                 and path.name not in NAME_EXEMPT_FILES):
-            violations += check_no_course_codes(path, text)
+            violations += check_no_course_codes(path, text, name_token)
         violations += check_mermaid_accdescr(path, text)
         violations += check_img_alt(path, text)
     return violations
 
 
 def main() -> int:
-    """Scan the docs tree; report violations and return an exit code."""
+    """Scan the docs tree and report violations.
+
+    Returns:
+        Process exit code: 0 when the gate passes (or there is no
+        docs directory to scan), 1 when any check fails.
+    """
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--docs",
