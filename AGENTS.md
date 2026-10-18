@@ -1,16 +1,9 @@
 ---
 title: dakotalearns — Repo Rules for Agents
-id: agents-dakotalearns
-version: 1.0.0
-status: active
-owner: Dakota Hollmann
-maintainer: claude-cowork
-created: 2026-08-29
-updated: 2026-08-29
 scope: repo-local — adds to (and inside this repo, overrides) ~/agents/AGENTS.md
-changelog:
-  - "1.0.0 (2026-08-29): Initial. Created during the global-rules wiring audit, which found this repo had no CLAUDE.md or AGENTS.md and therefore inherited none of the global rules — not filing, commits, voice, or copyright."
 ---
+
+<!-- author_status: assistant-shared | section: full page (agent instructions written to Dakota's rules; pending his read) -->
 
 # dakotalearns — Repo Rules for Agents
 
