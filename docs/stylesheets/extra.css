@@ -1,10 +1,10 @@
-/* Dakota Learns — brand colors: sapphire / royal blue. */
+/* Dakota Learns - brand colors: sapphire / royal blue. */
 
 :root {
-  --md-primary-fg-color:        #0f52ba;  /* sapphire — header / primary */
+  --md-primary-fg-color:        #0f52ba;  /* sapphire - header / primary */
   --md-primary-fg-color--light: #2563eb;  /* royal */
   --md-primary-fg-color--dark:  #0a3a85;  /* deep sapphire */
-  --md-accent-fg-color:         #1d4ed8;  /* royal — links/hover */
+  --md-accent-fg-color:         #1d4ed8;  /* royal - links/hover */
 }
 
 /* Dark mode: keep the royal accent readable on the slate scheme */
@@ -20,7 +20,7 @@
 /* ── Accessibility: admonition / collapsible colors (WCAG 2.1 AA, both schemes) ── */
 
 /* "question" (Check-yourself self-tests). Material's default is acid Light-Green-A700
-   (#64dd17): its icon/border only reach ~1.7:1 — below the 3:1 non-text floor.
+   (#64dd17): its icon/border only reach ~1.7:1 - below the 3:1 non-text floor.
    Green-700 (#388e3c) is the one green shade that clears 3:1 in BOTH light and dark. */
 .md-typeset .admonition.question,
 .md-typeset details.question { border-color: #388e3c; }
@@ -32,7 +32,7 @@
 .md-typeset .question > summary::after { color: #388e3c; }
 
 /* "faq" (common questions WE answer). A distinct slate blue-grey (#455a64) + quote
-   icon so an FAQ never looks like a green "answer this yourself" self-check —
+   icon so an FAQ never looks like a green "answer this yourself" self-check -
    differentiated on three channels (color + icon + type word), not color alone. */
 :root { --md-admonition-icon--faq: var(--md-admonition-icon--quote); }
 .md-typeset .admonition.faq,
@@ -50,7 +50,7 @@
 
 /* ── Self-check widgets (quiz + Parsons; javascripts/quiz-parsons.js) ──
    Same green as `question` (learner-answers role, AA-safe both schemes).
-   Result state is icon + words + color — the color is reinforcement only. */
+   Result state is icon + words + color - the color is reinforcement only. */
 
 .md-typeset .dl-widget {
   border: .075rem solid #388e3c;

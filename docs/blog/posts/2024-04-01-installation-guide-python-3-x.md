@@ -8,7 +8,7 @@ categories:
 # Installation Guide: Python 3.x 🐍
 
 !!! note "Update (July 21, 2026)"
-    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)** — it stays up to date as things change.
+    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)**; it stays up to date as things change.
 
 Welcome back so soon after the last post!
 
@@ -98,7 +98,7 @@ To ensure your installation was successful:
 
 1. Launch the Visual Studio Code application on your machine
 2. Launch the terminal window within VS Code (Windows/MacOS = CTRL + ` )
-3. Type `python3` and press <Enter>
+3. Type `python3` and press **Enter**
 4. The result should be something similar to the following:
 
 ```

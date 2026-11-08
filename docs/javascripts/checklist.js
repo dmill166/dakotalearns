@@ -1,10 +1,10 @@
 /**
- * Dakota Learns — persistent page checklists.
+ * Dakota Learns - persistent page checklists.
  *
  * Markdown task lists (`- [ ] item`, rendered by pymdownx.tasklist) arrive
  * as DISABLED checkboxes. This script enables them and persists each page's
  * checked state in localStorage, so a learner working through a "Done looks
- * like" list keeps their progress across visits — on this browser only.
+ * like" list keeps their progress across visits - on this browser only.
  * No accounts, no server, nothing leaves the machine (matches the course
  * platform decision: light browser-side state, no stored progress).
  *
@@ -41,7 +41,7 @@
     try {
       window.localStorage.setItem(KEY, JSON.stringify(checked));
     } catch (e) {
-      /* storage full/blocked — checklist still works, just not persisted */
+      /* storage full/blocked - checklist still works, just not persisted */
     }
   }
 

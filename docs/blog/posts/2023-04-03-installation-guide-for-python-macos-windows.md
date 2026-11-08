@@ -8,7 +8,7 @@ categories:
 # Installation Guide for Python - MacOS & Windows
 
 !!! note "Update (July 21, 2026)"
-    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)** — it stays up to date as things change.
+    This post is preserved exactly as I wrote it at the time. For the current, maintained installation steps (macOS, Windows, *and* Linux), use the **[Install Python guide](../../guides/install-python.md)**; it stays up to date as things change.
 
 ## Welcome back!
 

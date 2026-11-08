@@ -1,11 +1,11 @@
 {
-  "_provenance": "SSOT for the feedback form's sample placeholder texts (approved by Dakota 2026-08-02; design record: life-os feedback_system_spec.md section 4 — that table is frozen history, THIS file wins). Samples render as placeholder ghost text only, never as submittable values. Course-voice prose: edits here get reviewed like any content change.",
+  "_provenance": "SSOT for the feedback form's sample placeholder texts (approved by Dakota 2026-08-02; design record: the private feedback-system spec, section 4 - that table is frozen history, THIS file wins). Samples render as placeholder ghost text only, never as submittable values. Course-voice prose: edits here get reviewed like any content change.",
   "default": "What happened, what you expected, or what you'd improve…",
   "samples": {
-    "Something's broken": "The 'Check your own work' script won't run — I typed python3 check_my_work.py and got 'No such file or directory'. I'm on Windows 11.",
-    "Confusing": "The part about variables being names lost me around the second example — I couldn't tell why name changed but age didn't.",
+    "Something's broken": "The 'Check your own work' script won't run - I typed python3 check_my_work.py and got 'No such file or directory'. I'm on Windows 11.",
+    "Confusing": "The part about variables being names lost me around the second example - I couldn't tell why name changed but age didn't.",
     "Typo": "In the third paragraph under 'Your first program', I think 'immediatly' is missing an e.",
     "Idea": "Could the checkpoint page link back to the exact lecture section it covers? I kept scrolling to find it.",
-    "It helped!": "The palette analogy for virtual environments finally made it click — thank you!"
+    "It helped!": "The palette analogy for virtual environments finally made it click - thank you!"
   }
 }
