@@ -1,9 +1,9 @@
-# Course content manifest — single source of truth lives in each course's repo.
+# Course content manifest - single source of truth lives in each course's repo.
 #
 # The site does NOT store course prose. tools/sync_courses.py pulls it from these
 # repos into docs/ at build time (CI runs it automatically; run it yourself before
 # `mkdocs serve`). Adding a course = append one block below. No workflow changes
-# needed — the integration is course-count-agnostic.
+# needed - the integration is course-count-agnostic.
 #
 # Per course:
 #   id    short slug; also the docs/courses/<id>/ folder the prose lands in
@@ -12,22 +12,26 @@
 #   sync  list of copy rules, each:
 #           from     directory within the course repo
 #           to       destination under docs/ (git-ignored; see .gitignore)
-#           include  filename glob(s) to copy — string or list (default: "*")
-#           exclude  filename glob(s) to skip (e.g. repo-internal READMEs)
+#           include  glob(s) to copy - string or list (default: "*"). A glob
+#                    without "/" matches the file name; one with "/" matches
+#                    the path inside the synced folder ("*/starter/*")
+#           exclude  glob(s) to skip, same matching (e.g. repo-internal READMEs)
 #
 # ".nav.yml" is pulled alongside the prose so the course repo controls its own
-# on-site navigation (order + section titles) — single source of truth for nav too.
+# on-site navigation (order + section titles) - single source of truth for nav too.
 
 courses:
   - id: computer-science-1
     repo: dmill166/computer-science-1
     ref: main
     # University course codes this course ALIGNS to (regexes). The content
-    # gate (tools/check_content.py) forbids these on site-native pages —
+    # gate (tools/check_content.py) forbids these on site-native pages -
     # our courses are named by subject; codes appear only in reviewed
     # alignment contexts. New course = list its codes here and the naming
     # gate extends automatically.
     alignment_codes: ["CS ?1050"]
     sync:
       - { from: syllabus, to: courses/computer-science-1/syllabus, include: ["*.md", ".nav.yml"] }
-      - { from: "unit*",  to: courses/computer-science-1,          include: ["*.md", ".nav.yml"], exclude: "README.md" }
+      # Starter files ride along so each page can link them for direct
+      # download (no GitHub needed); they are public in the course repo.
+      - { from: "unit*",  to: courses/computer-science-1,          include: ["*.md", ".nav.yml", "*/starter/*"], exclude: ["README.md", "*.pyc"] }

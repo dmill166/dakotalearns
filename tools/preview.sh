@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Preview dakotalearns.com locally — INCLUDING unpushed course-repo work.
+# Preview dakotalearns.com locally - INCLUDING unpushed course-repo work.
 #
 # Syncs course prose from the local working trees (not GitHub), then serves
 # the site at http://127.0.0.1:8000 with live reload. Ctrl-C to stop.
@@ -17,7 +17,7 @@ SITE="$HOME/dev/dakotalearns"
 VENV="$HOME/.pyenv/versions/dakotalearns-site"
 
 if [ ! -x "$VENV/bin/mkdocs" ]; then
-    echo "Missing venv: $VENV — see the setup note in this script's header." >&2
+    echo "Missing venv: $VENV - see the setup note in this script's header." >&2
     exit 1
 fi
 

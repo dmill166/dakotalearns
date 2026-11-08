@@ -11,7 +11,7 @@ yourself before ``mkdocs serve`` to preview locally:
     python tools/sync_courses.py
     mkdocs serve
 
-To preview UNPUSHED local course work, point a course id at a local clone —
+To preview UNPUSHED local course work, point a course id at a local clone -
 files come from that working tree instead of a fresh GitHub clone:
 
     python tools/sync_courses.py \
@@ -19,7 +19,7 @@ files come from that working tree instead of a fresh GitHub clone:
 
 Page dates: for every synced ``*.md`` page, the source repo's real git history
 is stamped into front-matter as ``date_published`` (first commit) and
-``date_updated`` (last commit) — the site repo has no history for synced files,
+``date_updated`` (last commit) - the site repo has no history for synced files,
 so a build-time plugin would wrongly show the build date. The theme override
 (``overrides/main.html``) renders the line. A page opts out with
 ``page_dates: false`` in its front-matter; uncommitted files simply get no
@@ -89,10 +89,10 @@ def _inject_dates(target: Path, src_repo: Path, rel: str) -> None:
         return  # page opted out
     published, updated = _git_dates(src_repo, rel)
     if not published:
-        return  # uncommitted file — no history to report
+        return  # uncommitted file - no history to report
     # Each key is stamped independently: a hand-set date_published in the
     # source front-matter is honored (e.g. backdating a migrated page)
-    # while date_updated keeps tracking real git history — and vice versa.
+    # while date_updated keeps tracking real git history - and vice versa.
     lines = []
     if "date_published:" not in head:
         lines.append(f"date_published: {published}")
@@ -114,8 +114,8 @@ def _inject_dates(target: Path, src_repo: Path, rel: str) -> None:
 def sync_course(course: dict, local: dict[str, Path]) -> int:
     """Copy one course's content into docs/ per its manifest rules.
 
-    Clones the course repo (full history, for date stamping) — or uses a
-    local working tree if `local` maps this course id to a path — then
+    Clones the course repo (full history, for date stamping) - or uses a
+    local working tree if `local` maps this course id to a path - then
     applies each sync rule's include/exclude globs and stamps page dates.
 
     Args:
@@ -152,7 +152,7 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
             excludes = _as_list(rule.get("exclude"))
 
             # A glob `from` (e.g. "unit*") syncs every matching top-level
-            # directory to <to>/<dirname> — unit-count-agnostic, the same
+            # directory to <to>/<dirname> - unit-count-agnostic, the same
             # way the global nav includes courses via a glob.
             if any(ch in src_spec for ch in "*?["):
                 pairs = [
@@ -168,11 +168,11 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
                         if old.is_dir():
                             shutil.rmtree(old)
                 if not pairs:
-                    print(f"  (skip) {repo}:{src_spec} — no matches")
+                    print(f"  (skip) {repo}:{src_spec} - no matches")
             else:
                 pairs = [(src_root / src_spec, DOCS / rule["to"])]
                 if not pairs[0][0].is_dir():
-                    print(f"  (skip) {repo}:{src_spec} — not present")
+                    print(f"  (skip) {repo}:{src_spec} - not present")
                     continue
                 # Clean the destination so a source removal is reflected.
                 if pairs[0][1].exists():
@@ -187,6 +187,13 @@ def sync_course(course: dict, local: dict[str, Path]) -> int:
     return copied
 
 
+def _matches(path: Path, rel: Path, pattern: str) -> bool:
+    """Match a sync glob against a file name, or its path if it has a /."""
+    if "/" in pattern:
+        return fnmatch.fnmatch(rel.as_posix(), pattern)
+    return fnmatch.fnmatch(path.name, pattern)
+
+
 def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
     """Copy one directory tree per the include/exclude globs; stamp dates.
 
@@ -196,8 +203,12 @@ def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
         src_root: Course repo root (for repo-relative paths and git
             date lookups).
         repo: "owner/name" label used in the log lines.
-        includes: Filename globs a file must match to be copied.
-        excludes: Filename globs that exclude a file.
+        includes: Globs a file must match to be copied.
+        excludes: Globs that exclude a file.
+
+    A glob without a slash matches the file name (``*.md``). A glob with
+    a slash matches the path relative to ``src_dir`` (``*/starter/*``),
+    so a rule can pick files by the folder they live in.
 
     Returns:
         The number of files copied.
@@ -206,11 +217,11 @@ def _copy_tree(src_dir, dest_dir, src_root, repo, includes, excludes) -> int:
     for path in sorted(src_dir.rglob("*")):
         if not path.is_file():
             continue
-        if not any(fnmatch.fnmatch(path.name, pat) for pat in includes):
-            continue
-        if any(fnmatch.fnmatch(path.name, pat) for pat in excludes):
-            continue
         rel = path.relative_to(src_dir)
+        if not any(_matches(path, rel, pat) for pat in includes):
+            continue
+        if any(_matches(path, rel, pat) for pat in excludes):
+            continue
         target = dest_dir / rel
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(path, target)
@@ -226,7 +237,7 @@ def main() -> int:
     """Parse CLI args, read the manifest, and sync every course.
 
     Returns:
-        Process exit code (always 0 — a missing or empty manifest is
+        Process exit code (always 0 - a missing or empty manifest is
         a no-op, not an error).
     """
     parser = argparse.ArgumentParser(description=__doc__)

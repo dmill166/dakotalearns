@@ -6,14 +6,16 @@
   Dates: tools/sync_courses.py stamps date_published / date_updated into
   synced course pages' front-matter from the SOURCE repo's real git history
   (the site repo has none for synced files). "Last updated" renders only
-  when it's genuinely later than the published date — a hand-set (e.g.
+  when it's genuinely later than the published date - a hand-set (e.g.
   future-dated) publish date otherwise shows an older "updated" beside it,
   which reads as broken. Pages without date keys just show no dates.
 
-  Feedback: every page gets a "Feedback / report a problem" link that
-  opens a prefilled GitHub issue on the site repo with the page URL and
-  title baked in, so reports arrive attached to the page they're about.
-  (Requires a GitHub account — the issue form says so on arrival.)
+  Feedback: every page offers two ways to report, both prefilled with the
+  page's title and URL so reports arrive attached to the page they're
+  about. Email (mailto) needs no account and opens the reader's default
+  mail app; the address is the visible link text, so webmail-only readers
+  can copy it. GitHub opens a prefilled issue on the site repo (needs a
+  GitHub account; the issue form says so on arrival).
 #}
 {% block content %}
   {{ super() }}
@@ -28,9 +30,10 @@
       {%- endif %}
     </span>
     <span class="dl-page-feedback">
-      <a href="https://github.com/dmill166/dakotalearns/issues/new?title={{ ('Feedback: ' ~ page.title) | urlencode }}&amp;body={{ ('Page: ' ~ page.canonical_url ~ ' — what did you expect, and what happened?') | urlencode }}" rel="noopener">
-        Feedback / report a problem
-      </a>
+      Feedback:
+      <a href="mailto:hello@dakotalearns.com?subject={{ ('Feedback: ' ~ page.title) | urlencode }}&amp;body={{ ('Page: ' ~ page.canonical_url ~ '\r\n\r\nWhat did you expect, and what happened?\r\n') | urlencode }}" aria-label="Send feedback about this page by email to hello@dakotalearns.com">hello@dakotalearns.com</a>
+      ·
+      <a href="https://github.com/dmill166/dakotalearns/issues/new?title={{ ('Feedback: ' ~ page.title) | urlencode }}&amp;body={{ ('Page: ' ~ page.canonical_url ~ ' - what did you expect, and what happened?') | urlencode }}" rel="noopener" aria-label="Report a problem with this page on GitHub (GitHub account needed)">GitHub</a>
     </span>
   </p>
 {% endblock %}

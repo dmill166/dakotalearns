@@ -1,5 +1,5 @@
 /**
- * Dakota Learns — self-check renderers: quiz (single-answer MCQ) and
+ * Dakota Learns - self-check renderers: quiz (single-answer MCQ) and
  * Parsons (order-the-lines).
  *
  * Data is authored as fenced ```quiz / ```parsons JSON blocks in the COURSE
@@ -12,11 +12,11 @@
  *
  * Accessibility (cs-teaching/a11y.md): native radios/buttons only (keyboard
  * + focus for free), visible focus ring, feedback through aria-live, and
- * result state carried by icon + words + color — never color alone.
+ * result state carried by icon + words + color - never color alone.
  * Drag-and-drop always has a keyboard equivalent (move up/down buttons).
  *
  * Documentation standard: JSDoc headers on every function (the JS
- * counterpart of our PEP 8 + docstrings rule for Python — see
+ * counterpart of our PEP 8 + docstrings rule for Python - see
  * cs-teaching/STYLE.md "Code style").
  */
 (function () {
@@ -94,8 +94,13 @@
   /* ────────────────────────────────────────────────────────────────────
    * Quiz widget
    * Data shape: {title?, questions: [{prompt, options[], answer,
-   * explain?, hint?}]}
-   * `answer` is the zero-based index into `options`. Learners may retry
+   * explain?, hint?, fixed_order?}]}
+   * `answer` is the correct option's text, matching one entry of
+   * `options` exactly. Options are shuffled on every load unless
+   * `fixed_order` is true (True/False pairs, deliberate sequences).
+   * A question whose answer matches no option leaves the whole block
+   * raw, with a console warning (the site gate fails such blocks at
+   * build time). Learners may retry
    * until correct; a wrong pick never reveals the answer. `hint`
    * renders as a collapsed "Need a hint?" toggle available before
    * answering (a native <details>, keyboard-accessible by default).
@@ -109,6 +114,13 @@
    */
   function buildQuiz(el, data) {
     if (!data || !Array.isArray(data.questions)) return;
+    var bad = data.questions.filter(function (q) {
+      return !Array.isArray(q.options) || q.options.indexOf(q.answer) === -1;
+    });
+    if (bad.length) {
+      console.warn("Dakota Learns quiz: answer matches no option; block left as-is.", bad);
+      return;
+    }
     var root = document.createElement("div");
     root.className = "dl-widget dl-quiz";
     if (data.title) {
@@ -126,7 +138,8 @@
       lg.innerHTML = (data.questions.length > 1 ? qi + 1 + ". " : "") + inline(q.prompt);
       fs.appendChild(lg);
 
-      q.options.forEach(function (opt, oi) {
+      displayOrder(q).forEach(function (oi) {
+        var opt = q.options[oi];
         var label = document.createElement("label");
         label.className = "dl-option";
         var input = document.createElement("input");
@@ -163,10 +176,10 @@
           setFeedback(fb, false, "Pick an answer first.");
           return;
         }
-        if (Number(picked.value) === q.answer) {
+        if (q.options[Number(picked.value)] === q.answer) {
           setFeedback(fb, true, "<strong>Correct!</strong>" + (q.explain ? " " + inline(q.explain) : ""));
         } else {
-          setFeedback(fb, false, "Not quite — try again.");
+          setFeedback(fb, false, "Not quite, try again.");
         }
       });
       fs.appendChild(btn);
@@ -175,6 +188,24 @@
     });
 
     el.replaceWith(root);
+  }
+
+  /**
+   * Choose the order a question's options are shown in.
+   * @param {Object} q - One quiz question.
+   * @returns {number[]} Indexes into `q.options`: authored order when
+   *   `q.fixed_order` is true, otherwise a fresh random shuffle.
+   */
+  function displayOrder(q) {
+    var idx = q.options.map(function (_, i) { return i; });
+    if (q.fixed_order === true) return idx;
+    for (var j = idx.length - 1; j > 0; j--) {
+      var k = Math.floor(Math.random() * (j + 1));
+      var t = idx[j];
+      idx[j] = idx[k];
+      idx[k] = t;
+    }
+    return idx;
   }
 
   /* ────────────────────────────────────────────────────────────────────
@@ -309,7 +340,7 @@
       if (right === keys.length) {
         setFeedback(fb, true, "<strong>Correct order!</strong>");
       } else {
-        setFeedback(fb, false, "Not quite — " + right + " of " + keys.length + " lines are in the right spot. Keep going.");
+        setFeedback(fb, false, "Not quite: " + right + " of " + keys.length + " lines are in the right spot. Keep going.");
       }
     });
     var reset = document.createElement("button");
