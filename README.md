@@ -1,18 +1,29 @@
 # dakotalearns
 
-Source for **[dakotalearns.com](https://dakotalearns.com)** — the public home for Dakota Learns: free, beginner-first computer science taught in public. Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on GitHub Pages.
+<!-- author_status: dakota-authored | section: opening | source: SITE-A1, SITE-A3, SITE-A7 | edited and approved by Dakota 2026-11-09 -->
+
+Oh, hello there! 👋 This is the source behind **[dakotalearns.com](https://dakotalearns.com)**, the free, beginner-first home where I teach computer science, and other topics eventually, in public (and even keep learning it right alongside you).
+
+If you're here to *learn*, head over to the site; that's where everything lives and reads best. If you're curious how it's put together (or you teach and wonder whether you could build something like it), you're in the right place. No fancy setup needed: I've built all of this with an internet connection and my laptop, and you can run it the same way.
+
+<!-- author_status: assistant-shared | section: technical reference: run locally, structure, deploying, sync, navigation, licensing (Dakota's decisions, assistant prose; reviewed and approved by Dakota 2026-11-09) -->
+
+It's built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Run it locally
 
 ```bash
+# Windows (PowerShell): activate with .venv\Scripts\Activate.ps1, and type python instead of python3
 python3 -m venv .venv && source .venv/bin/activate    # optional
-pip install "mkdocs-material==9.7.6" "mkdocs-awesome-nav==3.3.0"   # pinned (matches CI)
-python tools/sync_courses.py                          # pull course prose (see below)
+pip install -r requirements.txt                       # pinned versions, same file CI uses
+python3 tools/sync_courses.py                         # pull course pages (see below)
+python3 tools/check_content.py                        # the same content gate CI runs
 mkdocs serve        # live preview at http://127.0.0.1:8000
 ```
 
-> Run `tools/sync_courses.py` before serving — course prose lives in the course
-> repos, not here, and the sync pulls it into `docs/`. CI does this automatically.
+> Course pages come from the course repos (see [Course content](#course-content)).
+> To preview course work you haven't pushed yet, run `bash tools/preview.sh` instead
+> of the plain sync.
 
 Build a static copy into `site/`:
 
@@ -24,42 +35,47 @@ mkdocs build --strict
 
 ```
 dakotalearns/
-├── mkdocs.yml                 # site config, theme, nav, plugins
-├── courses.yml                # content manifest: which repos to pull prose from
-├── tools/sync_courses.py      # build-time sync (course repos → docs/)
+├── mkdocs.yml                 # site config, theme, plugins, scripts
+├── courses.yml                # content manifest: which repos to pull pages from
+├── requirements.txt           # pinned build dependencies (CI + local)
+├── tools/
+│   ├── sync_courses.py        # build-time sync (course repos → docs/)
+│   ├── check_content.py       # content gate: provenance, accessibility, quiz data
+│   └── preview.sh             # local preview including unpushed course work
+├── includes/abbreviations.md  # site-wide abbreviation tooltips
+├── overrides/main.html        # theme override (page dates + feedback footer)
 ├── docs/                      # site source (hand-authored)
 │   ├── index.md               # landing
 │   ├── start-here.md          # newcomer path
 │   ├── about.md               # project + licensing + support
+│   ├── glossary.md            # student vocabulary
+│   ├── disclaimers.md         # affiliation, affiliate links (footer-linked)
 │   ├── courses/               # course catalog + per-course hubs
 │   │   ├── index.md
 │   │   └── computer-science-1/
 │   │       ├── index.md       # hand-authored hub
-│   │       └── syllabus/ …    # SYNCED from the course repo (git-ignored)
-│   ├── guides/                # standalone guides (install Python, …)
+│   │       └── syllabus/, unit…/   # SYNCED from the course repo (git-ignored)
+│   ├── guides/                # standalone guides (install Python, terminal, …)
 │   ├── blog/                  # build-in-public posts (Material blog plugin)
-│   ├── stylesheets/extra.css  # brand tweaks
+│   ├── javascripts/           # quiz + Parsons, checklists, glossary filter, starter downloads
+│   ├── stylesheets/extra.css  # brand + accessibility color tweaks
 │   └── CNAME                  # custom domain (dakotalearns.com)
-└── .github/workflows/deploy.yml   # sync + build + deploy to GitHub Pages
+└── .github/workflows/deploy.yml   # sync + content gate + build + deploy to GitHub Pages
 ```
 
 ## Deploying
 
-Pushes to `main` build and deploy automatically (GitHub Actions → Pages). First-time domain + HTTPS setup is in **[DEPLOY.md](DEPLOY.md)**.
+Pushes to `main` build and deploy automatically (GitHub Actions → Pages). Every build syncs the course pages, then runs the content gate (`tools/check_content.py`) before anything publishes: an unreviewed draft, an unmarked page, a diagram or image without a text description, or a quiz answer that matches none of its options stops the deploy, and the live site keeps its last good version. First-time domain + HTTPS setup is in **[DEPLOY.md](DEPLOY.md)**.
 
-## Relationship to the course repos
+## Course content
 
-This site is the **read surface** — not a second copy. Each course's **public repo is the single source of truth** for that course's prose *and* code (e.g. [`computer-science-1`](https://github.com/dmill166/computer-science-1)). At build time the site **pulls the prose from those repos** and renders it here; the **runnable code** stays in the repo to grab as a ZIP. Nothing is authored or maintained in two places.
+Course pages aren't stored here. Each course's **public repo is the single source of truth** for its prose *and* code (e.g. [`computer-science-1`](https://github.com/dmill166/computer-science-1)); this site is the read surface. Before every build, [`tools/sync_courses.py`](tools/sync_courses.py) reads [`courses.yml`](courses.yml) and copies each course's pages and `starter/` folders into `docs/`, so a page can offer its starter files as direct downloads. The synced paths are git-ignored, so nothing is authored or maintained in two places. The whole course is also available from its repo as a ZIP.
 
-## Course content sync
-
-Course prose is **not** stored in this repo. [`tools/sync_courses.py`](tools/sync_courses.py) reads [`courses.yml`](courses.yml) and copies each course's prose (syllabus, lectures, labs, assignment prompts) from its source repo into `docs/` before the site builds. The deploy workflow runs it automatically, and the synced paths are git-ignored so they're never committed here.
-
-Add a course by appending one block to `courses.yml` (repo, ref, and a `sync` map) — no workflow changes needed. The integration is built once and is course-count-agnostic.
+To add a course, append one block to `courses.yml` (repo, ref, and a `sync` map). No workflow changes are needed.
 
 ## Navigation
 
-Navigation is generated by the [`awesome-nav`](https://lukasgeiter.github.io/mkdocs-awesome-nav) plugin from the docs tree plus per-directory `.nav.yml` files — there is no hand-maintained `nav:` in `mkdocs.yml`. The global order lives in [`docs/.nav.yml`](docs/.nav.yml); each section's order and titles live in a `.nav.yml` inside that folder. A course's buckets (`Syllabus`, `Lectures`, …) and their ordering are set by `.nav.yml` files **in the course repo** that sync in with the prose, so the course owns its own navigation. New pages and new course folders appear automatically — drop a unit's markdown in the course repo and it shows up in the nav, naturally sorted, with no edits here.
+Navigation is generated by the [`awesome-nav`](https://lukasgeiter.github.io/mkdocs-awesome-nav) plugin from the docs tree plus per-directory `.nav.yml` files; there is no hand-maintained `nav:` in `mkdocs.yml`. The global order lives in [`docs/.nav.yml`](docs/.nav.yml); each section's order and titles live in a `.nav.yml` inside that folder. A course's buckets (`Syllabus`, `Lectures`, …) and their ordering are set by `.nav.yml` files **in the course repo** that sync in with the prose, so the course owns its own navigation. New pages and new course folders appear automatically: drop a unit's markdown in the course repo and it shows up in the nav, naturally sorted, with no edits here.
 
 ## Licensing
 
@@ -67,3 +83,7 @@ Navigation is generated by the [`awesome-nav`](https://lukasgeiter.github.io/mkd
 - Code: [PolyForm Noncommercial 1.0.0](LICENSE)
 
 Original work only; third-party materials are referenced, not reproduced ([policy](https://github.com/dmill166/cs-teaching/blob/main/COPYRIGHT_POLICY.md)).
+
+<!-- author_status: dakota-authored | section: closing | source: SITE-A7 | approved by Dakota 2026-11-09 -->
+
+Thanks for stopping by! Let's learn something together! 👨‍🏫
