@@ -54,7 +54,7 @@ A desktop shortcut works because it remembers exactly where one program lives. P
 
 ## Shell
 
-The program that reads the commands you type and runs them: usually **zsh** or **bash** on macOS and Linux, **PowerShell** or **Command Prompt** on Windows. Python has its own shell too: its `>>>` prompt, which runs Python instead of system commands.
+The program that reads the commands you type and runs them: usually **zsh** or **bash** on macOS and Linux, **PowerShell** on Windows. Python has its own shell too: its `>>>` prompt, which runs Python instead of system commands.
 
 ## Terminal
 
