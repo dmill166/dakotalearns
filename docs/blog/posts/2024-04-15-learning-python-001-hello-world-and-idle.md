@@ -13,19 +13,19 @@ Welcome back! I'm very excited to share the following blog post with all of you 
 
 Rather than waste any more time, let's get right into it - "Learning Python 001: "Hello, World!" and IDLE"!
 
-1. [🔙 Previous Blog Post(s)](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#previous-blog-post-s)
-2. [⁉️ IDLE (I thought it was IDE?)](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#idle-i-thought-it-was-ide)
-3. [🔢 Numeric Operators in Python](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#numeric-operators-in-python)
-4. [💁‍♂️ Rite of Passage ("Hello, World!")](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#rite-of-passage-hello-world)
-5. [💭 Thoughts from SkyNet](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#thoughts-from-skynet)
-6. [📒 Summary/Links](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#summary-links)
-   1. [Summary](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#summary)
-   2. [Links](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#links)
-7. [✅ Conclusions](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/#conclusions)
+1. [🔙 Previous Blog Post(s)](#previous-blog-posts)
+2. [⁉️ IDLE (I thought it was IDE?)](#idle-i-thought-it-was-ide)
+3. [🔢 Numeric Operators in Python](#numeric-operators-in-python)
+4. [💁‍♂️ Rite of Passage ("Hello, World!")](#rite-of-passage-hello-world)
+5. [💭 Thoughts from SkyNet](#thoughts-from-skynet)
+6. [📒 Summary/Links](#summarylinks)
+   1. [Summary](#summary)
+   2. [Links](#links)
+7. [✅ Conclusions](#conclusions)
 
 ## 🔙 Previous Blog Post(s)
 
-This guide is intended to follow my last two posts on [Installing Visual Studio Code](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/) and [Installing Python 3.x](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-%f0%9f%90%8d/). If you haven't read those, I'd highly encourage you to start with those so that you 1) Have an IDE installed for your own Python coding progress and 2) Have Python installed (an understandably necessary pre-requisite for this post on learning to code within Python).
+This guide is intended to follow my last two posts on [Installing Visual Studio Code](2024-03-25-installation-guide-microsoft-visual-studio-code-vs-code.md) and [Installing Python 3.x](2024-04-01-installation-guide-python-3-x.md). If you haven't read those, I'd highly encourage you to start with those so that you 1) Have an IDE installed for your own Python coding progress and 2) Have Python installed (an understandably necessary pre-requisite for this post on learning to code within Python).
 
 ## ⁉️ IDLE (I thought it was IDE?)
 
@@ -37,13 +37,13 @@ If it comes with all these things, I just KNOW you're wondering why I wrote a pr
 
 To launch IDLE, simply search your Windows apps, Mac Spotlight, or other mechanism for the IDLE application. The resulting application that opens should be similar to this:
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2024/04/image.png?w=1024)
+![The IDLE Shell 3.9.13 window on macOS: the Python version banner, then an empty >>> prompt waiting for input.](../../assets/blog/learning-python-001-hello-world-and-idle/idle-shell-empty.png)
 
 ## 🔢 Numeric Operators in Python
 
 The ">>> " signifies that the IDLE application is waiting on some input from you. Let's see if it's 'smarter than a 5th grader' with some various arithmetic.
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2024/04/image-1.png?w=1024)
+![The IDLE shell after a series of arithmetic expressions: 5 + 5 gives 10, 3 - 2 gives 1, 2 * 6 gives 12, 15 / 5 gives 3.0, 16 // 4 gives 4, 13 % 4 gives 1, then -1, +1, abs(-50) = 50, int(5.4) = 5, float(1) = 1.0, complex(1, 1) = (1+1j), divmod(20, 3) = (6, 2), pow(2, 5) = 32, and 2**5 = 32.](../../assets/blog/learning-python-001-hello-world-and-idle/idle-shell-arithmetic.png)
 
 Wow, that IDLE sure knows its mathematics! This also serves as a good summary of [most of the simple mathematical operations available in Python](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex). Be sure to take careful note of this as we'll be using these in future blog posts / practice problems! Once more to explain these expressions:
 
@@ -108,8 +108,8 @@ You can read the full conversation [HERE](https://chat.openai.com/share/93c97f48
 
 ### Links
 
-* [Prior Blog Post on Installing Microsoft Visual Studio Code (VS Code)](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/)
-* [Prior Blog Post on Installing Python 3.x](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-%f0%9f%90%8d/)
+* [Prior Blog Post on Installing Microsoft Visual Studio Code (VS Code)](2024-03-25-installation-guide-microsoft-visual-studio-code-vs-code.md)
+* [Prior Blog Post on Installing Python 3.x](2024-04-01-installation-guide-python-3-x.md)
 * [Python Documentation on IDLE](https://docs.python.org/3/library/idle.html)
 * [Official Python Website](https://www.python.org/)
 * [Official Visual Studio Code IDE Website](https://code.visualstudio.com/)

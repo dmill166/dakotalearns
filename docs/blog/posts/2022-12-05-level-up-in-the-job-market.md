@@ -13,14 +13,14 @@ Hello again, fellow denizens of the Internet! Thank you for visiting again/for t
 
 As I was thinking over this last week about what my next post would be, I kept coming to a road block. In a technical sense, I did not feel I learned anything ground-breaking or revelatory. Additionally, it was a busy time for me in a non-technical way (things outside of work). However, a couple of conversations with friends stirred up this sense of déjà vu; I caught myself repeating advice and conversation topics time and time again. Following the [DRY (Don't Repeat Yourself) principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), it was time to turn it into a blog post! Much like Elon Musk's timeline (calling out the [Oct 27 - Nov 17 rapidly successive series of headlines](https://www.ign.com/articles/elon-musks-twitter-takeover-and-the-chaos-that-followed-the-complete-timeline)), I will stop 'twit'ling my thumbs and get to the topic of levelling up in the job market!
 
-1. [Assess the current-state](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#assess-the-current-state)
-2. [Identify opportunities and level up](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#identify-opportunities-and-level-up)
-3. [Plan, plan, plan](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#plan-plan-plan)
-4. [Build the habit(s) routine(s)](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#build-the-habit-s-routine-s)
-5. [Execute](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#execute)
-6. [Persevere](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#persevere)
-7. [Summary and Links](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#summary-and-links)
-8. [Conclusion](https://dakotalearns.wordpress.com/2022/12/05/level-up-in-the-job-market/#conclusion)
+1. [Assess the current-state](#assess-the-current-state)
+2. [Identify opportunities and level up](#identify-opportunities-and-level-up)
+3. [Plan, plan, plan](#plan-plan-plan)
+4. [Build the habit(s) routine(s)](#build-the-habits-routines)
+5. [Execute](#execute)
+6. [Persevere](#persevere)
+7. [Summary and Links](#summary-and-links)
+8. [Conclusion](#conclusion)
 
 ![](https://dakotalearns.wordpress.com/wp-content/uploads/2022/12/51807778847_99e0c7bec4_o.jpg?w=1024)
 
@@ -87,10 +87,6 @@ Use of Digital Technology
 Situational Adaptability.
 
 ## Plan, plan, plan
-
-![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Why-are-goals-important.jpg)
-
-<https://commons.wikimedia.org/wiki/File:Why-are-goals-important.jpg>
 
 In order to progress with something in a significant fashion (such as the personal and professional development we've been discussing), you need an organized approach to meet these goals. That's where S.M.A.R.T. goals come in. I'll quote [Atlassian's article](https://www.atlassian.com/blog/productivity/how-to-write-smart-goals) as I don't think I can say it any better:
 

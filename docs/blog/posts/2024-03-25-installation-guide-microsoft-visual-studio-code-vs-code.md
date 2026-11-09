@@ -9,20 +9,20 @@ categories:
 
 Welcome back to the blog! 👋
 
-I've talked with friends and coworkers a lot since my [recent blog post](https://dakotalearns.wordpress.com/2024/03/11/personal-progress-update-2-2024-03-11/); in these discussions, I realized a central element was the fact we were ***communicating***. Be it body language, verbal, written, or other mediums of communication, all of those conversations enabled myself and those around me to exchange information and share knowledge. This led me to think about my desire to start a Python installation and series of articles to help one learn Python - in order for these to be successful, we need to be speaking the same language. The best place to start with that in a programming context is with the installation of your first IDE. Let's get started!
+I've talked with friends and coworkers a lot since my [recent blog post](2024-03-11-personal-progress-update-2-2024-03-11.md); in these discussions, I realized a central element was the fact we were ***communicating***. Be it body language, verbal, written, or other mediums of communication, all of those conversations enabled myself and those around me to exchange information and share knowledge. This led me to think about my desire to start a Python installation and series of articles to help one learn Python - in order for these to be successful, we need to be speaking the same language. The best place to start with that in a programming context is with the installation of your first IDE. Let's get started!
 
 <!-- more -->
 
-1. [What is an IDE?](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#what-is-an-ide)
-2. [What is Visual Studio Code?](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#what-is-visual-studio-code)
-3. [Why Use VS Code?](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#why-use-vs-code)
-4. [Windows Installation Instructions:](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#windows-installation-instructions)
-5. [Mac Installation Instructions:](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#mac-installation-instructions)
-6. [Process Complete](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#process-complete)
-7. [Summary/Links](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#summary-links)
-   1. [Summary](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#summary)
-   2. [Links](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#links)
-8. [Conclusion](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/#conclusion)
+1. [What is an IDE?](#what-is-an-ide)
+2. [What is Visual Studio Code?](#what-is-visual-studio-code)
+3. [Why Use VS Code?](#why-use-vs-code)
+4. [Windows Installation Instructions:](#windows-installation-instructions)
+5. [Mac Installation Instructions:](#mac-installation-instructions)
+6. [Process Complete](#process-complete)
+7. [Summary/Links](#summarylinks)
+   1. [Summary](#summary)
+   2. [Links](#links)
+8. [Conclusion](#conclusion)
 
 ## What is an IDE?
 
@@ -90,7 +90,7 @@ An IDE (Integrated Development Environment) is a powerful tool for those new or 
 
 ### Links
 
-* [Recent Blog Post](https://dakotalearns.wordpress.com/2024/03/11/personal-progress-update-2-2024-03-11/): If you missed it, my last post was in the "Personal Progress Update" series giving you the inside scoop on my latest personal, professional, and academic goals!
+* [Recent Blog Post](2024-03-11-personal-progress-update-2-2024-03-11.md): If you missed it, my last post was in the "Personal Progress Update" series giving you the inside scoop on my latest personal, professional, and academic goals!
 * [Codecademy IDE Definition](https://www.codecademy.com/article/what-is-an-ide): I really felt their definition said it best in a succinct manner, so I borrowed it! I still encourage you to go check out their article, too!
 * [Microsoft VS Code Homepage](https://code.visualstudio.com/): From here, you can quickly download VS Code, navigate to recent releases, or see what's new in their latest patches!
 

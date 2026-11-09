@@ -12,23 +12,23 @@ categories:
 
 Welcome back so soon after the last post!
 
-I had a lot of fun writing the [Installation Guide for VS Code](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/); so much, in fact, that I didn't want to wait around too much before I created the guide meant to follow it - an Installation Guide for Python 3.x!
+I had a lot of fun writing the [Installation Guide for VS Code](2024-03-25-installation-guide-microsoft-visual-studio-code-vs-code.md); so much, in fact, that I didn't want to wait around too much before I created the guide meant to follow it - an Installation Guide for Python 3.x!
 
 <!-- more -->
 
 This post, I'll dive into what Python is, why I'm choosing it, and how to install it on Windows and Mac operating systems. We'll have a guest appearance from ChatGPT and then the usual wrap-up. Without further ado, let's get started!
 
-1. [🐍 What is Python?](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#what-is-python)
-2. [⍰ Why have a series on Python?](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#why-have-a-series-on-python)
-3. [📋 Installation Steps](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#installation-steps)
-   1. [🪟 Windows](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#windows)
-   2. [🍎 MacOS](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#macos)
-   3. [🤩 Confirming Successful Installation](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#confirming-successful-installation)
-4. [🤖 ChatGPT Thoughts on Python](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#chatgpt-thoughts-on-python)
-5. [Summary/Links](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#summary-links)
-   1. [📝 Summary](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#summary)
-   2. [🔗 Links](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#links)
-6. [🏁 Conclusion](https://dakotalearns.wordpress.com/2024/04/01/installation-guide-python-3-x-🐍/#conclusion)
+1. [🐍 What is Python?](#what-is-python)
+2. [⍰ Why have a series on Python?](#why-have-a-series-on-python)
+3. [📋 Installation Steps](#installation-steps)
+   1. [🪟 Windows](#windows)
+   2. [🍎 MacOS](#macos)
+   3. [🤩 Confirming Successful Installation](#confirming-successful-installation)
+4. [🤖 ChatGPT Thoughts on Python](#chatgpt-thoughts-on-python)
+5. [Summary/Links](#summarylinks)
+   1. [📝 Summary](#summary)
+   2. [🔗 Links](#links)
+6. [🏁 Conclusion](#conclusion)
 
 ## 🐍 What is Python?
 
@@ -134,7 +134,7 @@ Discussing with ChatGPT, I received similar answers to that of my own research. 
 
 ### 🔗 Links
 
-* [Installation Guide for VS Code](https://dakotalearns.wordpress.com/2024/03/25/installation-guide-microsoft-visual-studio-code-vs-code/). I had so much fun writing this last post, it motivated me to write this one even sooner!
+* [Installation Guide for VS Code](2024-03-25-installation-guide-microsoft-visual-studio-code-vs-code.md). I had so much fun writing this last post, it motivated me to write this one even sooner!
 * [Python Blurbs](https://www.python.org/doc/essays/blurb/). The official Python site gave a great description of what Python is and made it easy for me to pick elements to break out and explain further for your reading.
 * [Official Python website](https://www.python.org/). I reference this for where to download Python. There may be other ways (e.g., package managers), but call me old-school that I like to navigate to the trusted originator of the information.
 * [Full ChatGPT Conversation](https://chat.openai.com/c/3bf931f9-c045-4101-b7ee-abcdc0ae4b52). I ask questions such as "What is Python? Explain it like I'm 5", "What are use-cases for learning Python", and "How do I install Python". ChatGPT handles it all with excellent and meaningful responses (in this case... 👀).
@@ -145,6 +145,6 @@ I started this post within four hours of publishing my last post. The energy and
 
 One realization I had along the way is just how many steps there were to installing Python (on both Windows and macOS). I expected macOS to have half as many steps as Windows and was mistaken. However, it was very satisfying to see the same keyboard shortcut opens the VS Code terminal across environments to validate a successful installation.
 
-Another realization was the fact [I have previously written a Python Installation Guide blog post](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/) 😳 even more ironically, this post was nearly a year ago to the day (published April 3, 2023 whereas this post was published April 1, 2024). I feel that this guide is a more thorough step-by-step guide than my previous iteration as well as more high-level on WHY you would want to install Python to begin; however, last year's post has a great explanation of the Windows PATH variable and how that comes into play with a Windows Python installation (which I only casually cover here). This is certainly a first (writing a blog post on a topic I've previously covered exactly) and so I'll leave both posts for now.
+Another realization was the fact [I have previously written a Python Installation Guide blog post](2023-04-03-installation-guide-for-python-macos-windows.md) 😳 even more ironically, this post was nearly a year ago to the day (published April 3, 2023 whereas this post was published April 1, 2024). I feel that this guide is a more thorough step-by-step guide than my previous iteration as well as more high-level on WHY you would want to install Python to begin; however, last year's post has a great explanation of the Windows PATH variable and how that comes into play with a Windows Python installation (which I only casually cover here). This is certainly a first (writing a blog post on a topic I've previously covered exactly) and so I'll leave both posts for now.
 
 I've already started the outline for the Learning Python series and hope to start on these posts in the coming days. I'll also be planning to include practice exercises and publish those solutions in the subsequent blog posts. For now, as the saying goes, "that's all she wrote". Until the next time we learn (or discuss) something together, have a wonderful Monday!

@@ -13,13 +13,13 @@ Now that the food coma has subsided, welcome back to my blog!
 
 I've decided for the next topic to discuss virtual environments - what they are, why we [want to] use them, and how to set them up (in MacOS and Windows environments). This is a topic I've had professional and academic use-cases for multiple times in the past couple of years where I continue to Google how to do it each time (the examples are just far enough apart that I can't recall it by the next need arising). Like the awkward greeting with some family at the start of the holiday season, let's get this over with!
 
-1. [A Virtual Environment? But I live in a real one!](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#a-virtual-environment-but-i-live-in-a-real-one)
-2. [A Virtual Environment? But I live in a real one! - Attempt #2](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#a-virtual-environment-but-i-live-in-a-real-one-attempt-2)
-3. [(Mac) Great, how do I do it?](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#mac-great-how-do-i-do-it)
-4. [(Windows) Great, how do I do it?](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#windows-great-how-do-i-do-it)
-5. [Is that it?](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#is-that-it)
-6. [Summary and Links:](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#summary-and-links)
-7. [Conclusion](https://dakotalearns.wordpress.com/2022/11/26/virtual-environments-what-why-how/#conclusion)
+1. [A Virtual Environment? But I live in a real one!](#a-virtual-environment-but-i-live-in-a-real-one)
+2. [A Virtual Environment? But I live in a real one! - Attempt #2](#a-virtual-environment-but-i-live-in-a-real-one-attempt-2)
+3. [(Mac) Great, how do I do it?](#mac-great-how-do-i-do-it)
+4. [(Windows) Great, how do I do it?](#windows-great-how-do-i-do-it)
+5. [Is that it?](#is-that-it)
+6. [Summary and Links:](#summary-and-links)
+7. [Conclusion](#conclusion)
 
 ## A Virtual Environment? But I live in a real one!
 

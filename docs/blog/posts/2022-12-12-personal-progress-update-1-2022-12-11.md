@@ -13,11 +13,11 @@ Hello again! Thank you for stopping by my blog again.
 
 This week, I want to kick off a new type of blog post - Personal Progress Updates. In the same ways I've shared/compiled some tips for goal-setting and accomplishment, I also regularly review these and revise my own approach towards meeting my goals. As I'm on my own journey (professionally, personally, academically), I'd like to share that with you, my readers. It'll be an intermittent frequency at first (coming in handy this week, as I haven't gotten to prepare a new "learned" topic... oops), but may find a regular cadence in the future (such as monthly).
 
-1. [Professional](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/#professional)
-2. [Personal](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/#personal)
-3. [Academic](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/#academic)
-4. [Summary/Links](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/#summary-links)
-5. [Conclusion](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/#conclusion)
+1. [Professional](#professional)
+2. [Personal](#personal)
+3. [Academic](#academic)
+4. [Summary/Links](#summarylinks)
+5. [Conclusion](#conclusion)
 
 ## Professional
 
@@ -54,7 +54,7 @@ Personal ventures have included a physical goal, a technological goal, and an em
 
 As the new semester approaches (Jan 9th, 2023), I hope to approach this semester with an open mind and good ~~habits~~ routines in place to obtain everything I can from this academic experience.
 
-For those of you who don't know, I am pursuing my Master's degree in Computer Science from the [Online Master of Science Computer Science (OMS CS) program at Georgia Institute of Technology (Georgia Tech)](https://omscs.gatech.edu/home). I have yet to complete my first class (as mentioned above, this semester became too busy and I had to drop my course to best handle other commitments), but am ecstatic to be on this learning venture.
+For those of you who don't know, I am pursuing my Master's degree in Computer Science from the [Online Master of Science Computer Science (OMS CS) program at Georgia Institute of Technology (Georgia Tech)](https://omscs.gatech.edu/). I have yet to complete my first class (as mentioned above, this semester became too busy and I had to drop my course to best handle other commitments), but am ecstatic to be on this learning venture.
 
 For the Fall 2022 term, I had tried [CS 6750: Human-Computer Interaction](https://omscs.gatech.edu/cs-6750-human-computer-interaction). Now that life is a bit more calm, I'd like to build some confidence by starting (and completing) a course within my comfort zone: [CS 6400: Database System Concepts and Design](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design). Even with my background enjoying a focus on querying with Structured Query Language (SQL) and some Extract-Transform-Load (ETL) approaches, I would like to take away more efficient ways to perform these tasks and learn about other roles that relate to databases (should I want to pivot again 😉).
 
@@ -77,7 +77,7 @@ For the Fall 2022 term, I had tried [CS 6750: Human-Computer Interaction](https:
     - [AWS Certified DevOps Engineer](https://aws.amazon.com/certification/certified-devops-engineer-professional/?ch=sec&sec=rmg&d=1)
     - [AWS Certified Database – Specialty](https://aws.amazon.com/certification/certified-database-specialty/?ch=sec&sec=rmg&d=1)
 * [Python Programming by Zelle](https://mcsp.wartburg.edu/zelle/python/)
-* [OMSCS (Master's in CS) @ Georgia Tech](https://omscs.gatech.edu/home)
+* [OMSCS (Master's in CS) @ Georgia Tech](https://omscs.gatech.edu/)
   + [CS 6750: Human-Computer Interaction](https://omscs.gatech.edu/cs-6750-human-computer-interaction)
   + [CS 6400: Database System Concepts and Design](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design)
 

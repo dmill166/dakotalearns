@@ -9,7 +9,7 @@ categories:
 
 The site is up!
 
-Oh, hello there. Thanks for stumbling across my first post. If you haven’t already checked out the “[What is this site?](https://dakotalearns.wordpress.com/what-is-this-site/)” page, I’ll give you a sec to read that over.
+Oh, hello there. Thanks for stumbling across my first post. If you haven’t already checked out the “[What is this site?](../../about.md)” page, I’ll give you a sec to read that over.
 
 <!-- more -->
 
@@ -38,17 +38,17 @@ Not having made (dragged-and-dropped) a website since the webs.com days, I start
 
 With that basic selection out of the way, I started working down a linear list of things I needed:
 
-* I created a [home page](https://dakotalearns.wordpress.com/)
-* I created a page describing the site ([What is this site?](https://dakotalearns.wordpress.com/what-is-this-site/))
+* I created a [home page](../../index.md)
+* I created a page describing the site ([What is this site?](../../about.md))
   + I went back and linked this on the home page
-* I created a place to host all the [blog posts](https://dakotalearns.wordpress.com/blog-posts/)
+* I created a place to host all the [blog posts](../index.md)
   + I went back and linked this on the home page
 * I spent some time adding a footer on the home page
 * I launched the site from the WordPress Dashboard
   + I didn’t realize this was something you had to do in the beginning (had I read the tutorials, I may have known that sooner)
-* I created a [Contact](https://dakotalearns.wordpress.com/contact/) page
+* I created a [Contact](../../about.md#find-me) page
   + You guessed it, I went back and linked this on the home page
-* I made a [Coming Soon](https://dakotalearns.wordpress.com/coming-soon/) page (nothing planned for this spot, I just wanted to fill that button on the home page)
+* I made a Coming Soon page (nothing planned for this spot, I just wanted to fill that button on the home page)
 * I started on this blog post
 
 ## What’s next?

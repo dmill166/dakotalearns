@@ -11,13 +11,13 @@ Oh, hello there. I'm glad you found your way back to my blog!
 
 <!-- more -->
 
-I want to discuss a topic from my [CS 6400: Database Systems Concepts and Design](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design) course I'm currently enrolled in at Georgia Institute of Technology (as part of their [OMSCS](https://omscs.gatech.edu/home) program).
+I want to discuss a topic from my [CS 6400: Database Systems Concepts and Design](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design) course I'm currently enrolled in at Georgia Institute of Technology (as part of their [OMSCS](https://omscs.gatech.edu/) program).
 
-1. [What is it?](https://dakotalearns.wordpress.com/2023/02/05/entity-relationship-diagrams/#what-is-it)
-2. [Terminology](https://dakotalearns.wordpress.com/2023/02/05/entity-relationship-diagrams/#terminology)
-3. [Guides to Using It](https://dakotalearns.wordpress.com/2023/02/05/entity-relationship-diagrams/#guides-to-using-it)
-4. [Summary and Links](https://dakotalearns.wordpress.com/2023/02/05/entity-relationship-diagrams/#summary-and-links)
-5. [Conclusion](https://dakotalearns.wordpress.com/2023/02/05/entity-relationship-diagrams/#conclusion)
+1. [What is it?](#what-is-it)
+2. [Terminology](#terminology)
+3. [Guides to Using It](#guides-to-using-it)
+4. [Summary and Links](#summary-and-links)
+5. [Conclusion](#conclusion)
 
 ## What is it?
 
@@ -27,7 +27,7 @@ Peter Chen is credited with developing ER modeling in the 1970s (per [LucidChart
 
 ![](https://dakotalearns.wordpress.com/wp-content/uploads/2023/02/image.png?w=680)
 
-[GitMind Illustration of ER Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgitmind.com%2Ferd-examples.html&psig=AOvVaw3LAwMS5QUQ1nvLDdKT5o2b&ust=1675707298267000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJjcgaT-_vwCFQAAAAAdAAAAABAE)
+[GitMind Illustration of ER Diagram](https://gitmind.com/erd-examples.html)
 
 Using the above illustration as a starting point, you can start to see the business value in knowing how to create these. A medical office may have information it wants to keep on doctors such as their specializations. In addition, those doctors will have patients they see on some frequency; ideally, those patients have insurance and, likely, those patients have some type of diagnoses. Although this is only a small subset of the type of information that can be outlined, I hope this illustrates the value to you (regardless of your role in your organization).
 
@@ -58,7 +58,7 @@ Great - I've thrown a bunch of pictures and terminology at you! But how can you 
 
 ![](https://dakotalearns.wordpress.com/wp-content/uploads/2023/02/image-2.png?w=640)
 
-[Sample ER Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcodeandwork.github.io%2Fcourses%2Fcs%2FsqlErdSimpleQueries.html&psig=AOvVaw2qVx0i0piW_BXHB7DsSq2l&ust=1675708194674000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCIiVs8-B__wCFQAAAAAdAAAAABAt)
+[Sample ER Diagram](https://codeandwork.github.io/courses/cs/sqlErdSimpleQueries.html)
 
 * Entity: In this diagram, we have two entities: Employee and Project.
   + An Employee has two Attributes, a Salary (likely a whole number or decimal number limited to two decimal places) and a Name (the Name is a Composite Attribute, broken down further into two Component Attributes: First Name and Last Name). Not shown here are other attributes we could show for the Employee such as their job title and the Employee ID of their supervisor
@@ -83,11 +83,11 @@ ER Diagrams are a way to communicate a desired database design in a high-level f
 If you want a more thorough dive into ER Diagrams, check out the LucidChart link below. I find it to be an excellent resource covering multiple facets of Entity-Relationship Diagrams.
 
 * [Course Description for CS 6400 @ Georgia Tech OMSCS](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design)
-* [Home Page for OMSCS Program](https://omscs.gatech.edu/home)
+* [Home Page for OMSCS Program](https://omscs.gatech.edu/)
 * [LucidChart Reference on ER Diagrams](https://www.lucidchart.com/pages/er-diagrams)
-* [GitMind Illustration of ER Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgitmind.com%2Ferd-examples.html&psig=AOvVaw3LAwMS5QUQ1nvLDdKT5o2b&ust=1675707298267000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJjcgaT-_vwCFQAAAAAdAAAAABAE)
+* [GitMind Illustration of ER Diagram](https://gitmind.com/erd-examples.html)
 * [SQL Server Mentalist Graphic of ER Diagram Elements](https://sqlmentalist.com/2013/10/13/bisql-laymen-to-sql-developer-23-entity-relationship-model-2-er-model-concept-with-an-example/)
-* [Sample ER Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcodeandwork.github.io%2Fcourses%2Fcs%2FsqlErdSimpleQueries.html&psig=AOvVaw2qVx0i0piW_BXHB7DsSq2l&ust=1675708194674000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCIiVs8-B__wCFQAAAAAdAAAAABAt)
+* [Sample ER Diagram](https://codeandwork.github.io/courses/cs/sqlErdSimpleQueries.html)
 
 ## Conclusion
 

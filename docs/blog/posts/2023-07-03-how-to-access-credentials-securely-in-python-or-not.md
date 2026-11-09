@@ -11,7 +11,7 @@ I'm starting to feel like a broken record.... welcome back, again!
 
 <!-- more -->
 
-Since my last post in April, I've been busy completing my Spring 2023 Master's course at Georgia Institute of Technology, getting accustomed to and simultaneously identifying ways to be a key contributor in my (still sort of) new role as a Senior Data Analyst at Dish Wireless, supporting my wife in her pursuit of her Master's, and continuing to navigate the after (as we discussed in "[Life and Loss](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/)").
+Since my last post in April, I've been busy completing my Spring 2023 Master's course at Georgia Institute of Technology, getting accustomed to and simultaneously identifying ways to be a key contributor in my (still sort of) new role as a Senior Data Analyst at Dish Wireless, supporting my wife in her pursuit of her Master's, and continuing to navigate the after (as we discussed in "[Life and Loss](2023-01-31-life-and-loss.md)").
 
 Updates since we last learned something together...
 
@@ -21,13 +21,13 @@ Updates since we last learned something together...
 
 I'll digress on me and give you what you came for - my time learning about accessing credentials in Python, various methods of accessing said credentials, and pros/cons of each approach to this problem. We'll conclude with ChatGPT's thoughts on the topic and the usual review of how writing this post went.
 
-1. [🕵️ Investigate Security](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#investigate-security)
-2. [🗒️ Methods Review](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#methods-review)
-   1. [🚩 Python Configuration Files](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#python-configuration-files)
-   2. [😵‍💫 Others](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#lorem-ipsum-1)
-   3. [🛡️ Defense-by-depth and 🤖 ChatGPT Thoughts on Security in Python](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#defense-by-depth-and-chatgpt-thoughts-on-security-in-python)
-3. [📖 Summary and Links](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#summary-and-links)
-4. [🏁 Conclusion](https://dakotalearns.wordpress.com/2023/07/02/how-to-access-credentials-securely-in-python-or-not/#conclusion)
+1. [🕵️ Investigate Security](#investigate-security)
+2. [🗒️ Methods Review](#methods-review)
+   1. [🚩 Python Configuration Files](#python-configuration-files)
+   2. [😵‍💫 Others](#others)
+   3. [🛡️ Defense-by-depth and 🤖 ChatGPT Thoughts on Security in Python](#defense-by-depth-and-chatgpt-thoughts-on-security-in-python)
+3. [📖 Summary and Links](#summary-and-links)
+4. [🏁 Conclusion](#conclusion)
 
 # 🕵️ Investigate Security
 
@@ -113,15 +113,15 @@ Summary:
 
 Links:
 
-* [My last post, Life and Loss](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/)
+* [My last post, Life and Loss](2023-01-31-life-and-loss.md)
 * [Dish Network achieving 70% 5G Wireless Buildout FCC Milestone](https://about.dish.com/2023-06-15-The-DISH-5G-Network-is-Now-Available-to-Over-70-Percent-of-the-U-S-Population)
 * [Amazon: "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport](https://amzn.to/4uZzoAI)
 * [Nikolai Janakiev (Freelance Data Scientist and Data Engineer) perspective on credentials/configurations in Python](https://janakiev.com/blog/python-credentials-and-configuration/)
 * [TowardsDataScience post](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3) on LOREM IPSUM
 * [The Twelve-Factor App](https://12factor.net/)
-* [Removing Sensitive data from a GitHub repo](http://Removing sensitive data from a repository - GitHub Docs(opens in a new tab))
+* [Removing Sensitive data from a GitHub repo](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 * [Xiaoxu's Illustration of ConfigParser](https://gist.github.com/highsmallxu/f028f821b88de47461a20bec1872f49f#file-configparser_example-py)
-* [Vault by Hashicorp, a KMS (Key Management System)](http://Vault by HashiCorp(opens in a new tab))
+* [Vault by Hashicorp, a KMS (Key Management System)](https://developer.hashicorp.com/vault)
 * [GeeksForGeeks explaining Environment Variables & illustrating reading them](https://www.geeksforgeeks.org/access-environment-variable-values-in-python/)
 * [PasswordSafe, a secure vault/secret management tool](https://pwsafe.org/)
 * [ChatGPT, conversation of Python Credential Access Methods & a very brief overview of the defense-by-depth security strategy](https://chat.openai.com/share/2f739b44-3b1b-41c0-8dbb-fca6b161e8b0)

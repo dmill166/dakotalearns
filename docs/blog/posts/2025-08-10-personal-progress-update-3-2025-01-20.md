@@ -10,14 +10,14 @@ categories:
 
 "Bueller? Bueller? Bueller? Bueller?"
 
-It's been 10 months since my last [Personal Progress Update blog post](https://dakotalearns.wordpress.com/2024/03/11/personal-progress-update-2-2024-03-11/) and 9 months since my [last post](https://dakotalearns.wordpress.com/2024/04/15/learning-python-001-hello-world-and-idle/) at all (starting the Learning Python series). Life gets busy and it gets busy fast! With this much time since the last posts, we have a lot to catch up on in not a lot of time, so let's get started!
+It's been 10 months since my last [Personal Progress Update blog post](2024-03-11-personal-progress-update-2-2024-03-11.md) and 9 months since my [last post](2024-04-15-learning-python-001-hello-world-and-idle.md) at all (starting the Learning Python series). Life gets busy and it gets busy fast! With this much time since the last posts, we have a lot to catch up on in not a lot of time, so let's get started!
 
 <!-- more -->
 
-1. [Professional](https://dakotalearns.wordpress.com/2025/01/20/personal-progress-update-3-2025-01-20/#professional)
-2. [Personal & Academic](https://dakotalearns.wordpress.com/2025/01/20/personal-progress-update-3-2025-01-20/#personal-academic)
-3. [Summary/Links](https://dakotalearns.wordpress.com/2025/01/20/personal-progress-update-3-2025-01-20/#summary-links)
-4. [Conclusion](https://dakotalearns.wordpress.com/2025/01/20/personal-progress-update-3-2025-01-20/#conclusion)
+1. [Professional](#professional)
+2. [Personal & Academic](#personal-academic)
+3. [Summary/Links](#summarylinks)
+4. [Conclusion](#conclusion)
 
 ## Professional
 
@@ -28,7 +28,7 @@ I had some big wins this last year on the professional front!
 
 My days now are spent in AWS (Amazon Web Services) Step Functions, AWS EMR (previously Elastic MapReduce), AWS S3 (Simple Storage Service), and GitLab. I've had to do a lot of growth already coming from a primarily RDBMS (Relational Database Management System) background that wasn't dealing in "Big Data" close to this scale!
 
-In [my last Personal Progress Update](https://dakotalearns.wordpress.com/2022/12/12/personal-progress-update-1-2022-12-11/), I mentioned the pursuit of cloud certifications to further advance my knowledge of cloud systems as it applies to the data engineering sector. At the time, my role at Arrow Electronics was tempting me to focus on the Azure track; yet again, I feel influenced by my current workplace's framework (in AWS) as well as the fact AWS is the largest cloud provider. I've started on this path with a series of LinkedIn Learning preparatory courses ([example](https://www.linkedin.com/learning/aws-certified-cloud-practitioner-clf-c01-cert-prep-1-cloud-concepts/how-did-we-get-in-the-cloud?u=44167460)) for the [Amazon Web Services Certified Cloud Practitioner Exam](https://aws.amazon.com/certification/certified-cloud-practitioner/). I've also set up my own AWS account to leverage [Free Tier services](https://aws.amazon.com/free/?gclid=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE&trk=78b916d7-7c94-4cab-98d9-0ce5e648dd5f&sc_channel=ps&ef_id=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE:G:s&s_kwcid=AL!4422!3!432339156165!e!!g!!aws%20free%20tier!9572385111!102212379047&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) and build alongside my LinkedIn Learning coursework so I can combine that knowledge with practical application.
+In [my last Personal Progress Update](2022-12-12-personal-progress-update-1-2022-12-11.md), I mentioned the pursuit of cloud certifications to further advance my knowledge of cloud systems as it applies to the data engineering sector. At the time, my role at Arrow Electronics was tempting me to focus on the Azure track; yet again, I feel influenced by my current workplace's framework (in AWS) as well as the fact AWS is the largest cloud provider. I've started on this path with a series of LinkedIn Learning preparatory courses ([example](https://www.linkedin.com/learning/aws-certified-cloud-practitioner-clf-c01-cert-prep-1-cloud-concepts/how-did-we-get-in-the-cloud?u=44167460)) for the [Amazon Web Services Certified Cloud Practitioner Exam](https://aws.amazon.com/certification/certified-cloud-practitioner/). I've also set up my own AWS account to leverage [Free Tier services](https://aws.amazon.com/free/?gclid=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE&trk=78b916d7-7c94-4cab-98d9-0ce5e648dd5f&sc_channel=ps&ef_id=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE:G:s&s_kwcid=AL!4422!3!432339156165!e!!g!!aws%20free%20tier!9572385111!102212379047&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) and build alongside my LinkedIn Learning coursework so I can combine that knowledge with practical application.
 
 All of the above considered, I'm setting the goal of increasing my knowledge and skillset as much as I can to aid in realizing a promotion to a Lead Data Developer. I've been following the posts and community of some of the industry greats (like [Zach Wilson](https://www.linkedin.com/in/eczachly/)) as they talk about topics like [going from Senior to Staff](https://blog.dataengineer.io/p/how-to-go-from-senior-to-staff-data) (or Lead, equivalently, in a lot of companies) to try and give myself the best chance to do so in my own career! I recently had a career discussion with my direct manager on my development plan to go from Senior to Staff; together, we came up with some of the following:
 
@@ -51,7 +51,7 @@ I can say 2+ months into the year that it's been a really enjoyable change of pa
 
 ## Summary/Links
 
-1. My [Personal Progress Update #1 post](https://dakotalearns.wordpress.com/2022/11/19/first-post-blog-is-live/)
+1. My [Personal Progress Update #1 post](2022-11-19-first-post-blog-is-live.md)
 2. Sample [LinkedIn Learning preparatory course](https://www.linkedin.com/learning/aws-certified-cloud-practitioner-clf-c01-cert-prep-1-cloud-concepts/how-did-we-get-in-the-cloud?u=44167460) for AWS CCP exam
 3. Homepage of [AWS CCP Exam](https://aws.amazon.com/certification/certified-cloud-practitioner/)
 4. [AWS Free Tier Services Homepage](https://aws.amazon.com/free/?gclid=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE&trk=78b916d7-7c94-4cab-98d9-0ce5e648dd5f&sc_channel=ps&ef_id=CjwKCAiA0bWvBhBjEiwAtEsoW56gU_YV9Wkdwfspthn4bx9sjaKZiVXQ5-q4tboYCHxfuz3_77cLYBoCEp0QAvD_BwE:G:s&s_kwcid=AL!4422!3!432339156165!e!!g!!aws%20free%20tier!9572385111!102212379047&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)

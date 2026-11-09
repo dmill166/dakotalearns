@@ -11,13 +11,13 @@ Wow, it feels like a lifetime ago I wrote my "Personal Progress Update" blog pos
 
 <!-- more -->
 
-1. [Intro](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#intro)
-2. [Lesson 1: Work Hard](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#lesson-1-work-hard)
-3. [Lesson 2: Help Others, Even People You Just Met](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#lesson-2-help-others-even-people-you-just-met)
-4. [Lesson 3: Mortality is Imminent; Live and Laugh](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#lesson-3-mortality-is-imminent-live-and-laugh)
-5. [Lesson 4: Be Prepared for the Worst](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#lesson-4-be-prepared-for-the-worst)
-6. [Summary/Links](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#summary-links)
-7. [Conclusion](https://dakotalearns.wordpress.com/2023/01/31/life-and-loss/#conclusion)
+1. [Intro](#intro)
+2. [Lesson 1: Work Hard](#lesson-1-work-hard)
+3. [Lesson 2: Help Others, Even People You Just Met](#lesson-2-help-others-even-people-you-just-met)
+4. [Lesson 3: Mortality is Imminent; Live and Laugh](#lesson-3-mortality-is-imminent-live-and-laugh)
+5. [Lesson 4: Be Prepared for the Worst](#lesson-4-be-prepared-for-the-worst)
+6. [Summary/Links](#summarylinks)
+7. [Conclusion](#conclusion)
 
 ## Intro
 

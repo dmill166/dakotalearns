@@ -21,7 +21,7 @@ In these last two months, I've had a very busy personal life!
 * 😥Learning how to navigate grief
 * 🧑‍💼Navigating the job market
   + 🎉...including starting a new job as [Senior Data Analyst at DISH](https://www.linkedin.com/posts/dakota-miller-_5g-seniordataanalyst-dataanalyst-activity-7043986978287079424-M8n6?utm_source=share&utm_medium=member_desktop)!
-* 🏫Navigating my [CS 6400](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design) [OMSCS](https://omscs.gatech.edu/home) Course at Georgia Tech
+* 🏫Navigating my [CS 6400](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design) [OMSCS](https://omscs.gatech.edu/) Course at Georgia Tech
 * 🐕Raising our golden retriever puppy (Jackson is 10 months old now!)
 * 🎖️Began volunteering with [DAMA-RMC](https://dama-rmc.wildapricot.org/) (Data Management Association - Rocky Mountain Chapter) as part of the Memberships and Partnerships Committee
 
@@ -29,14 +29,14 @@ Through talking with close ones as well as coworkers, I realized a common questi
 
 Enough words - let's learn how to install Python! 🐍
 
-1. [Welcome back!](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#welcome-back)
-2. [Why a Python installation guide?](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#why-a-python-installation-guide)
-3. [Python Installation on macOS 🍎](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#python-installation-on-macos)
-4. [Python Installation on Windows 🪟](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#python-installation-on-windows-1)
-5. [To add to PATH or not - that is the question ❓](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#to-add-to-path-or-not-that-is-the-question)
-6. [ChatGPT PATH Question 🤖](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#chatgpt-path-question)
-7. [Summary and Links](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#summary-and-links)
-8. [Conclusion](https://dakotalearns.wordpress.com/2023/04/03/installation-guide-for-python-macos-windows/#conclusion)
+1. [Welcome back!](#welcome-back)
+2. [Why a Python installation guide?](#why-a-python-installation-guide)
+3. [Python Installation on macOS 🍎](#python-installation-on-macos)
+4. [Python Installation on Windows 🪟](#python-installation-on-windows)
+5. [To add to PATH or not - that is the question ❓](#to-add-to-path-or-not-that-is-the-question)
+6. [ChatGPT PATH Question 🤖](#chatgpt-path-question)
+7. [Summary and Links](#summary-and-links)
+8. [Conclusion](#conclusion)
 
 ## Why a Python installation guide?
 
