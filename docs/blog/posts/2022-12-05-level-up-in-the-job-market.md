@@ -22,9 +22,7 @@ As I was thinking over this last week about what my next post would be, I kept c
 7. [Summary and Links](#summary-and-links)
 8. [Conclusion](#conclusion)
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2022/12/51807778847_99e0c7bec4_o.jpg?w=1024)
-
-<https://www.flickr.com/photos/venditti_min_min-venditti/51807778847>
+📷 *Photo: [view it on Flickr](https://www.flickr.com/photos/venditti_min_min-venditti/51807778847) (all rights reserved by its photographer, so it's linked rather than shown here).*
 
 ## Assess the current-state
 

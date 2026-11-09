@@ -23,11 +23,11 @@ I want to discuss a topic from my [CS 6400: Database Systems Concepts and Design
 
 From a business standpoint, it can be daunting to think about how to talk to your IT/technical teams to request a database implementation or modifications. The ER (Entity-Relationship) model presents a high-level overview where you can illustrate your business needs in a concise and [relatively] universal way that specifies requirements well for their development efforts.
 
+*Note (2026): the diagrams in this post belong to other sites, so they're linked rather than shown here.*
+
 Peter Chen is credited with developing ER modeling in the 1970s (per [LucidChart](https://www.lucidchart.com/pages/er-diagrams)). You may see "Chen's notation" as an option in various modelling tools considering this fact.
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2023/02/image.png?w=680)
-
-[GitMind Illustration of ER Diagram](https://gitmind.com/erd-examples.html)
+📊 **Diagram:** [GitMind's illustration of an ER diagram](https://gitmind.com/erd-examples.html), a medical office with doctors, specializations, patients, and diagnoses (opens on GitMind's site).
 
 Using the above illustration as a starting point, you can start to see the business value in knowing how to create these. A medical office may have information it wants to keep on doctors such as their specializations. In addition, those doctors will have patients they see on some frequency; ideally, those patients have insurance and, likely, those patients have some type of diagnoses. Although this is only a small subset of the type of information that can be outlined, I hope this illustrates the value to you (regardless of your role in your organization).
 
@@ -35,9 +35,7 @@ Using the above illustration as a starting point, you can start to see the busin
 
 I mentioned earlier there was some [relatively] universal methods for communicating ER diagrams to others (so that we're designing them the same way across industries and around the world). This graphic below details the most common elements:
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2023/02/image-1.png?w=408)
-
-[SQL Server Mentalist Graphic of ER Diagram Elements](https://sqlmentalist.com/2013/10/13/bisql-laymen-to-sql-developer-23-entity-relationship-model-2-er-model-concept-with-an-example/)
+📊 **Diagram:** [SQL Server Mentalist's chart of ER diagram symbols](https://sqlmentalist.com/2013/10/13/bisql-laymen-to-sql-developer-23-entity-relationship-model-2-er-model-concept-with-an-example/), one shape per term in the list below (opens on SQL Server Mentalist's site).
 
 * Entity: These are the building blocks of your diagram. Central elements, these are the "things" you care most about and will want to describe and relate to other things
 * Weak Entity: These are "pretty" or "extra" things. They rely on Entities (also called Strong Entities) in order to exist. If you removed the Strong Entity they're associated with, they can't stand on their own as a diagrammed element
@@ -56,9 +54,7 @@ I mentioned earlier there was some [relatively] universal methods for communicat
 
 Great - I've thrown a bunch of pictures and terminology at you! But how can you possible use this? Don't worry, just sit there and buckle up as I walk you through an example.
 
-![](https://dakotalearns.wordpress.com/wp-content/uploads/2023/02/image-2.png?w=640)
-
-[Sample ER Diagram](https://codeandwork.github.io/courses/cs/sqlErdSimpleQueries.html)
+📊 **Diagram:** [a sample ER diagram](https://codeandwork.github.io/courses/cs/sqlErdSimpleQueries.html) of employees, projects, and dependents, with each element labeled (opens on Code and Work's site).
 
 * Entity: In this diagram, we have two entities: Employee and Project.
   + An Employee has two Attributes, a Salary (likely a whole number or decimal number limited to two decimal places) and a Name (the Name is a Composite Attribute, broken down further into two Component Attributes: First Name and Last Name). Not shown here are other attributes we could show for the Employee such as their job title and the Employee ID of their supervisor

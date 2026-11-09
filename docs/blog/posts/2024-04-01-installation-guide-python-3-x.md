@@ -124,7 +124,7 @@ Discussing with ChatGPT, I received similar answers to that of my own research. 
 >
 > If you want to learn more about Python and try it out yourself, you can visit the official Python website: [Python.org](https://www.python.org/).
 >
-> [Full ChatGPT Conversation](https://chat.openai.com/share/2a2716e8-093f-4f97-85e7-2ca465ca3f29)
+> Full ChatGPT Conversation *(no longer available)*
 
 ## Summary/Links
 
@@ -137,7 +137,7 @@ Discussing with ChatGPT, I received similar answers to that of my own research. 
 * [Installation Guide for VS Code](2024-03-25-installation-guide-microsoft-visual-studio-code-vs-code.md). I had so much fun writing this last post, it motivated me to write this one even sooner!
 * [Python Blurbs](https://www.python.org/doc/essays/blurb/). The official Python site gave a great description of what Python is and made it easy for me to pick elements to break out and explain further for your reading.
 * [Official Python website](https://www.python.org/). I reference this for where to download Python. There may be other ways (e.g., package managers), but call me old-school that I like to navigate to the trusted originator of the information.
-* [Full ChatGPT Conversation](https://chat.openai.com/c/3bf931f9-c045-4101-b7ee-abcdc0ae4b52). I ask questions such as "What is Python? Explain it like I'm 5", "What are use-cases for learning Python", and "How do I install Python". ChatGPT handles it all with excellent and meaningful responses (in this case... 👀).
+* Full ChatGPT Conversation *(no longer available)*. I ask questions such as "What is Python? Explain it like I'm 5", "What are use-cases for learning Python", and "How do I install Python". ChatGPT handles it all with excellent and meaningful responses (in this case... 👀).
 
 ## 🏁 Conclusion
 

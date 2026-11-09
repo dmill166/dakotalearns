@@ -54,6 +54,10 @@ Hidden placeholders
       as an HTML tag and silently disappears from the page. Use
       ``[square brackets]`` for placeholders (cs-teaching/STYLE.md).
 
+No links to the retired WordPress site
+    * No page may reference dakotalearns.wordpress.com: it is being
+      retired, so any link or image pointing there would break.
+
 No em-dashes
     * Published pages use no em-dash (U+2014). Semicolons join two
       thoughts; commas or parentheses set off an aside; a colon leads
@@ -370,6 +374,24 @@ def check_angle_placeholders(path: Path, text: str) -> list[Violation]:
     ]
 
 
+OLD_SITE = "dakotalearns.wordpress.com"
+
+
+def check_no_old_site(path: Path, text: str) -> list[Violation]:
+    """Fail on links or images that still point at the retired WordPress site.
+
+    Returns:
+        One violation per line that references it; empty means the page
+        passes.
+    """
+    return [
+        Violation(path, n, f"references {OLD_SITE}, which is being retired; "
+                  "link the page on dakotalearns.com or host the file here")
+        for n, line in enumerate(text.splitlines(), start=1)
+        if OLD_SITE in line
+    ]
+
+
 EM_DASH = "\u2014"
 
 
@@ -468,6 +490,7 @@ def scan(docs: Path) -> list[Violation]:
         violations += check_quiz_answers(path, text)
         violations += check_angle_placeholders(path, text)
         violations += check_no_em_dash(path, text)
+        violations += check_no_old_site(path, text)
     violations += check_private_refs(docs)
     return violations
 
