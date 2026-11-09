@@ -28,8 +28,8 @@ jobs:
         with:
           python-version: "3.x"
       - name: Install MkDocs Material + plugins
-        # Pinned for reproducible builds. Bump deliberately; see CHANGELOG/releases.
-        run: pip install "mkdocs-material==9.7.6" "mkdocs-awesome-nav==3.3.0" "mkdocs-rss-plugin==1.19.0"
+        # Pinned in requirements.txt (single source; the README installs from it too).
+        run: pip install -r requirements.txt
       - name: Sync course content from source repos
         # Single source of truth = each course's public repo (see courses.yml).
         # Pulls prose into docs/ just before the build; nothing is committed here.

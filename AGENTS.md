@@ -23,8 +23,8 @@ canonical.
 - **Copyright is a hard line**, same as the course repos. Nothing third-party reproduced.
 - **Affiliation disclaimer** must survive any rewrite: independent materials, not affiliated
   with or endorsed by MSU Denver.
-- **Pinned dependencies** (`mkdocs-material`, `mkdocs-awesome-nav`) match CI. Don't bump them
-  casually; a version drift breaks the build in Actions, not locally.
+- **Pinned dependencies** live in `requirements.txt`, the one file both CI and local setup
+  install from. Don't bump them casually; a version drift breaks the build in Actions, not locally.
 - `site/` is build output. Never hand-edit it.
 - The domain is claimed by `docs/CNAME`; it is also a Google OAuth authorized domain for the
   Workspace MCP consent screen (see `~/agents/rules/google-access.md`). Removing or changing
