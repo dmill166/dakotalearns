@@ -41,7 +41,17 @@ GitHub issues its own Let's Encrypt certificate, and it must be able to see the 
 - **Set the records to DNS only (grey cloud)** for setup. With Cloudflare's proxy on (orange) + SSL/TLS mode "Flexible," you get redirect loops and cert errors.
 - If you later want Cloudflare's CDN/proxy in front: switch the records to proxied **only after** GitHub's cert is active, and set Cloudflare **SSL/TLS → Overview → Full (strict)** (never "Flexible"). For now, grey cloud + GitHub HTTPS is the simplest reliable setup; leave it there unless you have a reason to proxy.
 
-## 5. Verify
+## 5. Verify the domain with GitHub (prevents takeover)
+
+If the Pages site were ever switched off while DNS still points at GitHub, someone else could attach `dakotalearns.com` to their own Pages site. Verifying the domain on your account blocks that.
+
+1. GitHub → your profile **Settings → Pages → Add a domain**, enter `dakotalearns.com`.
+2. GitHub shows a **TXT record** (a name like `_github-pages-challenge-dmill166` and a value). Add it in Cloudflare → **DNS → Records** as type **TXT**.
+3. Back in GitHub, click **Verify**. Leave the TXT record in place; GitHub re-checks it.
+
+While you're in there: turn on two-factor authentication for both GitHub and Cloudflare (whoever controls either account controls the site), and confirm the domain's transfer lock is on in Cloudflare Registrar.
+
+## 6. Check it works
 
 - `https://dakotalearns.com` loads with a valid padlock.
 - `https://www.dakotalearns.com` redirects to the apex (GitHub handles this once both DNS records exist and the apex is set as the custom domain).
