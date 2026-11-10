@@ -1,6 +1,10 @@
 # Deploy & Domain Setup
 
-How `dakotalearns.com` gets online: GitHub Pages hosts the built site; Cloudflare serves DNS. One-time setup, then every push to `main` redeploys automatically.
+<!-- author_status: dakota-authored | section: opening (approved by Dakota 2026-11-09) -->
+
+This is the one-time checklist I followed to get `dakotalearns.com` online. GitHub Pages hosts the built site, and Cloudflare handles DNS (the internet's phone book; it turns the name you type into the address of the server). Set it up once, and from then on every push to `main` redeploys on its own.
+
+<!-- author_status: assistant-shared | section: setup steps, migration plan, hosting options (Dakota's decisions, assistant prose; reviewed by Dakota 2026-11-09) -->
 
 ## 0. Prerequisites
 
@@ -11,7 +15,7 @@ How `dakotalearns.com` gets online: GitHub Pages hosts the built site; Cloudflar
 
 1. Push this repo to `main`. The workflow in `.github/workflows/deploy.yml` builds MkDocs and deploys.
 2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Wait for the **Deploy site** workflow to go green (Actions tab). You'll get a `…github.io` URL — confirm the site renders there first.
+3. Wait for the **Deploy site** workflow to go green (Actions tab). You'll get a `…github.io` URL; confirm the site renders there first.
 
 ## 2. Point the domain (Cloudflare DNS)
 
@@ -30,12 +34,12 @@ Cloudflare auto-flattens the apex CNAME, so this works without A records. (If yo
 2. Wait for the **DNS check** to pass and GitHub to provision the TLS certificate (minutes, occasionally up to ~an hour).
 3. Tick **Enforce HTTPS**.
 
-## 4. The one gotcha — keep DNS "grey cloud" during setup
+## 4. The one gotcha: keep DNS "grey cloud" during setup
 
 GitHub issues its own Let's Encrypt certificate, and it must be able to see the hostname. So:
 
 - **Set the records to DNS only (grey cloud)** for setup. With Cloudflare's proxy on (orange) + SSL/TLS mode "Flexible," you get redirect loops and cert errors.
-- If you later want Cloudflare's CDN/proxy in front: switch the records to proxied **only after** GitHub's cert is active, and set Cloudflare **SSL/TLS → Overview → Full (strict)** (never "Flexible"). For now, grey cloud + GitHub HTTPS is the simplest reliable setup — leave it there unless you have a reason to proxy.
+- If you later want Cloudflare's CDN/proxy in front: switch the records to proxied **only after** GitHub's cert is active, and set Cloudflare **SSL/TLS → Overview → Full (strict)** (never "Flexible"). For now, grey cloud + GitHub HTTPS is the simplest reliable setup; leave it there unless you have a reason to proxy.
 
 ## 5. Verify
 
@@ -45,32 +49,29 @@ GitHub issues its own Let's Encrypt certificate, and it must be able to see the 
 
 ---
 
-## WordPress migration / redirect plan
+## Posts moved from WordPress
 
-The existing posts live on the free `dakotalearns.wordpress.com`. The free tier **cannot** do server-side 301 redirects or custom canonical tags, so the plan is link-based and SEO-friendly:
+The blog started on `dakotalearns.wordpress.com` in 2022. Every post from it now lives here under `/blog/`, with its text unchanged and its links pointing at this site. The content gate fails any page that still references the old address.
 
-1. **Don't delete anything** — old posts carry backlinks and search history.
-2. **Inventory** every post into the table below.
-3. **Classify each:**
-   - **Keep** — still fine as-is; just add a footer linking to the new home.
-   - **Supersede** — rewrite a current, canonical version here on `dakotalearns.com`; then edit the *old* WordPress post to add a note at the very top: *"📌 Updated version: https://dakotalearns.com/…"*. Search engines and readers follow the link; authority gradually shifts to the new domain.
-   - **Retire** — rare; only if truly obsolete. Even then, redirect-by-note rather than delete.
-4. As inbound links and new posts accumulate on the owned domain, it becomes the canonical home without ever breaking the old URLs.
+### Where each old post lives now
 
-### Migration tracker
-
-| Old WordPress URL | New URL on dakotalearns.com | Action (Keep / Supersede / Retire) | Done |
-|---|---|---|---|
-| /2024/04/01/installation-guide-python-3-x… | /guides/install-python/ | Supersede (Module 0 is the canonical install guide) | ☐ |
-| /2023/04/03/installation-guide-for-python-macos-windows… | /guides/install-python/ | Supersede | ☐ |
-| _(install guide for VS Code)_ | _(future guide)_ | Keep / later | ☐ |
-| _(ERD post)_ | _(future DB course/guide)_ | Keep | ☐ |
-| _(remaining posts — fill in)_ | | | ☐ |
-
-> First pass: just the two Python install guides → point them at `/guides/install-python/`. The rest can migrate lazily.
+| Old WordPress post | New home |
+|---|---|
+| First Post: Blog is Live! (2022-11-19) | `/blog/first-post-blog-is-live/` |
+| Virtual Environments: What, Why, How? (2022-11-26) | `/blog/virtual-environments-what-why-how/` |
+| Level Up in the Job Market (2022-12-05) | `/blog/level-up-in-the-job-market/` |
+| Personal Progress Update #1 (2022-12-12) | `/blog/personal-progress-update-1-2022-12-11/` |
+| Life and Loss (2023-01-31) | `/blog/life-and-loss/` |
+| Entity Relationship Diagrams (2023-02-06) | `/blog/entity-relationship-diagrams/` |
+| Installation Guide for Python: MacOS & Windows (2023-04-03) | `/blog/installation-guide-for-python-macos-windows/` (superseded by [Install Python](docs/guides/install-python.md); the post says so at the top) |
+| How to Access Credentials [Securely] in Python (2023-07-03) | `/blog/how-to-access-credentials-securely-in-python-or-not/` |
+| Personal Progress Update #2 (2024-03-11) | `/blog/personal-progress-update-2-2024-03-11/` |
+| Installation Guide: VS Code (2024-03-25) | `/blog/installation-guide-microsoft-visual-studio-code-vs-code/` |
+| Installation Guide: Python 3.x (2024-04-01) | `/blog/installation-guide-python-3-x/` (superseded by [Install Python](docs/guides/install-python.md); the post says so at the top) |
+| Learning Python 001: "Hello, World!" and IDLE (2024-04-15) | `/blog/learning-python-001-hello-world-and-idle/` |
 
 ---
 
 ## Later: optional move to Cloudflare Pages
 
-If you ever want Cloudflare-native hosting (tighter integration with the domain, optional Workers for light dynamic features): in Cloudflare → **Workers & Pages → Create → Pages → Connect to Git**, pick this repo, set **build command** `mkdocs build` and **output directory** `site`, add the custom domain. Same repo, same content — a ~10-minute swap, no rewrite. Not needed now.
+If you ever want Cloudflare-native hosting (tighter integration with the domain, optional Workers for light dynamic features): in Cloudflare → **Workers & Pages → Create → Pages → Connect to Git**, pick this repo, set **build command** `mkdocs build` and **output directory** `site`, add the custom domain. Same repo, same content: a ~10-minute swap, no rewrite. Not needed now.
