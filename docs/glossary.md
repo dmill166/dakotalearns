@@ -1,7 +1,7 @@
 # Glossary
 
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-08) -->
-<!-- Keep entries A–Z by heading. Every entry must make sense to a first-time visitor arriving from a search engine (rules: cs-teaching STYLE.md, Glossary). -->
+<!-- Two sections, each kept A–Z by heading. Every entry must make sense to a first-time visitor arriving from a search engine (rules: cs-teaching STYLE.md, Glossary). -->
 
 Plain-language definitions of terms you'll meet around here, **A–Z**.
 
@@ -14,55 +14,123 @@ Many of these terms also appear as **dotted underlines** in the lessons; hover (
 
 <p id="glossary-empty" style="display:none"><em>No terms match your filter.</em></p>
 
-## IDE
+## Student terms
+
+### IDE
 
 **Integrated Development Environment**: an editor bundled with tools to write, run, and debug code in one place (e.g., VS Code, PyCharm). IDLE is a tiny IDE; you'll graduate to a fuller one once the fundamentals are yours.
 
-## IDLE
+### IDLE
 
 **Integrated Development and Learning Environment**: the simple code editor and interactive shell that ships *with* Python. It's deliberately bare: no aggressive autocomplete or AI suggestions, which is exactly why it's good for learning. You write code, press **F5** (on a Mac, usually **fn + F5**) or choose **Run → Run Module**, and it runs. It's a common place to start before heavier tools. (It's also a nod to Monty Python's Eric Idle; Python is named after Monty Python's Flying Circus.) Official docs: [IDLE](https://docs.python.org/3/library/idle.html).
 
-## I/O
+### I/O
 
 **Input/Output**: the umbrella term for data going *into* a program (keyboard input, a file on your computer, etc.) and coming back *out* (appearing on-screen, a file output, etc.). When a lesson says "interactive I/O," it means the keyboard-and-screen conversation kind.
 
-## Interpreter
+### Interpreter
 
 The program that reads your Python code and runs it, line by line. When you "install Python," you're mainly installing the interpreter (the `python` / `python3` command).
 
-## OOP
+### OOP
 
 **Object-Oriented Programming**: a style of programming where you bundle data and the actions that belong with it into "objects." In Python you use objects from day one (even a plain piece of text is one!), long before you learn to define your own kinds.
 
-## Operating system (OS)
+### Operating system (OS)
 
 The software that runs your computer and everything on it: **Windows**, **macOS**, or **Linux** are the three you'll meet most. Guides often branch by OS ("on Windows do this; on macOS do that") because each one names things a little differently: same destination, slightly different doors.
 
-## PATH
+### PATH
 
 A list your operating system keeps of folders to search when you type a program's name. When a guide says "add Python to your PATH," it means "let me type `python` in a terminal and have the computer find it," instead of typing the program's full location every time. Without it, you'd type something like `C:\Users\you\AppData\Local\Programs\Python\Python314\python.exe` every time you want to run Python; with it, just `python`. The classic Windows gotcha ("`python` is not recognized") is almost always a PATH that doesn't include Python's folder.
 
 A desktop shortcut works because it remembers exactly where one program lives. PATH is the terminal's version of that: instead of one saved location per program, it's a short list of folders your computer checks, in order, whenever you type a program's name.
 
-## REPL
+### REPL
 
 **Read-Eval-Print Loop**: an interactive prompt that **R**eads a line of code, **E**valuates it, **P**rints the result, and **L**oops for the next line. Python's `>>>` prompt (including IDLE's shell) is a REPL: type `2 + 2`, press Enter, see `4`. Great for quick experiments. *Not to be confused with **[Replit](https://replit.com)**, a separate online IDE that happens to share the prefix.*
 
-## RSS
+### RSS
 
 **Really Simple Syndication**: a standard *feed* that lets you follow a site's new or updated posts in a **reader app**, without an account, an algorithm, or email. See [Following the blog (RSS)](guides/following-rss.md) to get new Dakota Learns posts in your reader app.
 
-## Shell
+### Shell
 
 The program that reads the commands you type and runs them: usually **zsh** or **bash** on macOS and Linux, **PowerShell** on Windows. Python has its own shell too: its `>>>` prompt, which runs Python instead of system commands.
 
-## Terminal
+### Terminal
 
 The app window where you type commands to your shell: **Terminal** on macOS, **Windows Terminal** on Windows. In everyday talk, "open a terminal" and "open a shell" mean the same thing.
 
-## Virtual environment (venv)
+### Virtual environment (venv)
 
 An isolated, per-project set of Python packages, so one project's installs can't clash with another's. You **don't need one** while you're learning the basics with only what ships with Python; you'll want one once your projects start installing outside packages. Official docs: [venv](https://docs.python.org/3/library/venv.html).
+
+## Instructor and accreditation terms
+
+<!-- author_status: assistant-mechanical | section: Instructor and accreditation terms (definitions; one official link each) -->
+These come up in the "For instructors" notes and the course design documents: the frameworks a course is mapped to and the shorthand that goes with them. Learners never need them to follow a lesson.
+
+### ABET
+
+The U.S. organization that accredits college degree programs in engineering, computing, and applied science. Accreditation means an outside review confirmed that a program meets agreed standards. Official site: [abet.org](https://www.abet.org/).
+
+### ACM
+
+**Association for Computing Machinery**: the largest professional society for computing. With the IEEE Computer Society, it publishes the standard guidelines for what a computer science degree should cover. Official site: [acm.org](https://www.acm.org/).
+
+### ADT
+
+**Abstract data type**: a kind of data defined by what you can do with it, not how it's stored. A stack, for example, is "add to the top, take from the top," whether it's built from a list or something else. ADTs are the heart of a typical Computer Science 2 course.
+
+### CAC
+
+**Computing Accreditation Commission**: the part of ABET that accredits computing programs such as computer science. Its list of student outcomes is one of the frameworks Dakota Learns courses are mapped to. Official criteria: [ABET accreditation criteria](https://www.abet.org/accreditation/accreditation-criteria/).
+
+### CoR
+
+**Course of record**: a university's official, catalog-approved version of a course: its description, objectives, and required topics. Dakota Learns courses reference a course of record for alignment only; they aren't the official version of any course.
+
+### CS2023
+
+**Computer Science Curricula 2023**: the current ACM, IEEE Computer Society, and AAAI guidelines for undergraduate computer science, organized into knowledge areas. Official site: [csed.acm.org](https://csed.acm.org/).
+
+### FPL
+
+**Foundations of Programming Languages**: the CS2023 knowledge area about how programming languages work: syntax, meaning, types, and the ideas behind them. Official site: [csed.acm.org](https://csed.acm.org/).
+
+### IEEE-CS
+
+**IEEE Computer Society**: the computing society within the IEEE, the world's largest technical professional organization. It co-authors the computing curriculum guidelines with the ACM. Official site: [computer.org](https://www.computer.org/).
+
+### KA
+
+**Knowledge area**: one of the topic groups CS2023 divides computer science into, such as Software Development Fundamentals. A course's outcomes map lists which knowledge areas each objective touches. Official site: [csed.acm.org](https://csed.acm.org/).
+
+### OCW
+
+**MIT OpenCourseWare**: MIT's free, openly licensed course materials. MIT's introductory Python course there informed the Computer Science 1 topic order. Official site: [ocw.mit.edu](https://ocw.mit.edu/).
+
+### PRIMM
+
+**Predict, Run, Investigate, Modify, Make**: a sequence for teaching programming. Learners predict what code does before running it, then study it, change it, and finally write their own. Official site: [primmportal.com](https://primmportal.com/).
+
+### SDF
+
+**Software Development Fundamentals**: the CS2023 knowledge area covering the core skills of writing programs: algorithms, data, control flow, testing, and debugging. Official site: [csed.acm.org](https://csed.acm.org/).
+
+### SDLC
+
+**Software development life cycle**: the stages software moves through, from understanding the problem through design, building, testing, release, and maintenance. Computer Science 1 practices it at the scale of a single program.
+
+### SO
+
+**Student outcome**: ABET's term for what graduates of a program should be able to do, numbered SO-1, SO-2, and so on. The outcomes map links each course objective to the student outcomes it supports. Official criteria: [ABET accreditation criteria](https://www.abet.org/accreditation/accreditation-criteria/).
+
+### WCAG
+
+**Web Content Accessibility Guidelines**: the international standard for making web content usable by people with disabilities. Dakota Learns pages are built to meet it. Official site: [W3C WCAG overview](https://www.w3.org/WAI/standards-guidelines/wcag/).
+<!-- /author_status -->
 
 ---
 

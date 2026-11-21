@@ -13,3 +13,11 @@
 *[CS2023]: The ACM/IEEE-CS 2023 curricular guidelines for computer science degrees.
 *[OCW]: MIT OpenCourseWare: MIT's free, openly licensed course materials.
 *[venv]: Virtual environment: an isolated, per-project set of Python packages.
+*[ADT]: Abstract data type: a kind of data defined by what you can do with it, not how it's stored.
+*[CoR]: Course of record: a university's official, catalog-approved version of a course.
+*[FPL]: Foundations of Programming Languages: a CS2023 knowledge area.
+*[KA]: Knowledge area: one of the topic groups in the CS2023 curriculum guidelines.
+*[PRIMM]: Predict, Run, Investigate, Modify, Make: a sequence for teaching programming.
+*[SDF]: Software Development Fundamentals: a CS2023 knowledge area.
+*[SDLC]: Software development life cycle: the stages from problem to maintained software.
+*[WCAG]: Web Content Accessibility Guidelines: the international web accessibility standard.
