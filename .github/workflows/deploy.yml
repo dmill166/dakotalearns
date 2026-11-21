@@ -1,3 +1,6 @@
+# Purpose: The build pipeline: installs pinned dependencies, syncs course
+#   pages, runs the content gate, builds the site and publishes it to
+#   GitHub Pages on every push and course update.
 name: Deploy site
 
 on:
@@ -27,6 +30,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Fetch the shared file-map checker (cs-teaching)
+        uses: actions/checkout@v4
+        with:
+          repository: dmill166/cs-teaching
+          path: .cs-teaching
+      - name: Every file has a purpose line (cs-teaching STYLE.md)
+        run: python .cs-teaching/tools/file_map.py --check .
       - name: Install MkDocs Material + plugins
         # Pinned in requirements.txt (single source; the README installs from it too).
         run: pip install -r requirements.txt

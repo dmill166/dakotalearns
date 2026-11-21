@@ -1,3 +1,5 @@
+# Purpose: The list of courses the site pulls in: which repo, which branch, and
+#   which folders map to which site paths.
 # Course content manifest - single source of truth lives in each course's repo.
 #
 # The site does NOT store course prose. tools/sync_courses.py pulls it from these

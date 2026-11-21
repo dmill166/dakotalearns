@@ -1,5 +1,7 @@
 # Computer Science 1 (Python)
 
+<!-- purpose: Computer Science 1 hub: what the course covers, how to learn from it, the textbook, and its alignment. -->
+
 <!-- author_status: dakota-authored | section: full page (approved by Dakota 2026-11-08) -->
 
 The first programming course: from "what *is* a computer program?" all the way to writing real Python with functions, classes, and your first real algorithms. **No prior experience and no math background required.** We start from zero and build up.

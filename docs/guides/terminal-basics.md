@@ -1,5 +1,7 @@
 # Terminal Basics (just enough for the course)
 
+<!-- purpose: Just enough terminal to move around and run a script, plus how to gather your details when asking for help. -->
+
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-08) -->
 
 The **terminal** (a window where you type commands instead of clicking) shows up a handful of times in this course: checking your Python install, running a self-check script, maybe setting up an optional virtual environment. That's it. You don't need to become a command-line wizard; you need about five commands and one big idea. This could take you somewhere around 10 minutes.

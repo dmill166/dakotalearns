@@ -1,4 +1,7 @@
 /**
+ * Purpose: Renders the `quiz` and `parsons` self-check blocks in lessons:
+ *   shuffling, checking answers, hints and accessible feedback.
+ *
  * Dakota Learns - self-check renderers: quiz (single-answer MCQ) and
  * Parsons (order-the-lines).
  *

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# Purpose: The content gate: blocks the build on unreviewed drafts, missing
+#   provenance markers, accessibility gaps, broken quiz data, private
+#   references, hidden placeholders, em-dashes and links to the retired
+#   WordPress site.
 """Publish-lock + accessibility gate for built content.
 
 Runs AFTER ``tools/sync_courses.py`` and BEFORE ``mkdocs build`` so it sees

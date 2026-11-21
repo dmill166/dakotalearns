@@ -1,5 +1,7 @@
 # Deploy & Domain Setup
 
+<!-- purpose: One-time checklist for putting the site online (GitHub Pages, Cloudflare DNS, HTTPS, domain verification), plus where the old WordPress posts now live. -->
+
 <!-- author_status: dakota-authored | section: opening (approved by Dakota 2026-11-09) -->
 
 This is the one-time checklist I followed to get `dakotalearns.com` online. GitHub Pages hosts the built site, and Cloudflare handles DNS (the internet's phone book; it turns the name you type into the address of the server). Set it up once, and from then on every push to `main` redeploys on its own.

@@ -1,3 +1,5 @@
+# Purpose: Navigation order and titles for the Computer Science 1 section on
+#   the site.
 # Computer Science 1 hub + buckets. index.md is the hand-authored hub (section landing).
 # The bucket directories are synced from dmill166/computer-science-1 at build time;
 # their inner order/titles come from each bucket's own .nav.yml (also synced).

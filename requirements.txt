@@ -1,3 +1,5 @@
+# Purpose: The pinned build dependencies; CI and local setup both install from
+#   it.
 # Site build dependencies, pinned for reproducible builds.
 # Single source of truth: the deploy workflow and the README both install
 # from this file. Bump deliberately, one package at a time, and confirm

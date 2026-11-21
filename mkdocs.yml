@@ -1,3 +1,6 @@
+# Purpose: Site configuration: theme, navigation features, Markdown extensions,
+#   plugins (blog, RSS, navigation) and the scripts and styles every
+#   page loads.
 site_name: Dakota Learns
 site_url: https://dakotalearns.com
 site_description: Free, beginner-friendly learning shared in public - currently focused on computer science. Let's learn something together.

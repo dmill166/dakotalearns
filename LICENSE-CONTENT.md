@@ -1,5 +1,7 @@
 # Content License: CC BY-NC-ND 4.0
 
+<!-- purpose: License for the site's written content (CC BY-NC-ND 4.0) and who to contact for other uses. -->
+
 The **non-code content** of this site (articles, lecture write-ups, guides, and other instructional text) is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
 
 Copyright (c) 2026 Dakota Hollmann.

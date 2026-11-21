@@ -1,5 +1,7 @@
 # Glossary
 
+<!-- purpose: Plain-language definitions in two A–Z sections: student terms, and instructor and accreditation terms. -->
+
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-08) -->
 <!-- Two sections, each kept A–Z by heading. Every entry must make sense to a first-time visitor arriving from a search engine (rules: cs-teaching STYLE.md, Glossary). -->
 

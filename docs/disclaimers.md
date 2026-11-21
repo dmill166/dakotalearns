@@ -1,5 +1,7 @@
 # Disclaimers
 
+<!-- purpose: Full detail on affiliation, licensing, copyright, affiliate links and the no-warranty notice. -->
+
 <!-- author_status: dakota-authored | section: Affiliation/Licensing/Copyright/No-warranty (approved by Dakota 2026-11-08) -->
 
 > Brief notes appear in the page footer and next to affiliate links where they're used; this page is the full detail.

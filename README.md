@@ -1,5 +1,7 @@
 # dakotalearns
 
+<!-- purpose: Front page of the site's source repo: what dakotalearns.com is, how to run it locally, how it builds and deploys, and where course content comes from. -->
+
 <!-- author_status: dakota-authored | section: opening | source: SITE-A1, SITE-A3, SITE-A7 | edited and approved by Dakota 2026-11-09 -->
 
 Oh, hello there! 👋 This is the source behind **[dakotalearns.com](https://dakotalearns.com)**, the free, beginner-first home where I teach computer science, and other topics eventually, in public (and even keep learning it right alongside you).

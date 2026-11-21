@@ -6,6 +6,8 @@ hide:
 
 # Dakota Learns
 
+<!-- purpose: Home page: what Dakota Learns is, what you'll find, why it's free, and who makes it. -->
+
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-08) -->
 
 ### *Let's learn something together.*

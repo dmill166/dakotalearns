@@ -1,3 +1,5 @@
+// Purpose: The Glossary's live filter box: hides terms that don't match what
+//   you type.
 // Live in-page filter for the Glossary. No-ops on every other page.
 // Filters the terms (each <h3> + its content) as you type; a section
 // heading (<h2>) hides when none of its terms match.

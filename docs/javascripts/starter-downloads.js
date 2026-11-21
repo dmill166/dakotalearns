@@ -1,4 +1,7 @@
 /**
+ * Purpose: Turns links to starter files into downloads, so the browser saves
+ *   the file instead of showing it.
+ *
  * Dakota Learns - starter-file downloads.
  *
  * Course pages link starter files with plain relative links

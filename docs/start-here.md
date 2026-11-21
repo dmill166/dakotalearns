@@ -1,5 +1,7 @@
 # Start Here
 
+<!-- purpose: Newcomer path: who the site is for, getting Python working, how the lessons work, and what to do when something breaks. -->
+
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-05) -->
 
 New to programming? You're in the right place. Here's the path.

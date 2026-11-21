@@ -7,6 +7,8 @@ scope: "repo-local: adds to (and inside this repo, overrides) ~/agents/AGENTS.md
 
 # dakotalearns: Repo Rules for Agents
 
+<!-- purpose: Repo rules for AI agents working here: what they may change, the authorship rule, pinned dependencies, and the domain's special role. -->
+
 Source for **[dakotalearns.com](https://dakotalearns.com)**, the public front door for the
 CS teaching initiative. MkDocs Material, GitHub Pages. `DEPLOY.md` is the SSOT for shipping.
 

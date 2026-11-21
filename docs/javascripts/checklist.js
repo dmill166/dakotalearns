@@ -1,4 +1,7 @@
 /**
+ * Purpose: Makes Markdown checklists clickable and remembers each page's ticks
+ *   in the browser.
+ *
  * Dakota Learns - persistent page checklists.
  *
  * Markdown task lists (`- [ ] item`, rendered by pymdownx.tasklist) arrive

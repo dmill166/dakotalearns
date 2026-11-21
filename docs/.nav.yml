@@ -1,3 +1,4 @@
+# Purpose: Top-level site navigation: the order of the main tabs.
 # Global navigation (top level). awesome-nav builds the rest from the tree.
 # Directories (courses, guides, blog) expand into collapsible sections; their
 # contents and titles are controlled by the .nav.yml inside each.

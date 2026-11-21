@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Purpose: Copies each course's pages and starter files from its own repo into
+#   the site before the build, stamping real git dates on each page.
 """Build-time content sync: pull course prose from source repos into docs/.
 
 Single source of truth = each course's public repo. This site never stores a

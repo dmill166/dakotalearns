@@ -1,3 +1,5 @@
+# Purpose: Navigation for the Guides section, mirroring the landing page's two
+#   groups.
 nav:
   - index.md
   - Get set up to code:

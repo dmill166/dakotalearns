@@ -1,5 +1,7 @@
 # Courses
 
+<!-- purpose: The course catalog: every course with its subject, tags and status, plus the tag legend. -->
+
 <!-- author_status: dakota-authored | section: full page (approved by Dakota 2026-11-05) -->
 
 Free, structured courses; learn from them at your own pace, right here on the site. Subjects will grow over time; **computer science is the current focus.** I try to build each course end-to-end before starting the next, so nothing here is abandoned halfway through (all should be Complete, In progress, or Planned).

@@ -1,5 +1,7 @@
 # About
 
+<!-- purpose: The project and the person: background, why teaching, affiliation, licensing, support and contact. -->
+
 <!-- author_status: dakota-authored | section: full page (edited and approved by Dakota 2026-11-08) -->
 
 ## The project

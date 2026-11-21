@@ -1,3 +1,5 @@
+# Purpose: Keeps build output, local virtual environments, synced course pages
+#   and private working notes out of the repo.
 # MkDocs build output
 site/
 
@@ -20,3 +22,6 @@ _local/
 # committed here. Hand-authored course hubs (docs/courses/<id>/index.md) stay tracked.
 docs/courses/*/syllabus/
 docs/courses/*/unit*/
+
+# Shared checker fetched by CI (cs-teaching), never committed
+.cs-teaching/

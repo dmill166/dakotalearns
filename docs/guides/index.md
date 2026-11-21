@@ -1,5 +1,7 @@
 # Guides
 
+<!-- purpose: Guides landing page, grouped into getting set up to code and keeping up with new posts. -->
+
 <!-- author_status: dakota-authored | section: full page (approved by Dakota 2026-11-05) -->
 
 Standalone walk-throughs for the common starting points: the things you'll want to get right once and then never think about again.

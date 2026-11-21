@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Purpose: Local preview that syncs from your local course clones, so unpushed
+#   course work shows up.
 # Preview dakotalearns.com locally - INCLUDING unpushed course-repo work.
 #
 # Syncs course prose from the local working trees (not GitHub), then serves

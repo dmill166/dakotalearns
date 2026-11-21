@@ -1,3 +1,4 @@
+<!-- purpose: Hover-tooltip definitions for every acronym used on the site, added to every page at build time. -->
 *[IDLE]: Integrated Development and Learning Environment: Python's built-in editor and shell.
 *[IDE]: Integrated Development Environment: an editor bundled with tools to write, run, and debug code.
 *[REPL]: Read-Eval-Print Loop: an interactive prompt that runs code one line at a time (e.g. Python's >>> shell). Not to be confused with Replit, an online IDE.

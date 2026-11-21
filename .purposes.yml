@@ -1,0 +1,5 @@
+# purpose: Purpose lines for files that cannot carry their own comment (read by cs-teaching tools/file_map.py).
+"LICENSE": "License for the site's code (PolyForm Noncommercial 1.0.0), with a plain-language summary."
+"docs/CNAME": "Claims the dakotalearns.com domain for GitHub Pages."
+"docs/assets/feedback_samples.json": "Sample texts for the planned no-account feedback form."
+"docs/assets/blog/learning-python-001-hello-world-and-idle/*.png": "Dakota's IDLE screenshots used in the Learning Python 001 blog post."
