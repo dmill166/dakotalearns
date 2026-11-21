@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # Purpose: The content gate: blocks the build on unreviewed drafts, missing
 #   provenance markers, accessibility gaps, broken quiz data, private
-#   references, hidden placeholders, em-dashes and links to the retired
-#   WordPress site.
+#   references, hidden placeholders, unfilled template slots, em-dashes and
+#   links to the retired WordPress site.
 """Publish-lock + accessibility gate for built content.
 
 Runs AFTER ``tools/sync_courses.py`` and BEFORE ``mkdocs build`` so it sees
@@ -156,7 +156,10 @@ class Violation:
 
     def format(self) -> str:
         """Render as a clickable ``path:line - message`` report line."""
-        rel = self.path.relative_to(ROOT)
+        try:
+            rel = self.path.relative_to(ROOT)
+        except ValueError:  # --docs pointed outside the repo
+            rel = self.path
         return f"  {rel}:{self.line} - {self.message}"
 
 
@@ -414,6 +417,29 @@ def check_no_em_dash(path: Path, text: str) -> list[Violation]:
     ]
 
 
+TEMPLATE_LEFTOVER = re.compile(r"\[FILL\b|purpose:\s*Template:")
+
+
+def check_template_leftovers(path: Path, text: str) -> list[Violation]:
+    """Fail on slots left over from a cs-teaching template.
+
+    A page started from cs-teaching/templates carries ``[FILL: ...]``
+    slots and a purpose line beginning "Template:"; both must be replaced
+    before the page can publish.
+
+    Returns:
+        One violation per line with a leftover; empty means the page
+        passes.
+    """
+    return [
+        Violation(path, n, "unfilled template slot ([FILL] or a "
+                  "\"Template:\" purpose line); replace it before publishing "
+                  "(cs-teaching/templates/README.md)")
+        for n, line in enumerate(text.splitlines(), start=1)
+        if TEMPLATE_LEFTOVER.search(line)
+    ]
+
+
 QUIZ_BLOCK = re.compile(r"^```quiz[ \t]*\n(.*?)\n```", re.S | re.M)
 
 
@@ -493,6 +519,7 @@ def scan(docs: Path) -> list[Violation]:
         violations += check_img_alt(path, text)
         violations += check_quiz_answers(path, text)
         violations += check_angle_placeholders(path, text)
+        violations += check_template_leftovers(path, text)
         violations += check_no_em_dash(path, text)
         violations += check_no_old_site(path, text)
     violations += check_private_refs(docs)
