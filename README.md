@@ -62,7 +62,10 @@ dakotalearns/
 │   ├── javascripts/           # quiz + Parsons, checklists, glossary filter, starter downloads
 │   ├── stylesheets/extra.css  # brand + accessibility color tweaks
 │   └── CNAME                  # custom domain (dakotalearns.com)
-└── .github/workflows/deploy.yml   # sync + content gate + build + deploy to GitHub Pages
+├── .lycheeignore              # sites the link check skips (they block bots)
+└── .github/workflows/
+    ├── deploy.yml             # sync + content gate + build + deploy to GitHub Pages
+    └── links.yml              # weekly link check; opens a "Broken links" issue
 ```
 
 ## Deploying

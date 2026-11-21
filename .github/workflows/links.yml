@@ -1,0 +1,62 @@
+# Purpose: Weekly link check: builds the site, checks every outbound link,
+#   and opens (or updates) one "Broken links" issue when any break, so
+#   linking out costs only the fixes it flags.
+name: Link check
+
+on:
+  schedule:
+    # Mondays 14:17 UTC (7:17 AM Denver in winter). Off the hour on purpose.
+    - cron: "17 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install MkDocs Material + plugins
+        run: pip install -r requirements.txt
+      - name: Sync course content from source repos
+        # Same sync as deploy.yml, so course pages' links get checked too.
+        run: python tools/sync_courses.py
+      - name: Build site
+        run: mkdocs build --strict
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Built HTML covers docs, synced course pages and the footer.
+          # http(s) only: internal page links are already checked by
+          # mkdocs --strict. Sites that block automated checkers are listed
+          # in .lycheeignore. 429 (rate limited) counts as alive.
+          args: >-
+            --no-progress
+            --scheme https --scheme http
+            --accept 100..=103,200..=299,429
+            --max-retries 3
+            --timeout 30
+            'site/**/*.html'
+          output: lychee/report.md
+          fail: false
+      - name: Open or update the Broken links issue
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Broken links"
+          num=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file lychee/report.md
+          else
+            gh issue create --title "$title" --body-file lychee/report.md
+          fi
+      - name: Fail the run so the red X shows on the Actions page
+        if: steps.lychee.outputs.exit_code != 0
+        run: exit 1

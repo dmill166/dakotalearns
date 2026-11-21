@@ -1,0 +1,7 @@
+# Purpose: Link patterns the weekly link check skips: sites that block
+#   automated checkers (they answer bots with 403 or 999 even when the page
+#   is fine), plus mail links. Check these by hand when you touch them.
+^mailto:
+^https?://(www\.)?linkedin\.com/
+^https?://(www\.)?reddit\.com/
+^https?://chat\.openai\.com/
