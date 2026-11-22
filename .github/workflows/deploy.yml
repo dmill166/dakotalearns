@@ -17,7 +17,9 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment; don't cancel an in-progress run.
+# One run at a time; a newer push cancels a run still in progress, because
+# the newer run builds from the latest content anyway. (History check,
+# 2026-11-22: every cancellation so far hit the build job, never mid-deploy.)
 concurrency:
   group: pages
   cancel-in-progress: true
