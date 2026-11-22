@@ -39,7 +39,7 @@ If you need a quick read, check out the Summary section at the bottom of this ar
 
 *Help, I need out but I'm not sure where to find my next job!*
 
-It is great to know where you stand, but in this day and age (where [the most recent Consumer Price Index](https://www.bls.gov/news.release/cpi.nr0.htm), or key measure of inflation, rose 7.7%), it can be hard to justify making that move without something else lined up. Continuing from that, how can you know what opportunities exist? A quick Google search of `job boards` showed me the [Betterteam website discussing the Best Job Boards for 2022](https://www.betterteam.com/job-boards). Ironically, their top three suggestions (Indeed, Google Jobs, LinkedIn) are also my go-to for my own career ventures:
+It is great to know where you stand, but in this day and age (where [the most recent Consumer Price Index](https://www.bls.gov/news.release/archives/cpi_11102022.htm), or key measure of inflation, rose 7.7%), it can be hard to justify making that move without something else lined up. Continuing from that, how can you know what opportunities exist? A quick Google search of `job boards` showed me the [Betterteam website discussing the Best Job Boards for 2022](https://web.archive.org/web/20221205000000/https://www.betterteam.com/job-boards). Ironically, their top three suggestions (Indeed, Google Jobs, LinkedIn) are also my go-to for my own career ventures:
 
 1. [Indeed](https://www.indeed.com/)
    * After creating an account and customizing your profile, navigation to Indeed will result in a search bar of "What" (to define the job title, keywords, or company that interests you) and "Where" (allowing options such as a physical location [city, state, zip] or type of work like `remote`). Plus, most of the page will result in an updated Job Feed (improved by your continued activity within Indeed) suggesting opportunities that should, to some degree, match your interests for employment ventures.
@@ -68,7 +68,7 @@ In this Information Age, your ability to progress and move your life forward is 
   + [EventBrite](https://www.eventbrite.com/) has a collection of in-person and online conferences listed in a central location. Whether it's for personal reasons (like a visit to a comedy club) or professional (such as career fairs and training seminars, as we care more about for the purposes of this blog post), EventBrite might have you covered
 * "I only learn well when I read it, but books cost money"
   + [OpenLibrary](https://openlibrary.org/)
-  + [Project Gutenberg](https://www.gutenberg.org/3)
+  + [Project Gutenberg](https://www.gutenberg.org/)
   + [Goodreads](https://www.goodreads.com/)
 
 [Regardless of what industry you're in, CU Boulder found common skills that enable success in one's career](https://www.colorado.edu/today/2019/04/17/10-essential-skills-youll-need-career-success). If technical prowess isn't where you need to advance, try further developing these skills:
@@ -151,8 +151,8 @@ Links:
 
 * [DRY Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 * [News Article discussing Twitter timeline](https://www.ign.com/articles/elon-musks-twitter-takeover-and-the-chaos-that-followed-the-complete-timeline) (used in dad joke)
-* [Inflation as of November 2022](https://www.bls.gov/news.release/cpi.nr0.htm)
-* [2022 Best Job Boards](https://www.betterteam.com/job-boards)
+* [Inflation as of November 2022](https://www.bls.gov/news.release/archives/cpi_11102022.htm)
+* [2022 Best Job Boards](https://web.archive.org/web/20221205000000/https://www.betterteam.com/job-boards)
 * [Indeed.com](https://www.indeed.com/)
 * [Google Jobs About page](https://jobs.google.com/about/)
   + (to use Google Jobs, search your desired job title at [google.com](http://google.com) and click the "Jobs" heading towards the top of your results page)
@@ -167,7 +167,7 @@ Links:
 * [EventBrite](https://www.eventbrite.com/): "the leading events management and growth platform helping creators and entrepreneurs thrive"
 * Three sample online PDF/Book resources:
   + [OpenLibrary](https://openlibrary.org/)
-  + [Project Gutenberg](https://www.gutenberg.org/3)
+  + [Project Gutenberg](https://www.gutenberg.org/)
   + [Goodreads](https://www.goodreads.com/)
 * [CU Boulder Soft Skills to Improve](https://www.colorado.edu/today/2019/04/17/10-essential-skills-youll-need-career-success)
 * [Atlassian on S.M.A.R.T. Goals](https://www.atlassian.com/blog/productivity/how-to-write-smart-goals)

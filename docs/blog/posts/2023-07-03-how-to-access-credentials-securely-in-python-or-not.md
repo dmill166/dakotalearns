@@ -47,7 +47,7 @@ We need to start this conversation with the question.... why? Why have a method 
 
 ## 🚩 Python Configuration Files
 
-Researching this topic seems to break down even further into two subdivisions: a config.py file which stores the credentials in variables that can then be imported versus use of the ConfigParser library which allows more separation of the variables with more granular controls, albeit more overhead (often separated into a .ini file). Regardless of which you choose, per [TowardsDataScience](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3), it should 1) be easy to read and edit, 2) allow comments, and 3) be easy to deploy.
+Researching this topic seems to break down even further into two subdivisions: a config.py file which stores the credentials in variables that can then be imported versus use of the ConfigParser library which allows more separation of the variables with more granular controls, albeit more overhead (often separated into a .ini file). Regardless of which you choose, per [TowardsDataScience](https://web.archive.org/web/20230519060254/https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3), it should 1) be easy to read and edit, 2) allow comments, and 3) be easy to deploy.
 
 The pros of this approach include, when used in a Python-heavy/entire stack, it's natural to the developer(s) maintaining this & easy to write this into a .gitignore file to ensure it isn't committed to source code.
 
@@ -117,7 +117,7 @@ Links:
 * [Dish Network achieving 70% 5G Wireless Buildout FCC Milestone](https://about.dish.com/2023-06-15-The-DISH-5G-Network-is-Now-Available-to-Over-70-Percent-of-the-U-S-Population)
 * [Amazon: "Deep Work: Rules for Focused Success in a Distracted World" by Cal Newport](https://amzn.to/4uZzoAI)
 * [Nikolai Janakiev (Freelance Data Scientist and Data Engineer) perspective on credentials/configurations in Python](https://janakiev.com/blog/python-credentials-and-configuration/)
-* [TowardsDataScience post](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3) on LOREM IPSUM
+* [TowardsDataScience post](https://web.archive.org/web/20230519060254/https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3) on LOREM IPSUM
 * [The Twelve-Factor App](https://12factor.net/)
 * [Removing Sensitive data from a GitHub repo](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 * [Xiaoxu's Illustration of ConfigParser](https://gist.github.com/highsmallxu/f028f821b88de47461a20bec1872f49f#file-configparser_example-py)

@@ -25,7 +25,7 @@ From a business standpoint, it can be daunting to think about how to talk to you
 
 *Note (2026): the diagrams in this post belong to other sites, so they're linked rather than shown here.*
 
-Peter Chen is credited with developing ER modeling in the 1970s (per [LucidChart](https://www.lucidchart.com/pages/er-diagrams)). You may see "Chen's notation" as an option in various modelling tools considering this fact.
+Peter Chen is credited with developing ER modeling in the 1970s (per [LucidChart](https://lucid.co/diagram/erd/tutorial)). You may see "Chen's notation" as an option in various modelling tools considering this fact.
 
 📊 **Diagram:** [GitMind's illustration of an ER diagram](https://gitmind.com/erd-examples.html), a medical office with doctors, specializations, patients, and diagnoses (opens on GitMind's site).
 
@@ -80,7 +80,7 @@ If you want a more thorough dive into ER Diagrams, check out the LucidChart link
 
 * [Course Description for CS 6400 @ Georgia Tech OMSCS](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design)
 * [Home Page for OMSCS Program](https://omscs.gatech.edu/)
-* [LucidChart Reference on ER Diagrams](https://www.lucidchart.com/pages/er-diagrams)
+* [LucidChart Reference on ER Diagrams](https://lucid.co/diagram/erd/tutorial)
 * [GitMind Illustration of ER Diagram](https://gitmind.com/erd-examples.html)
 * [SQL Server Mentalist Graphic of ER Diagram Elements](https://sqlmentalist.com/2013/10/13/bisql-laymen-to-sql-developer-23-entity-relationship-model-2-er-model-concept-with-an-example/)
 * [Sample ER Diagram](https://codeandwork.github.io/courses/cs/sqlErdSimpleQueries.html)

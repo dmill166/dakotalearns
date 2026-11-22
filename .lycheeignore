@@ -5,3 +5,13 @@
 ^https?://(www\.)?linkedin\.com/
 ^https?://(www\.)?reddit\.com/
 ^https?://chat\.openai\.com/
+# Verified alive by hand 2026-11-22 (Stack Exchange API, a browser fetch,
+# or the site's home page); they answer automated checkers with 403.
+^https?://([a-z]+\.)?stackoverflow\.com/
+^https?://([a-z]+\.)?stackexchange\.com/
+^https?://(www\.)?acm\.org/
+^https?://(www\.)?bls\.gov/
+^https?://(www\.)?forbes\.com/
+^https?://(www\.)?indeed\.com/
+^https?://(www\.)?udemy\.com/
+^https?://(www\.)?skillshare\.com/

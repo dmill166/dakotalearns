@@ -39,7 +39,7 @@ Be it a big or small action/kind word, do good recklessly all your life.
 
 ## Lesson 3: Mortality is Imminent; Live and Laugh
 
-Life is too short. One of many thoughts in this last month has been, "Did Pawpaw live a full life?" Statistically speaking, he outlived men in the U.S. (according to [THIS](https://www.cdc.gov/nchs/pressroom/nchs_press_releases/2022/20220831.htm) report, the average lifespan for men in 2021 was 73.2 years). All the same, I feel I could have had 1,000 years with both Pawpaw and Connor and it still wouldn't have been enough time.
+Life is too short. One of many thoughts in this last month has been, "Did Pawpaw live a full life?" Statistically speaking, he outlived men in the U.S. (according to [THIS](https://www.cdc.gov/nchs/pressroom/releases/20220831.html) report, the average lifespan for men in 2021 was 73.2 years). All the same, I feel I could have had 1,000 years with both Pawpaw and Connor and it still wouldn't have been enough time.
 
 This fact will have a lasting impact on me. The idea of saying "I love you" every chance I get, to go make memories I may not be feeling in the moment, and to be involved in a way with meaning - all of these are points that have been [re]emphasized for how I want to live my life moving forward.
 
@@ -71,7 +71,7 @@ Summary:
 
 Links:
 
-* [Average US Lifespan (as of 2021)](https://www.cdc.gov/nchs/pressroom/nchs_press_releases/2022/20220831.htm)
+* [Average US Lifespan (as of 2021)](https://www.cdc.gov/nchs/pressroom/releases/20220831.html)
 * [Dave Ramsey's Seven Baby Steps Financial Plan](https://www.ramseysolutions.com/dave-ramsey-7-baby-steps)
 * [David Goggins book: Can't Hurt Me: Master Your Mind and Defy the Odds](https://www.amazon.com/Cant-Hurt-Me-Master-Your/dp/1544512287)
 * [Grief: Ball and Box Analogy](https://psychcentral.com/blog/coping-with-grief-ball-and-box-analogy#looking-forward)

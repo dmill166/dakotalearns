@@ -15,7 +15,7 @@ In plain terms: I've guest-lectured, joined panels, and serve in an advisory cap
 ## Licensing
 
 - **Course content** (text, explanations, assignment prompts, slides): [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): free to read and share for noncommercial use with attribution; no derivatives. For commercial use or to create and share an adaptation, email me at **hello@dakotalearns.com**; it may well be welcome.
-- **Code** (starter code, examples, scripts): [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/): free for noncommercial use.
+- **Code** (starter code, examples, scripts): [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0): free for noncommercial use.
 
 These licenses cover original work only and grant no rights to any third-party materials a course references. All other rights reserved.
 

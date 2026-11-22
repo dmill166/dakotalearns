@@ -35,7 +35,7 @@ In plain terms: whatever my role at MSU Denver, now or later, Dakota Learns stay
 ## How it's licensed
 
 - **Course content** (text, slides, prompts): [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): free to read and share for noncommercial use, with attribution.
-- **Code** (examples, starter code): [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).
+- **Code** (examples, starter code): [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0).
 
 For commercial use or to create and share an adaptation, email me at **hello@dakotalearns.com**; it may well be welcome. These licenses cover my original work only; courses *reference* their textbooks (e.g., by chapter) but never reproduce them.
 

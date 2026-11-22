@@ -34,10 +34,13 @@ jobs:
         with:
           # Built HTML covers docs, synced course pages and the footer.
           # http(s) only: internal page links are already checked by
-          # mkdocs --strict. Sites that block automated checkers are listed
+          # mkdocs --strict. --root-dir lets lychee resolve site-root links
+          # like /start-here/ (to local files, which --scheme then skips)
+          # instead of reporting them as errors. Sites that block automated checkers are listed
           # in .lycheeignore. 429 (rate limited) counts as alive.
           args: >-
             --no-progress
+            --root-dir ${{ github.workspace }}/site
             --scheme https --scheme http
             --accept 100..=103,200..=299,429
             --max-retries 3
