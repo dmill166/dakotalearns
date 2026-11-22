@@ -15,3 +15,7 @@
 ^https?://(www\.)?indeed\.com/
 ^https?://(www\.)?udemy\.com/
 ^https?://(www\.)?skillshare\.com/
+# Load fine from a normal connection (checked 2026-11-22) but answer
+# GitHub's runners with 403.
+^https?://(www\.)?lucid\.co/
+^https?://(www\.)?cdc\.gov/
