@@ -92,3 +92,7 @@ Original work only; third-party materials are referenced, not reproduced ([polic
 <!-- author_status: dakota-authored | section: closing | source: SITE-A7 | approved by Dakota 2026-11-09 -->
 
 Thanks for stopping by! Let's learn something together! 👨‍🏫
+
+---
+
+*How I use AI in my work: see [my profile](https://github.com/dmill166/dmill166#how-i-work-with-ai).*
